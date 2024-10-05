@@ -40,7 +40,7 @@ mark{
 }
 
 div#imagem-header-container{
-    background-image: url(../imagens/mulher-correndo-3.jpg);
+    background-image: url(./imagens/mulher-correndo-3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
