@@ -250,7 +250,7 @@ section#sessao-produtos{
     align-items: center;
     height: 70vh;
     width: 100%;
-    background-image: url(../imagens/abstract.jpg);
+    background-image: url(../imagens/nuvens.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -261,7 +261,7 @@ section#sessao-produtos{
         flex-direction: column;
         height: 100%;
         width: 50%;
-        background-color: #ea54f51c;
+        background-color: #2880b639;
 
         & #text{
             display: flex;
