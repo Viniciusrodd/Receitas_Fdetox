@@ -49,7 +49,7 @@ div#imagem-header-container{
 div#imagem-header{
     height: 120vh;
     width: 100%;
-    background-color: rgba(0, 53, 88, 0.429);
+    background-color: rgba(0, 0, 0, 0.67);
 }
 
 
@@ -149,19 +149,18 @@ div#container-button-1{
 
 #btt-conteudo-1{
     height: 100%;
-    width: 210px;
+    width: 190px;
     margin-right: 300px;
     font-size: 25px;
     font-weight: bold;
     letter-spacing: 4px;
-    border: none;
+    border: 3px solid white;
     color: white;
-    background-color: #287FB6;
+    background-color: #2880b600;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 #btt-conteudo-1:hover{
-    background-color: rgb(73, 157, 209);
     transform: scale(1.05);
 }
 
@@ -239,5 +238,79 @@ section#sessao-produtos{
         background-repeat: no-repeat;
     }
 }
+
+
+/*SECTION OUR MISSION*/
+
+
+#section-mission{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+    background-image: url(../imagens/abstract.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    & #mission-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 50%;
+        background-color: #ea54f51c;
+
+        & #text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;    
+            height: 80%;
+            width: 80%;
+
+            & .h1-mission{
+                font-size: 35px;
+                color: white;
+                font-weight: bold;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                margin-bottom: 3px;
+            }
+    
+            & .p-mission{
+                font-size: 27px;
+                color: white;
+                font-weight: bold;
+                text-align: center;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }    
+        }
+    }
+
+    & #mission-image{
+        height: 100%;
+        width: 50%;
+        overflow: hidden; /* Oculta partes do vídeo que saem da div */
+        position: relative; /* Necessário para posicionamento do vídeo */        
+
+        & #video-section-mission{
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Mantém a proporção do vídeo enquanto ocupa todo o espaço */        }
+    }
+}
+
+
+/*SESSÃO APRESENTAÇÃO PRODUTOS*/
+
+
+#apresentacao-produtos{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--cor01);
+}
+
 
 
