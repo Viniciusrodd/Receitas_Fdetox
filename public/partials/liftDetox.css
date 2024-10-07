@@ -3,8 +3,13 @@
 /*SECTION*/
 
 
-#liftDetox-container{
+.liftDetox-container{
     display: none;
+    
+}
+
+.liftdetox{
+    display: block;
 }
 
 

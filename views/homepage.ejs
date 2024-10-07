@@ -98,8 +98,24 @@
         <!--SESSÃO APRESENTAÇÃO PRODUTOS-->
 
 
-        <section id="apresentacao-produtos">
+        <section id="product-presentation">
 
+        </section>
+
+
+        <!--SESSÃO ESCOLHA DE PRODUTOS-->
+
+
+        <section id="product-choice">
+            <button id="btt-liftdetox">
+                Lift-Detox
+            </button>
+            <button>
+                Chá
+            </button>
+            <button>
+                Treino
+            </button>
         </section>
 
 
@@ -108,6 +124,79 @@
 
     </div>
 
-    <script src="../js/homepage.js"></script>
+
+
+<script>
+    let sobreBtt = document.getElementById('sobre')
+    let beneficiosBtt = document.getElementById('beneficios')
+    let resultadosBtt = document.getElementById('resultados')
+    let entregaBtt = document.getElementById('entrega')
+    let iniciarBtt = document.getElementById('btt-conteudo-1')
+    let comprarAgora1Btt = document.getElementById('btt-compraragora-1')
+    let comprarAgora2Btt = document.getElementById('btt-compraragora-2')
+
+
+
+    function scrollButton(btt, content){
+        btt.addEventListener('click', () =>{
+            if(btt){
+                content.scrollIntoView({
+                    behavior: "smooth"
+                })
+            }
+        })
+    }
+
+
+
+    let sobreConteudo = document.getElementById('container-argumentos')
+    scrollButton(sobreBtt, sobreConteudo)
+
+
+    let beneficiosConteudo = document.getElementById('container-produto')
+    scrollButton(beneficiosBtt, beneficiosConteudo)
+
+
+    let resultadosConteudo = document.getElementById('div-resultados')
+    scrollButton(resultadosBtt, resultadosConteudo)
+
+
+    let entregaConteudo = document.getElementById('container-footer-6')
+    scrollButton(entregaBtt, entregaConteudo)
+
+
+    let iniciarConteudo = document.getElementById('sessao-conteudo-1')
+    scrollButton(iniciarBtt, iniciarConteudo)
+
+
+    var cardsCompras = document.getElementById('container-cards-compras')
+    scrollButton(comprarAgora1Btt,cardsCompras)
+    scrollButton(comprarAgora2Btt, cardsCompras)
+
+
+    
+    //CARREGANDO LIFT-DETOX:
+
+
+
+    var bttLift = document.getElementById('btt-liftdetox');
+    bttLift.addEventListener('click', () => {
+        var liftContainer = document.getElementById('liftDetox-container');
+
+        liftContainer.style.display = 'block';
+
+        requestAnimationFrame(() =>{
+            liftContainer.classList.add('liftdetox');
+                iniciarConteudo.scrollIntoView({
+                    behavior: "smooth"
+                })
+        })
+    })
+
+
+
+</script>
+
+
 </body>
 </html>

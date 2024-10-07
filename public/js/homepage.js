@@ -45,3 +45,6 @@ scrollButton(iniciarBtt, iniciarConteudo)
 var cardsCompras = document.getElementById('container-cards-compras')
 scrollButton(comprarAgora1Btt,cardsCompras)
 scrollButton(comprarAgora2Btt, cardsCompras)
+
+
+//ADD LIFT DETOX DISPLAY
