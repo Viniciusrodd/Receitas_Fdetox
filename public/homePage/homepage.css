@@ -20,6 +20,12 @@
 body, html {
     margin: 0;
     padding: 0;
+    overflow: scroll; /* Permite a rolagem */
+    -ms-overflow-style: none; /* Para Internet Explorer e Edge */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Para Chrome, Safari e Opera */
 }
 
 mark{
@@ -307,9 +313,87 @@ section#sessao-produtos{
 
 
 #product-presentation{
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 200vh;
     width: 100%;
-    background-color: var(--cor01);
+    background-color: black;
+
+    & #container-lift{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 30%;
+        width: 100%;
+        border-radius: 20px;
+        background-color: var(--cor04);
+        position: relative;
+        transform: translateX(40%); /* Começa na posição original */
+        transition: transform 1s ease;
+        cursor: pointer;
+
+        & #desc-lift{
+            height: 100%;
+            width: 40%;
+            background-color: var(--cor01);
+        }
+    }
+    #container-lift:hover{
+        transform: translateX(-3px);
+        transition: transform 1s ease;
+    }
+
+
+    & #container-cha{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 30%;
+        width: 100%;
+        border-radius: 20px;
+        background-color: var(--cor05);
+        position: relative;
+        transform: translateX(-40%);
+        transition: transform 1s ease;
+        cursor: pointer;
+
+        & #desc-cha{
+            height: 100%;
+            width: 40%;
+            background-color: var(--cor01);
+        }
+    }
+    #container-cha:hover{
+        transform: translateX(3px);
+        transition: transform 1s ease;
+    }
+
+
+    & #container-produtoDigital{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 30%;
+        width: 100%;
+        border-radius: 20px;
+        background-color: var(--cor06);
+        position: relative;
+        transform: translateX(40%);
+        transition: transform 1s ease;
+        cursor: pointer;
+
+        & #desc-produtoDigital{
+            height: 100%;
+            width: 40%;
+            background-color: var(--cor01);            
+        }
+    }
+    #container-produtoDigital:hover{
+        transform: translateX(-3px);
+        transition: transform 1s ease;
+    }
 }
 
 
@@ -323,7 +407,7 @@ section#sessao-produtos{
     align-items: center;
     height: 50vh;
     width: 100%;
-    background-color: var(--cor05);
+    background-color: var(--cor01);
 }
 
 
