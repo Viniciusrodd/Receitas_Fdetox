@@ -336,15 +336,25 @@ section#sessao-produtos{
         & #img-lift{
             height: 100%;
             width: 50%;
-            background-color: palevioletred;
+            background-image: url(../imagens/remedios.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
             position: absolute; /* Sobrepõe a `desc-lift` */
             transition: transform 1s ease; /* Animação suave ao mover */
         }
 
         & #desc-lift{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             height: 100%;
             width: 50%;
             background-color: var(--cor01);
+
+            & p{
+                text-align: center;
+            }
         }
     }
     #img-lift:hover{
@@ -368,7 +378,10 @@ section#sessao-produtos{
         & #img-cha{
             height: 100%;
             width: 50%;
-            background-color: palevioletred;
+            background-image: url(../imagens/cha-2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
             position: absolute; /* Sobrepõe a `desc-lift` */
             transition: transform 1s ease; /* Animação suave ao mover */
         }
@@ -400,7 +413,10 @@ section#sessao-produtos{
         & #img-produtoDigital{
             height: 100%;
             width: 50%;
-            background-color: palevioletred;
+            background-image: url(../imagens/mulher-treino.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
             position: absolute; /* Sobrepõe a `desc-lift` */
             transition: transform 1s ease; /* Animação suave ao mover */
         }
