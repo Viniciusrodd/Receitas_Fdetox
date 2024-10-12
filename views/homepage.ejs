@@ -251,22 +251,33 @@
 
     //ANIMAÇÃO NOS PRODUTOS
 
+    function mouseEnter(img, transformed){
+        img.addEventListener('mouseenter', () => {
+            img.classList.add(transformed);
+        });
+    }
+
+    function mouseLeave(img, classe){
+        img.addEventListener('mouseleave', () =>{
+            setTimeout(() =>{
+                img.classList.remove(classe)
+            }, 5000)
+        })
+    }
+
 
     var imgLift = document.getElementById('img-lift');
-    imgLift.addEventListener('mouseenter', () => {
-      imgLift.classList.add('transformed-lift');
-    });
-
+    mouseEnter(imgLift, 'transformed-lift');
+    mouseLeave(imgLift, 'transformed-lift');
 
     var imgCha = document.getElementById('img-cha');
-    imgCha.addEventListener('mouseenter', () =>{
-        imgCha.classList.add('transformed-cha');
-    })
+    mouseEnter(imgCha, 'transformed-cha')
+    mouseLeave(imgCha, 'transformed-cha')
+
 
     var imgProdutoDigital = document.getElementById('img-produtoDigital');
-    imgProdutoDigital.addEventListener('mouseenter', () =>{
-        imgProdutoDigital.classList.add('transformed-produtoDigital');
-    })
+    mouseEnter(imgProdutoDigital, 'transformed-produtoDigital')
+    mouseLeave(imgProdutoDigital, 'transformed-produtoDigital')
 
 </script>
 
