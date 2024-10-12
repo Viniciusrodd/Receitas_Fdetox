@@ -19,14 +19,9 @@
 
 body, html {
     margin: 0;
-    padding: 0;
-    overflow: scroll; /* Permite a rolagem */
-    -ms-overflow-style: none; /* Para Internet Explorer e Edge */
+    padding: 0;    
 }
 
-body::-webkit-scrollbar {
-    display: none; /* Para Chrome, Safari e Opera */
-}
 
 mark{
     background-color: black;
@@ -331,35 +326,71 @@ section#sessao-produtos{
         background-color: var(--cor04);
         position: relative;
         overflow: hidden; /* Para esconder o conteúdo que sair da div */
-        cursor: pointer;
 
         & #img-lift{
             height: 100%;
             width: 50%;
-            background-image: url(../imagens/remedios.jpg);
-            background-size: cover;
+            background-color: var(--cor02);
+            background-image: url(../imagens/Lift-Caps.png);
+            background-size: contain;
             background-repeat: no-repeat;
             background-position: left;
             position: absolute; /* Sobrepõe a `desc-lift` */
             transition: transform 1s ease; /* Animação suave ao mover */
+            cursor: pointer;
         }
 
         & #desc-lift{
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100%;
             width: 50%;
             background-color: var(--cor01);
 
-            & p{
-                text-align: center;
+            & ul{
+                width: 70%;
+                padding: 0%;
+                margin-bottom: 0px;
+
+                & #h1-desc-lift{
+                    font-family: "Fira Sans Condensed", sans-serif;
+                    font-size: 25px;
+                    text-align: center;
+                    margin-top: 0px;
+                    margin-bottom: 3px;
+                    color: var(--cor05);
+                }
+
+                & li{
+                    font-family: "Fira Sans Condensed", sans-serif;
+                    font-size: 20px;
+                    text-align: center;
+                    text-decoration: underline;
+                    color: black;
+                }
+            }
+
+            & #button-lift{
+                height: 45px;
+                width: 120px;
+                margin-top: 0px;
+                border: none;
+                font-size: 16px;
+                color: white;
+                background-color: var(--cor05);
+                transition: transform 0.3s ease;
+                cursor: pointer;
             }
         }
     }
-    #img-lift:hover{
+    #button-lift:hover{
+        background-color: rgb(255, 0, 0);
+        transform: scale(1.05);
+    }
+    .transformed-lift{
         transform: translateX(-100%);        
-        transition: transform 1s ease;
     }
 
 
@@ -373,7 +404,6 @@ section#sessao-produtos{
         background-color: var(--cor05);
         position: relative;
         overflow: hidden; /* Para esconder o conteúdo que sair da div */
-        cursor: pointer;
 
         & #img-cha{
             height: 100%;
@@ -384,17 +414,20 @@ section#sessao-produtos{
             background-position: center;
             position: absolute; /* Sobrepõe a `desc-lift` */
             transition: transform 1s ease; /* Animação suave ao mover */
+            cursor: pointer;
         }
 
         & #desc-cha{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             height: 100%;
             width: 50%;
             background-color: var(--cor01);
         }
     }
-    #img-cha:hover{
+    .transformed-cha{
         transform: translateX(100%);        
-        transition: transform 1s ease;
     }
 
 
@@ -408,7 +441,6 @@ section#sessao-produtos{
         background-color: var(--cor06);
         position: relative;
         overflow: hidden;
-        cursor: pointer;
 
         & #img-produtoDigital{
             height: 100%;
@@ -419,17 +451,20 @@ section#sessao-produtos{
             background-position: center;
             position: absolute; /* Sobrepõe a `desc-lift` */
             transition: transform 1s ease; /* Animação suave ao mover */
+            cursor: pointer;
         }
 
         & #desc-produtoDigital{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             height: 100%;
             width: 50%;
             background-color: var(--cor01);            
         }
     }
-    #img-produtoDigital:hover{
+    .transformed-produtoDigital{
         transform: translateX(-100%);
-        transition: transform 1s ease;
     }
 }
 

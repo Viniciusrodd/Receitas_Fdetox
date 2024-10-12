@@ -6,6 +6,9 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="../homePage/homepage.css">
     <link rel="stylesheet" href="../homePage/mobileStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="container-pai">
@@ -104,15 +107,24 @@
 
                 </div>
                 <div id="desc-lift">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                        Debitis molestias sapiente cum error? Vel voluptatibus <br>
-                        temporibus laboriosam, ratione molestias explicabo accusantium <br> 
-                        cupiditate iste repudiandae, praesentium aut? Asperiores <br>
-                        voluptate ipsa earum.
-                    </p>
+                    <ul>
+                        <h1 id="h1-desc-lift">
+                            UM PRODUTO PERFEITO PARA AUXILIAR NO SEU EMAGRECIMENTO NESSE ANO
+                        </h1>
+
+                        <li>Reduz a vontade de comer</li>
+                        <li>Combate as Estrias e Celulite</li>
+                        <li>Promove melhorias na sua saúde</li>
+                        <li>Saudável e 100% natural</li>
+                        <li>Queima gordura localizada</li>
+                        <li>Acelera o metabolismo</li>
+                    </ul>
+
+                    <button id="button-lift">Veja mais</button>
                 </div>
             </div>
+
+
             <div id="container-cha">
                 <div id="img-cha">
 
@@ -127,6 +139,8 @@
                     </p>
                 </div>
             </div>
+
+
             <div id="container-produtoDigital">
                 <div id="img-produtoDigital">
 
@@ -220,7 +234,7 @@
 
 
 
-    var bttLift = document.getElementById('btt-liftdetox');
+    var bttLift = document.getElementById('button-lift');
     bttLift.addEventListener('click', () => {
         var liftContainer = document.getElementById('liftDetox-container');
 
@@ -234,6 +248,25 @@
         })
     })
     
+
+    //ANIMAÇÃO NOS PRODUTOS
+
+
+    var imgLift = document.getElementById('img-lift');
+    imgLift.addEventListener('mouseenter', () => {
+      imgLift.classList.add('transformed-lift');
+    });
+
+
+    var imgCha = document.getElementById('img-cha');
+    imgCha.addEventListener('mouseenter', () =>{
+        imgCha.classList.add('transformed-cha');
+    })
+
+    var imgProdutoDigital = document.getElementById('img-produtoDigital');
+    imgProdutoDigital.addEventListener('mouseenter', () =>{
+        imgProdutoDigital.classList.add('transformed-produtoDigital');
+    })
 
 </script>
 
