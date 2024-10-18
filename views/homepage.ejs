@@ -143,7 +143,7 @@
                             por dietas radicais ou treinos exaustivos!
                         </p>
                     </div>
-                    <button class="button-products">Veja mais</button>
+                    <button class="button-products" id="button-secando">Veja mais</button>
                 </div>
             </div>
 
@@ -237,9 +237,10 @@
 
     //CARREGANDO LIFT-DETOX:
     var bttLift = document.getElementById('button-lift');
-    bttLift.addEventListener('click', () => {
-        var liftContainer = document.getElementById('liftDetox-container');
+    var liftContainer = document.getElementById('liftDetox-container');
 
+    bttLift.addEventListener('click', () => {
+        secandoContainer.style.display = 'none';
         liftContainer.style.display = 'block';
 
         requestAnimationFrame(() =>{
@@ -249,7 +250,24 @@
                 })
         })
     })
-    
+
+
+
+    //CARREGANDO SECANDO EM CASA
+    var bttSecando = document.getElementById('button-secando');
+    var secandoContainer = document.getElementById('container-secando');
+
+    bttSecando.addEventListener('click', () =>{
+        liftContainer.style.display = 'none'   
+        secandoContainer.style.display = 'block';
+
+        requestAnimationFrame(() =>{
+            secandoContainer.classList.add('secando');
+                secandoContainer.scrollIntoView({
+                    behavior: "smooth"
+                })
+        })
+    })    
 
 
     //ANIMAÇÃO NOS PRODUTOS
