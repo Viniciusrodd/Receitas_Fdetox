@@ -386,7 +386,7 @@ section#sessao-produtos{
             }
         }
     }
-    #button-lift:hover{
+    #button-lift:active{
         background-color: rgb(255, 0, 0);
         transform: scale(1.05);
     }
