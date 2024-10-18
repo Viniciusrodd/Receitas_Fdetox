@@ -373,20 +373,20 @@ section#sessao-produtos{
                 }
             }
 
-            & #button-lift{
-                height: 45px;
-                width: 120px;
-                margin-top: 8px;
-                border: none;
-                font-size: 16px;
-                color: white;
-                background-color: var(--cor05);
-                transition: transform 0.3s ease;
-                cursor: pointer;
-            }
         }
     }
-    #button-lift:active{
+    .button-products{
+        height: 45px;
+        width: 120px;
+        margin-top: 8px;
+        border: none;
+        font-size: 16px;
+        color: white;
+        background-color: var(--cor05);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+    .button-products:hover{
         background-color: rgb(255, 0, 0);
         transform: scale(1.05);
     }
@@ -422,9 +422,32 @@ section#sessao-produtos{
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100%;
             width: 50%;
             background-color: var(--cor01);
+
+            & .container-desc{
+                width: 90%;
+
+                & #h1-secandoCasa{
+                    color: var(--cor05);
+                    font-size: 40px;
+                    text-align: center;
+                    margin: 0px;
+                }
+
+                & #h2-secandoCasa{
+                    font-size: 25px;
+                    text-align: center;
+                }
+
+                & #p-secandoCasa{
+                    font-size: 19px;
+                    text-align: center;
+                    margin-bottom: 8px;
+                }
+            }
         }
     }
     .transformed-secandoCasa{
