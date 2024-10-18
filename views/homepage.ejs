@@ -125,11 +125,11 @@
             </div>
 
 
-            <div id="container-cha">
-                <div id="img-cha">
+            <div id="container-secandoCasa">
+                <div id="img-secandoCasa">
 
                 </div>
-                <div id="desc-cha">
+                <div id="desc-secandoCasa">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Debitis molestias sapiente cum error? Vel voluptatibus 
@@ -174,14 +174,19 @@
         </section>
 
 
+        <!--PARTIALS-->
+
 
         <%- include('partials/liftDetox.ejs') %>
+        <%- include('partials/secando.ejs') %>
 
     </div>
 
 
 
 <script>
+
+    //FUNÇÕES DE AÇÕES HEADER
     let sobreBtt = document.getElementById('sobre')
     let beneficiosBtt = document.getElementById('beneficios')
     let resultadosBtt = document.getElementById('resultados')
@@ -189,7 +194,6 @@
     let iniciarBtt = document.getElementById('btt-conteudo-1')
     let comprarAgora1Btt = document.getElementById('btt-compraragora-1')
     let comprarAgora2Btt = document.getElementById('btt-compraragora-2')
-
 
 
     function scrollButton(btt, content){
@@ -202,27 +206,20 @@
         })
     }
 
-
-
     let sobreConteudo = document.getElementById('container-argumentos')
     scrollButton(sobreBtt, sobreConteudo)
-
 
     let beneficiosConteudo = document.getElementById('container-produto')
     scrollButton(beneficiosBtt, beneficiosConteudo)
 
-
     let resultadosConteudo = document.getElementById('div-resultados')
     scrollButton(resultadosBtt, resultadosConteudo)
-
 
     let entregaConteudo = document.getElementById('container-footer-6')
     scrollButton(entregaBtt, entregaConteudo)
 
-
     let iniciarConteudo = document.getElementById('sessao-conteudo-1')
     scrollButton(iniciarBtt, iniciarConteudo)
-
 
     var cardsCompras = document.getElementById('container-cards-compras')
     scrollButton(comprarAgora1Btt,cardsCompras)
@@ -230,10 +227,8 @@
 
 
     
+
     //CARREGANDO LIFT-DETOX:
-
-
-
     var bttLift = document.getElementById('button-lift');
     bttLift.addEventListener('click', () => {
         var liftContainer = document.getElementById('liftDetox-container');
@@ -249,8 +244,8 @@
     })
     
 
-    //ANIMAÇÃO NOS PRODUTOS
 
+    //ANIMAÇÃO NOS PRODUTOS
     function mouseEnter(img, transformed){
         img.addEventListener('mouseenter', () => {
             img.classList.add(transformed);
@@ -268,16 +263,16 @@
 
     var imgLift = document.getElementById('img-lift');
     mouseEnter(imgLift, 'transformed-lift');
-    mouseLeave(imgLift, 'transformed-lift');
+    //mouseLeave(imgLift, 'transformed-lift');
 
-    var imgCha = document.getElementById('img-cha');
-    mouseEnter(imgCha, 'transformed-cha')
-    mouseLeave(imgCha, 'transformed-cha')
+    var imgSecandoCasa = document.getElementById('img-secandoCasa');
+    mouseEnter(imgSecandoCasa, 'transformed-secandoCasa')
+    //mouseLeave(imgSecandoCasa, 'transformed-secandoCasa')
 
 
     var imgProdutoDigital = document.getElementById('img-produtoDigital');
     mouseEnter(imgProdutoDigital, 'transformed-produtoDigital')
-    mouseLeave(imgProdutoDigital, 'transformed-produtoDigital')
+    //mouseLeave(imgProdutoDigital, 'transformed-produtoDigital')
 
 </script>
 

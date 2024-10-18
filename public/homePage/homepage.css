@@ -323,7 +323,7 @@ section#sessao-produtos{
         height: 30%;
         width: 90%;
         border-radius: 20px;
-        background-color: var(--cor04);
+        background-color: black;
         position: relative;
         overflow: hidden; /* Para esconder o conteúdo que sair da div */
 
@@ -395,21 +395,21 @@ section#sessao-produtos{
     }
 
 
-    & #container-cha{
+    & #container-secandoCasa{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         height: 30%;
         width: 90%;
         border-radius: 20px;
-        background-color: var(--cor05);
+        background-color: black;
         position: relative;
         overflow: hidden; /* Para esconder o conteúdo que sair da div */
 
-        & #img-cha{
+        & #img-secandoCasa{
             height: 100%;
             width: 50%;
-            background-image: url(../imagens/cha-2.jpg);
+            background-image: url(../imagens/secandoEmCasa.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -418,7 +418,7 @@ section#sessao-produtos{
             cursor: pointer;
         }
 
-        & #desc-cha{
+        & #desc-secandoCasa{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -427,7 +427,7 @@ section#sessao-produtos{
             background-color: var(--cor01);
         }
     }
-    .transformed-cha{
+    .transformed-secandoCasa{
         transform: translateX(100%);        
     }
 
@@ -439,7 +439,7 @@ section#sessao-produtos{
         height: 30%;
         width: 90%;
         border-radius: 20px;
-        background-color: var(--cor06);
+        background-color: black;
         position: relative;
         overflow: hidden;
 
