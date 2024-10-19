@@ -1,7 +1,18 @@
 @charset "UTF-8";
 
+
+:root{
+    --cor01: #FCF9ED;
+    --cor02: #172313;
+    --cor03: #7aa789;
+    --cor04: #d3efdc;
+    --cor05: rgb(255, 94, 94);
+    --cor06: #287FB6;
+}
+
+
+
 div#container-secando{
-    display: none;
     height: 30vh;
 }
 
@@ -10,6 +21,135 @@ div#container-secando{
 }
 
 
-h1#h1-secando{
-    color: red;
+/*SESSÃO 4 - ARGUMENTOS 2 - CARDS 2*/
+
+
+section#container-arg-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(../../imagens/pilulas.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div#div-container-arg-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    width: 100%;
+    background-color: rgba(0, 53, 88, 0.823);
+}
+
+h1#h1-arg-1{
+    color: white;
+    font-size: 50px;
+    margin: 0px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2#h2-arg-1{
+    color: white;
+    font-size: 35px;
+    margin: 0px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+div#container-arg-cards-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 40vh;
+    width: 90%;
+    border-radius: 30px;
+    margin-top: 50px;
+    padding: 5px;
+}
+
+div.cards-secando{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 20vw;
+    padding: 0px 10px 10px 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.13);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+div.cards-secando:hover{
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.161);
+}
+
+div.imagem-1{
+    height: 100px;
+    width: 100px;
+    background-image: url(../../imagens/mulher-praia.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px;
+}
+
+p.p-cards-secando{
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*ARGUMENTOS 2*/
+
+
+#container-arg-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    background-color: var(--cor01);
+
+    & #div-container-arg-2{
+        height: 30vh;
+        width: 90%;
+        background-color: var(--cor03);
+    }
+
+    & #container-arg-cards-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        padding: 20px 0px 20px 0px;
+        background-color: var(--cor02);
+
+    }
+    .cards-arg-2{
+        height: 50vh;
+        width: 20vw;
+        padding: 0px 10px 10px 10px;
+        border-radius: 20px;
+        margin: 20px;
+        background-color: rgba(255, 255, 255, 0.13);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+    .cards-arg-2:hover{
+        transform: scale(1.05);
+        background-color: rgba(255, 255, 255, 0.161);
+    }
+
 }
