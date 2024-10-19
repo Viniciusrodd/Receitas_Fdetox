@@ -99,15 +99,16 @@ div.imagem-cards-secando{
     width: 140px;
     background-color: red;
     border-radius: 100px; 
-
-    & .img-cards-arg-1{
-        height: 100%;
-        width: 100%;    
-        background-size: cover;
-        background-position: center;
-        border-radius: 100px; 
-    }
 }
+
+.img-cards-arg-1{
+    height: 100%;
+    width: 100%;    
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px; 
+}
+
 
 p.p-cards-secando{
     font-size: 22px;
@@ -126,83 +127,108 @@ p.p-cards-secando{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    padding: 20px 0px 20px 0px;
+    padding: 80px 0px 80px 0px;
     background-color: var(--cor01);
+}
 
-    & #div-container-arg-2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 40vh;
-        width: 95%;
-        background-color: var(--cor07);
+#div-container-arg-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0px 10px 0px;
+    width: 95%;
+    background-color: var(--cor07);
+}
 
-        & #p-container-arg-2{
-            width: 90%;
-            text-align: center;
-            font-size: 30px;
-            color: white;
-            margin-bottom: 0px;
-        }
-    }
+.h1-container-arg{
+    font-size: 40px;
+    color: white;
+}
 
-    & #container-arg-cards-2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 95%;
-        padding: 20px 0px 20px 0px;
-        background-color: var(--cor07);
-    }
+.p-container-arg{
+    width: 90%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 0px;
+}
+    
+#container-arg-cards-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+    padding: 20px 0px 20px 0px;
+    background-color: var(--cor07);
+}
 
-    .cards-arg-2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 70vh;
-        width: 20vw;
-        padding: 0px 10px 10px 10px;
-        border-radius: 20px;
-        margin: 30px;
-        background-color: rgba(255, 255, 255, 0.13);
-        transition: transform 0.3s ease;
-        cursor: pointer;
+.cards-arg-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 65vh;
+    width: 25vw;
+    padding: 0px 10px 10px 10px;
+    border-radius: 20px;
+    margin: 30px;
+    background-color: rgba(255, 255, 255, 0.13);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
 
-        & div.imagem-cards-arg-2{
-            height: 150px;
-            width: 150px;
-            background-color: red;
-            border-radius: 100px;         
+div.imagem-cards-arg-2{
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    border-radius: 100px;         
+}
 
-            & .img-cards-arg-2{
-                height: 100%;
-                width: 100%;    
-                background-size: auto;
-                background-position: center;
-                border-radius: 100px;    
-            }
-        }
+.img-cards-arg-2{
+    height: 100%;
+    width: 100%;    
+    background-size: auto;
+    background-position: center;
+    border-radius: 100px;    
+}
 
-        & .h1-cards-arg-2{
-            font-size: 30px;
-            text-align: center;
-            margin: 15px 0px 2px 0px;
-        }
+.h1-cards-arg-2{
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0px 2px 0px;
+}
 
-        & .p-cards-arg-2{
-            font-size: 20px;
-            text-align: center;
-            color: white;
-            margin: 10px 0px 0px 0px;
-        }
-    }
-    .cards-arg-2:hover{
-        transform: scale(1.05);
-        background-color: rgba(255, 255, 255, 0.161);
-    }
+.p-cards-arg-2{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin: 10px 0px 0px 0px;
+}
 
+.cards-arg-2:hover{
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.161);
+}
+
+
+/*ARGUMENTOS 3*/
+
+
+section#container-arg-3{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--cor01);
+}
+
+#div-container-arg-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+    height: 140vh;
+    width: 100%;
+    background-color: var(--cor05);
 }
