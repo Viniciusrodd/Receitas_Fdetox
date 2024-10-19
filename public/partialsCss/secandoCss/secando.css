@@ -8,9 +8,12 @@
     --cor04: #d3efdc;
     --cor05: rgb(255, 94, 94);
     --cor06: #287FB6;
+    --cor07: #003452;
 }
 
-
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 div#container-secando{
     height: 30vh;
@@ -78,7 +81,7 @@ div.cards-secando{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 120%;
     width: 20vw;
     padding: 0px 10px 10px 10px;
     border-radius: 20px;
@@ -91,13 +94,19 @@ div.cards-secando:hover{
     background-color: rgba(255, 255, 255, 0.161);
 }
 
-div.imagem-1{
-    height: 100px;
-    width: 100px;
-    background-image: url(../../imagens/mulher-praia.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 100px;
+div.imagem-cards-secando{
+    height: 140px;
+    width: 140px;
+    background-color: red;
+    border-radius: 100px; 
+
+    & .img-cards-arg-1{
+        height: 100%;
+        width: 100%;    
+        background-size: cover;
+        background-position: center;
+        border-radius: 100px; 
+    }
 }
 
 p.p-cards-secando{
@@ -121,9 +130,21 @@ p.p-cards-secando{
     background-color: var(--cor01);
 
     & #div-container-arg-2{
-        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 40vh;
         width: 90%;
-        background-color: var(--cor03);
+        background-color: #003452;
+
+        & #p-container-arg-2{
+            height: 90%;
+            width: 90%;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+        }
     }
 
     & #container-arg-cards-2{
@@ -134,11 +155,16 @@ p.p-cards-secando{
         flex-wrap: wrap;
         width: 90%;
         padding: 20px 0px 20px 0px;
-        background-color: var(--cor02);
+        background-color: #003452;
 
     }
+
     .cards-arg-2{
-        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 70vh;
         width: 20vw;
         padding: 0px 10px 10px 10px;
         border-radius: 20px;
@@ -146,6 +172,34 @@ p.p-cards-secando{
         background-color: rgba(255, 255, 255, 0.13);
         transition: transform 0.3s ease;
         cursor: pointer;
+
+        & div.imagem-cards-arg-2{
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            border-radius: 100px;         
+
+            & .img-cards-arg-2{
+                height: 100%;
+                width: 100%;    
+                background-size: auto;
+                background-position: center;
+                border-radius: 100px;    
+            }
+        }
+
+        & .h1-cards-arg-2{
+            font-size: 30px;
+            text-align: center;
+            margin: 15px 0px 2px 0px;
+        }
+
+        & .p-cards-arg-2{
+            font-size: 20px;
+            text-align: center;
+            color: white;
+            margin: 10px 0px 0px 0px;
+        }
     }
     .cards-arg-2:hover{
         transform: scale(1.05);
