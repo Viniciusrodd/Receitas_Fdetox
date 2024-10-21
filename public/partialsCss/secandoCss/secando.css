@@ -6,9 +6,11 @@
     --cor02: #172313;
     --cor03: #7aa789;
     --cor04: #d3efdc;
-    --cor05: rgb(255, 94, 94);
+    --cor05: #ff5e5e;
     --cor06: #287FB6;
     --cor07: #003452;
+    --cor08: #ea5f5f;
+    --cor09: #410039;
 }
 
 *{
@@ -33,7 +35,7 @@ section#container-arg-1{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    background-image: url(../../imagens/pilulas.jpg);
+    background-image: url(../../imagens/amor.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -95,8 +97,8 @@ div.cards-secando:hover{
 }
 
 div.imagem-cards-secando{
-    height: 140px;
-    width: 140px;
+    height: 120px;
+    width: 120px;
     background-color: red;
     border-radius: 100px; 
 }
@@ -138,7 +140,8 @@ p.p-cards-secando{
     flex-direction: column;
     padding: 10px 0px 10px 0px;
     width: 95%;
-    background-color: var(--cor07);
+    background-color: #410039;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .h1-container-arg{
@@ -162,7 +165,8 @@ p.p-cards-secando{
     flex-wrap: wrap;
     width: 95%;
     padding: 20px 0px 20px 0px;
-    background-color: var(--cor07);
+    background-color: var(--cor09);
+    border-radius: 0px 0px 20px 20px;
 }
 
 .cards-arg-2{
@@ -218,7 +222,11 @@ div.imagem-cards-arg-2{
 
 
 section#container-arg-3{
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0px 40px 0px;
     width: 100%;
     background-color: var(--cor01);
 }
@@ -227,8 +235,44 @@ section#container-arg-3{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;    
-    height: 140vh;
+    flex-direction: column;
+    padding: 40px 0px 40px 0px;    
     width: 100%;
-    background-color: var(--cor05);
+    background-color: var(--cor07);
+}
+
+.container-depoimentos-secando{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    margin: 80px 0px 50px 0px;
+}
+
+.cards-depoimentos-secando{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25vw;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.13);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.video-secando{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    border: 3px solid white;
+    margin: 0px;
+    transition: transform 0.3s ease;
+}
+.video-secando{
+    transition: transform 0.3s ease;
+
 }
