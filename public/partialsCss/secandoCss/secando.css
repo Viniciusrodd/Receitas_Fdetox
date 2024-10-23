@@ -160,7 +160,7 @@ p.p-cards-secando{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
     
-#container-arg-cards-2{
+.container-arg-cards-2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,6 +185,10 @@ p.p-cards-secando{
     background-color: rgba(255, 255, 255, 0.13);
     transition: transform 0.3s ease;
     cursor: pointer;
+}
+.cards-arg-2:hover{
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.161);
 }
 
 div.imagem-cards-arg-2{
@@ -215,11 +219,6 @@ div.imagem-cards-arg-2{
     color: white;
     margin: 10px 0px 0px 0px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.cards-arg-2:hover{
-    transform: scale(1.05);
-    background-color: rgba(255, 255, 255, 0.161);
 }
 
 
@@ -271,6 +270,10 @@ section#container-arg-3{
     transition: transform 0.3s ease;
     cursor: pointer;
 }
+.cards-depoimentos-secando:hover{
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.161);
+}
 
 .video-secando{
     height: 100%;
@@ -289,13 +292,13 @@ section#container-arg-3{
 /*ARGUMENTOS 4*/
 
 
-section#container-arg-4{
+#container-arg-4{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    background-color: var(--cor01);
+    background-color: var(--cor09);
 }
 
 #div-container-arg-4{
@@ -305,34 +308,85 @@ section#container-arg-4{
     flex-direction: column;
     padding: 40px 0px 40px 0px;    
     width: 100%;
+    background-color: var(--cor01);
 }
 
-.h1-container-arg-4{
+.container-arg-cards-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 20px 0px 20px 0px;   
+    border-radius: 20px;
+    background-color: var(--cor09);
+}
+
+.cards-arg-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 65vh;
+    width: 20vw;
+    margin: 30px;
+    border: 3px solid black;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.cards-arg-4:hover{
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.161);
+}
+
+/*ARGUMENTOS 5*/
+
+
+section#container-arg-5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--cor01);
+}
+
+#div-container-arg-5{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0px 40px 0px;    
+    width: 100%;
+}
+
+.h1-container-arg-5{
     text-align: center;
     font-size: 40px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-#container-img-arg-4{
+#container-img-arg-5{
     padding: 20px 0px 0px 0px;
     width: 20%;
 }
 
-.img-arg-4{
+.img-arg-5{
     height: 100%;
     width: 100%;
     background-size: auto;
     background-position: center;
 }
 
-.p-container-arg-4{
+.p-container-arg-5{
     font-size: 20px;
     text-align: center;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.btt-arg-4{
+.btt-arg-5{
     height: 65px;
     width: 300px;
     font-size: 21px;
@@ -344,12 +398,12 @@ section#container-arg-4{
     cursor: pointer;
     transition: transform 0.3s ease;
 }
-.btt-arg-4:hover{
+.btt-arg-5:hover{
     background-color: rgb(255, 0, 0);
     transform: scale(1.05);
 }
 
-#container2-img-arg-4{
+#container2-img-arg-5{
     height: 15vh;
     width: 30%;  
 }

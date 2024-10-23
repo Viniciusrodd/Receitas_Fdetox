@@ -109,7 +109,7 @@ section#container-argumentos{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    background-image: url(../../imagens/pilulas2.jpg);
+    background-image: url(../../imagens/lift/pilulas2.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -228,7 +228,7 @@ li{
 div#imagem-produto{
     height: 70vh;
     width: 35%;
-    background-image: url(../../imagens/pilulas.jpg);
+    background-image: url(../../imagens/lift/pilulas.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -289,7 +289,7 @@ section#container-compras-5{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    background-image: url(../../imagens/pilulas.jpg);
+    background-image: url(../../imagens/lift/pilulas.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -505,7 +505,7 @@ section#container-footer-6{
 #imagem-argumentos-footer{
     height: 100%;
     width: 35%;
-    background-image: url(../../imagens/valores.jpg);
+    background-image: url(../../imagens/lift/valores.jpg);
     background-size: contain;
     background-position: center center;
 }

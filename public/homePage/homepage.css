@@ -332,7 +332,7 @@ section#sessao-produtos{
             height: 100%;
             width: 50%;
             background-color: var(--cor02);
-            background-image: url(../imagens/Lift-Caps.png);
+            background-image: url(../imagens/lift/Lift-Caps.png);
             background-size: contain;
             background-repeat: no-repeat;
             background-position: left;
@@ -410,7 +410,7 @@ section#sessao-produtos{
         & #img-secandoCasa{
             height: 100%;
             width: 50%;
-            background-image: url(../imagens/secandoEmCasa.jpg);
+            background-image: url(../imagens/secando/secandoEmCasa.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
