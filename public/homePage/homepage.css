@@ -205,103 +205,134 @@ div#conteudo-container-2{
 
 
 section#sessao-produtos{
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
     height: 25vh;
     width: 100%;
-    background-color: var(--cor01);
-
-    & #chá{
-        height: 80%;
-        width: 17%;
-        background-image: url(../imagens/cha.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    & #produto-digital{
-        height: 80%;
-        width: 17%;
-        background-image: url(../imagens/peso.png);
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    & #lift-detox{
-        height: 80%;
-        width: 17%;
-        background-image: url(../imagens/secando.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+    background-image: url(../imagens/nuvens.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+#chá{
+    height: 80%;
+    width: 17%;
+    background-image: url(../imagens/cha.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#produto-digital{
+    height: 80%;
+    width: 17%;
+    background-image: url(../imagens/peso.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#lift-detox{
+    height: 80%;
+    width: 17%;
+    background-image: url(../imagens/secando.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 
 /*SECTION OUR MISSION*/
 
 
-#section-mission{
+.section-mission{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 0px 20vh 0px;
+    width: 100%;
+    background-image: url(../imagens/nuvens.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-mission{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 70vh;
     width: 100%;
-    background-image: url(../imagens/nuvens.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    margin-top: 10vh;
+}
 
-    & #mission-text{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 100%;
-        width: 50%;
-        background-color: #2880b639;
+.mission-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 65vh;
+    width: 50%;
+    border-radius: 20px 0px 0px 20px;
+    background-color: rgba(0, 53, 88, 0.369);
+}
 
-        & #text{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;    
-            height: 80%;
-            width: 80%;
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+    height: 80%;
+    width: 80%;
+}
 
-            & .h1-mission{
-                font-size: 35px;
-                color: white;
-                font-weight: bold;
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-                margin-bottom: 3px;
-            }
-    
-            & .p-mission{
-                font-size: 27px;
-                color: white;
-                font-weight: bold;
-                text-align: center;
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            }    
-        }
-    }
+.h1-mission{
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 3px;
+}
 
-    & #mission-image{
-        height: 100%;
-        width: 50%;
-        overflow: hidden; /* Oculta partes do vídeo que saem da div */
-        position: relative; /* Necessário para posicionamento do vídeo */        
+.p-mission{
+    font-size: 27px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}    
 
-        & #video-section-mission{
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Mantém a proporção do vídeo enquanto ocupa todo o espaço */        }
-    }
+.mission-video{
+    height: 65vh;
+    width: 40%;
+    overflow: hidden; /* Oculta partes do vídeo que saem da div */
+    position: relative; /* Necessário para posicionamento do vídeo */
+    border-radius: 0px 20px 20px 0px;      
+}
+.video-section-mission{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantém a proporção do vídeo enquanto ocupa todo o espaço */
+}
+
+
+.mission-text-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 65vh;
+    width: 90%;
+    border-radius: 20px;
+    background-color: rgba(0, 53, 88, 0.369);
 }
 
 
@@ -313,199 +344,184 @@ section#sessao-produtos{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 200vh;
+    height: 250vh;
     width: 100%;
     background-color: black;
-
-    & #container-lift{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        height: 30%;
-        width: 90%;
-        border-radius: 20px;
-        background-color: black;
-        position: relative;
-        overflow: hidden; /* Para esconder o conteúdo que sair da div */
-
-        & #img-lift{
-            height: 100%;
-            width: 50%;
-            background-color: var(--cor02);
-            background-image: url(../imagens/lift/Lift-Caps.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: left;
-            position: absolute; /* Sobrepõe a `desc-lift` */
-            transition: transform 1s ease; /* Animação suave ao mover */
-            cursor: pointer;
-        }
-
-        & #desc-lift{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 50%;
-            background-color: var(--cor01);
-
-            & ul{
-                width: 90%;
-                padding: 0%;
-                margin-bottom: 0px;
-
-                & #h1-desc-lift{
-                    font-family: "Fira Sans Condensed", sans-serif;
-                    font-size: 35px;
-                    text-align: center;
-                    margin-top: 0px;
-                    margin-bottom: 3px;
-                    color: var(--cor05);
-                }
-
-                & li{
-                    font-family: "Fira Sans Condensed", sans-serif;
-                    margin: 8px;
-                    font-size: 25px;
-                    text-align: center;
-                    text-decoration: underline;
-                    color: black;
-                }
-            }
-
-        }
-    }
-    .button-products{
-        height: 45px;
-        width: 120px;
-        margin-top: 8px;
-        border: none;
-        font-size: 16px;
-        color: white;
-        background-color: var(--cor05);
-        transition: transform 0.3s ease;
-        cursor: pointer;
-    }
-    .button-products:hover{
-        background-color: rgb(255, 0, 0);
-        transform: scale(1.05);
-    }
-    .transformed-lift{
-        transform: translateX(-100%);        
-    }
-
-
-    & #container-secandoCasa{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        height: 30%;
-        width: 90%;
-        border-radius: 20px;
-        background-color: black;
-        position: relative;
-        overflow: hidden; /* Para esconder o conteúdo que sair da div */
-
-        & #img-secandoCasa{
-            height: 100%;
-            width: 50%;
-            background-image: url(../imagens/secando/secandoEmCasa.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            position: absolute; /* Sobrepõe a `desc-lift` */
-            transition: transform 1s ease; /* Animação suave ao mover */
-            cursor: pointer;
-        }
-
-        & #desc-secandoCasa{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 100%;
-            width: 50%;
-            background-color: var(--cor01);
-
-            & .container-desc{
-                width: 90%;
-
-                & #h1-secandoCasa{
-                    color: var(--cor05);
-                    font-size: 40px;
-                    text-align: center;
-                    margin: 0px;
-                }
-
-                & #h2-secandoCasa{
-                    font-size: 28px;
-                    text-align: center;
-                }
-
-                & #p-secandoCasa{
-                    font-size: 20px;
-                    text-align: center;
-                    margin-bottom: 8px;
-                }
-            }
-        }
-    }
-    .transformed-secandoCasa{
-        transform: translateX(100%);        
-    }
-
-
-    & #container-produtoDigital{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        height: 30%;
-        width: 90%;
-        border-radius: 20px;
-        background-color: black;
-        position: relative;
-        overflow: hidden;
-
-        & #img-produtoDigital{
-            height: 100%;
-            width: 50%;
-            background-image: url(../imagens/mulher-treino.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            position: absolute; /* Sobrepõe a `desc-lift` */
-            transition: transform 1s ease; /* Animação suave ao mover */
-            cursor: pointer;
-        }
-
-        & #desc-produtoDigital{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 50%;
-            background-color: var(--cor01);            
-        }
-    }
-    .transformed-produtoDigital{
-        transform: translateX(-100%);
-    }
 }
 
-
-/*SESSÃO ESCOLHA PRODUTOS*/
-
-
-#product-choice{
+#container-lift{
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    height: 65vh;
+    width: 90%;
+    border-radius: 20px;
+    background-color: black;
+    position: relative;
+    overflow: hidden; /* Para esconder o conteúdo que sair da div */
+}
+
+#img-lift{
+    height: 100%;
+    width: 50%;
+    background-color: var(--cor02);
+    background-image: url(../imagens/lift/Lift-Caps.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    position: absolute; /* Sobrepõe a `desc-lift` */
+    transition: transform 1s ease; /* Animação suave ao mover */
+    cursor: pointer;
+}
+
+#desc-lift{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-    width: 100%;
+    height: 100%;
+    width: 50%;
     background-color: var(--cor01);
 }
 
+ul{
+    width: 90%;
+    padding: 0%;
+    margin-bottom: 0px;
+}
+
+#h1-desc-lift{
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    color: var(--cor05);
+}
+
+.li-lift{
+    margin: 8px;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+}
+
+.button-products{
+    height: 45px;
+    width: 120px;
+    margin-top: 8px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    background-color: var(--cor05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.button-products:hover{
+    background-color: rgb(255, 0, 0);
+    transform: scale(1.05);
+}
+
+.transformed-lift{
+    transform: translateX(-100%);        
+}
+
+#container-secandoCasa{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 65vh;
+    width: 90%;
+    border-radius: 20px;
+    background-color: black;
+    position: relative;
+    overflow: hidden; /* Para esconder o conteúdo que sair da div */
+}
+
+#img-secandoCasa{
+    height: 100%;
+    width: 50%;
+    background-image: url(../imagens/secando/secandoEmCasa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute; /* Sobrepõe a `desc-lift` */
+    transition: transform 1s ease; /* Animação suave ao mover */
+    cursor: pointer;
+}
+
+#desc-secandoCasa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    background-color: var(--cor01);
+}
+
+.container-desc{
+    width: 90%;
+}
+
+#h1-secandoCasa{
+    color: var(--cor05);
+    font-size: 40px;
+    text-align: center;
+    margin: 0px;
+}
+
+#h2-secandoCasa{
+    font-size: 28px;
+    text-align: center;
+}
+
+#p-secandoCasa{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.transformed-secandoCasa{
+    transform: translateX(100%);        
+}
 
 
+#container-produtoDigital{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 65vh;
+    width: 90%;
+    border-radius: 20px;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+#img-produtoDigital{
+    height: 100%;
+    width: 50%;
+    background-image: url(../imagens/mulher-treino.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute; /* Sobrepõe a `desc-lift` */
+    transition: transform 1s ease; /* Animação suave ao mover */
+    cursor: pointer;
+}
+
+#desc-produtoDigital{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    background-color: var(--cor01);            
+}
+
+.transformed-produtoDigital{
+    transform: translateX(-100%);
+}

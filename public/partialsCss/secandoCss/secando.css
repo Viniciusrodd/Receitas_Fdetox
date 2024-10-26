@@ -18,6 +18,7 @@
 }
 
 div#container-secando{
+    display: none;
     height: 30vh;
 }
 
