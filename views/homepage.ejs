@@ -16,17 +16,9 @@
         <div id="imagem-header-container">
             <div id="imagem-header">
                 <header>
-                    <div id="titles-header-1">
-                        <h1 class="h1-titles-header" id="sobre">SOBRE</h1>
-                        <h1 class="h1-titles-header" id="beneficios">BENEFÍCIOS</h1>
-                    </div>
                     <h1 id="titulo">
                         FitFitness
                     </h1>
-                    <div id="titles-header-2">
-                        <h1 class="h1-titles-header" id="resultados">RESULTADOS</h1>
-                        <h1 class="h1-titles-header" id="entrega">ENTREGA</h1>
-                    </div>
                 </header>
                 <!--CONTEÚDO 1:-->
                 <div id="conteudo-container-1">
@@ -202,10 +194,6 @@
 <script>
 
     //FUNÇÕES DE AÇÕES HEADER
-    let sobreBtt = document.getElementById('sobre')
-    let beneficiosBtt = document.getElementById('beneficios')
-    let resultadosBtt = document.getElementById('resultados')
-    let entregaBtt = document.getElementById('entrega')
     let iniciarBtt = document.getElementById('btt-conteudo-1')
     let comprarAgora1Btt = document.getElementById('btt-compraragora-1')
     let comprarAgora2Btt = document.getElementById('btt-compraragora-2')
@@ -220,21 +208,10 @@
             }
         })
     }
+    
 
-    let sobreConteudo = document.getElementById('container-argumentos')
-    scrollButton(sobreBtt, sobreConteudo)
-
-    let beneficiosConteudo = document.getElementById('container-produto')
-    scrollButton(beneficiosBtt, beneficiosConteudo)
-
-    let resultadosConteudo = document.getElementById('div-resultados')
-    scrollButton(resultadosBtt, resultadosConteudo)
-
-    let entregaConteudo = document.getElementById('container-footer-6')
-    scrollButton(entregaBtt, entregaConteudo)
-
-    let iniciarConteudo = document.getElementById('sessao-conteudo-1')
-    scrollButton(iniciarBtt, iniciarConteudo)
+    let sectionMission = document.getElementsByClassName('section-mission')
+    scrollButton(iniciarBtt, sectionMission[0])
 
     var cardsCompras = document.getElementById('container-cards-compras')
     scrollButton(comprarAgora1Btt,cardsCompras)
@@ -246,6 +223,7 @@
     //CARREGANDO LIFT-DETOX:
     var bttLift = document.getElementById('button-lift');
     var liftContainer = document.getElementById('liftDetox-container');
+    var secandoContainer = document.getElementById('container-secando');
 
     bttLift.addEventListener('click', () => {
         secandoContainer.style.display = 'none';
@@ -253,7 +231,7 @@
 
         requestAnimationFrame(() =>{
             liftContainer.classList.add('liftdetox');
-                iniciarConteudo.scrollIntoView({
+                liftContainer.scrollIntoView({
                     behavior: "smooth"
                 })
         })
