@@ -204,7 +204,7 @@ div#conteudo-container-2{
 /*SECTION PRODUTOS*/
 
 
-section#sessao-produtos{
+section.sessao-imagens{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -214,25 +214,25 @@ section#sessao-produtos{
     background-color: var(--cor01);
 }
 
-#chá{
+#img-1{
     height: 80%;
     width: 17%;
-    background-image: url(../imagens/cha.png);
+    background-image: url(../imagens/fita-metrica.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#produto-digital{
+#img-2{
     height: 80%;
     width: 17%;
-    background-image: url(../imagens/peso.png);
+    background-image: url(../imagens/cesta.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#lift-detox{
+#img-3{
     height: 80%;
     width: 17%;
     background-image: url(../imagens/secando.png);
@@ -343,6 +343,30 @@ section#sessao-produtos{
 }
 
 
+/*SESSÃO PRODUTOS ABAIXO*/
+.sessao-prodAbaixo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0px 20px 0px;
+    width: 100%;
+    background-color: var(--cor01);
+}
+
+.p-prodAbaixo{
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+#img-seta{
+    height: 50px;
+}
+
 /*SESSÃO APRESENTAÇÃO PRODUTOS*/
 
 
@@ -353,7 +377,7 @@ section#sessao-produtos{
     align-items: center;
     height: 250vh;
     width: 100%;
-    background-color: black;
+    background-color: var(--cor01);
 }
 
 #container-lift{
@@ -363,7 +387,7 @@ section#sessao-produtos{
     height: 65vh;
     width: 90%;
     border-radius: 20px;
-    background-color: black;
+    background-color: var(--cor01);
     position: relative;
     overflow: hidden; /* Para esconder o conteúdo que sair da div */
 }
@@ -435,6 +459,8 @@ ul{
     transform: translateX(-100%);        
 }
 
+/*SECANDO*/
+
 #container-secandoCasa{
     display: flex;
     flex-direction: row;
@@ -442,7 +468,7 @@ ul{
     height: 65vh;
     width: 90%;
     border-radius: 20px;
-    background-color: black;
+    background-color: var(--cor01);
     position: relative;
     overflow: hidden; /* Para esconder o conteúdo que sair da div */
 }
@@ -495,6 +521,7 @@ ul{
     transform: translateX(100%);        
 }
 
+/*PRODUTO DIGITAL*/
 
 #container-produtoDigital{
     display: flex;
@@ -503,7 +530,7 @@ ul{
     height: 65vh;
     width: 90%;
     border-radius: 20px;
-    background-color: black;
+    background-color: var(--cor01);
     position: relative;
     overflow: hidden;
 }
