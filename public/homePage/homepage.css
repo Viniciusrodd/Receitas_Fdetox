@@ -1,13 +1,16 @@
 @charset "UTF-8";
 
 :root{
-    --cor01: #FCF9ED;
+    --cor01: #FBF3EB;
     --cor02: #172313;
     --cor03: #7aa789;
     --cor04: #d3efdc;
     --cor05: rgb(255, 94, 94);
     --cor06: #287FB6;
     --cor07: #003452;
+    --cor08: #ea5f5f;
+    --cor09: #410039;
+    --cor10: #2D728F;
 }
 
 
@@ -25,7 +28,7 @@ body, html {
 
 
 mark{
-    background-color: black;
+    background-color: var(--cor10);
     border-radius: 10px;
     color: var(--cor01);
     padding: 3px;
@@ -51,7 +54,7 @@ div#imagem-header-container{
 div#imagem-header{
     height: 120vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.67);
+    background-color: #1d49546f;
 }
 
 
@@ -331,6 +334,7 @@ section.sessao-imagens{
     padding: 30px;
     border-radius: 20px;
     background-color: rgba(0, 53, 88, 0.369);
+    border: 3px solid var(--cor10);
 }
 
 .text-2{
@@ -339,7 +343,7 @@ section.sessao-imagens{
     align-items: center;
     flex-direction: column;
     height: 90%;
-    width: 70%;
+    width: 100%;
 }
 
 
