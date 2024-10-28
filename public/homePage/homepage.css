@@ -11,6 +11,7 @@
     --cor08: #ea5f5f;
     --cor09: #410039;
     --cor10: #2D728F;
+    --cor11: #EFF053;
 }
 
 
@@ -407,6 +408,7 @@ section.sessao-imagens{
     position: absolute; /* Sobrepõe a `desc-lift` */
     transition: transform 1s ease; /* Animação suave ao mover */
     cursor: pointer;
+    border-radius: 20px 0px 0px 20px;
 }
 
 #desc-lift{
@@ -417,6 +419,7 @@ section.sessao-imagens{
     height: 100%;
     width: 50%;
     background-color: var(--cor01);
+    border-radius: 0px 20px 20px 0px;
 }
 
 ul{
@@ -562,4 +565,75 @@ ul{
 
 .transformed-produtoDigital{
     transform: translateX(-100%);
+}
+
+
+/*SESSÃO ARGUMENTOS 5*/
+
+
+#sessao-argumentos-5{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cor10);
+    padding: 60px 0px 60px 0px;
+    width: 100%;
+}
+
+.h1-arg-5{
+    color: var(--cor01);
+    font-size: 45px;
+    margin-bottom: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.p-arg-5{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#container-cards-arg5{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-bottom: 40px;
+}
+
+.cards-arg-5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 20vw;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.13);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.cards-arg-5:hover{
+    transform: scale(1.02);
+    background-color: rgba(255, 255, 255, 0.161);
+}
+
+#container-pai .imagem-cards-arg-2{
+    height: 150px;
+    width: 150px;
+    background-color: var(--cor11);
+    border-radius: 100px;         
+}
+
+.img-cards-arg-2{
+    height: 100%;
+    width: 100%;    
+    background-size: auto;
+    background-position: center;
+    border-radius: 100px;    
 }

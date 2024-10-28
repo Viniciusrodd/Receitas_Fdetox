@@ -17,6 +17,10 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+#container-secando mark{
+    background-color: #843B62;
+}
+
 div#container-secando{
     display: none;
     height: 30vh;
