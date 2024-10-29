@@ -530,7 +530,7 @@ ul{
 
 /*PRODUTO DIGITAL*/
 
-#container-produtoDigital{
+#container-treino-product{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -542,7 +542,7 @@ ul{
     overflow: hidden;
 }
 
-#img-produtoDigital{
+#img-treino{
     height: 100%;
     width: 50%;
     background-image: url(../imagens/mulher-treino.jpg);
@@ -554,7 +554,7 @@ ul{
     cursor: pointer;
 }
 
-#desc-produtoDigital{
+#desc-treino{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -563,7 +563,7 @@ ul{
     background-color: var(--cor01);            
 }
 
-.transformed-produtoDigital{
+.transformed-treino{
     transform: translateX(-100%);
 }
 

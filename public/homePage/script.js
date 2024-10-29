@@ -1,8 +1,9 @@
+
+
 //FUNÇÕES DE AÇÕES HEADER
 let iniciarBtt = document.getElementById('btt-conteudo-1')
 let comprarAgora1Btt = document.getElementById('btt-compraragora-1')
 let comprarAgora2Btt = document.getElementById('btt-compraragora-2')
-
 
 function scrollButton(btt, content){
     btt.addEventListener('click', () =>{
@@ -13,7 +14,6 @@ function scrollButton(btt, content){
         }
     })
 }
-
 
 let sectionMission = document.getElementsByClassName('section-mission')
 scrollButton(iniciarBtt, sectionMission[0])
@@ -33,6 +33,7 @@ var secandoContainer = document.getElementById('container-secando');
 bttLift.addEventListener('click', () => {
     secandoContainer.style.display = 'none';
     liftContainer.style.display = 'block';
+    treinoContainer.style.display = 'none';   
 
     requestAnimationFrame(() =>{
         liftContainer.classList.add('liftdetox');
@@ -49,8 +50,9 @@ var bttSecando = document.getElementById('button-secando');
 var secandoContainer = document.getElementById('container-secando');
 
 bttSecando.addEventListener('click', () =>{
-    liftContainer.style.display = 'none'   
+    liftContainer.style.display = 'none';   
     secandoContainer.style.display = 'block';
+    treinoContainer.style.display = 'none';   
 
     requestAnimationFrame(() =>{
         secandoContainer.classList.add('secando');
@@ -59,6 +61,26 @@ bttSecando.addEventListener('click', () =>{
             })
     })
 })    
+
+
+
+//CARREGANDO TREINO
+var bttTreino = document.getElementById('button-treino');
+var treinoContainer = document.getElementById('container-treino');
+
+bttTreino.addEventListener('click', () =>{
+    liftContainer.style.display = 'none';
+    secandoContainer.style.display = 'none';
+    treinoContainer.style.display = 'block';   
+
+    requestAnimationFrame(() =>{
+        treinoContainer.classList.add('treino');
+            treinoContainer.scrollIntoView({
+                behavior: "smooth"
+            })
+    })
+})
+
 
 
 //ANIMAÇÃO NOS PRODUTOS
@@ -76,7 +98,6 @@ function mouseLeave(img, classe){
     })
 }
 
-
 var imgLift = document.getElementById('img-lift');
 mouseEnter(imgLift, 'transformed-lift');
 //mouseLeave(imgLift, 'transformed-lift');
@@ -86,6 +107,6 @@ mouseEnter(imgSecandoCasa, 'transformed-secandoCasa')
 //mouseLeave(imgSecandoCasa, 'transformed-secandoCasa')
 
 
-var imgProdutoDigital = document.getElementById('img-produtoDigital');
-mouseEnter(imgProdutoDigital, 'transformed-produtoDigital')
+var imgTreino = document.getElementById('img-treino');
+mouseEnter(imgTreino, 'transformed-treino')
 //mouseLeave(imgProdutoDigital, 'transformed-produtoDigital')
