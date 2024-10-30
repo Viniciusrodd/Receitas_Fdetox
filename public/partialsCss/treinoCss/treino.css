@@ -4,6 +4,60 @@
     display: block;
 }
 
-h1{
+#container-treino mark{
+    background-color: red;
+    color: white;
+}
+
+#container-treino{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0px 40px 0px;
+    width: 100%;
+    background-color: black;
+}
+
+.h1-treino{
     color: red;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#div-container-treino{
+    padding: 40px 0px 40px 0px;
+    width: 80%;
+}
+
+#h3-treino{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/*IMAGE TREINO*/
+
+
+#image-treino{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    background-image: url(/imagens/treino/mulher-treino-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 30px;
+}
+
+.h1-image-treino{
+    color: red;
+    font-size: 90px;
+    text-align: center;
+    margin: 0px;
 }
