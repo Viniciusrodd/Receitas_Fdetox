@@ -26,12 +26,12 @@
     margin-bottom: 0px;
 }
 
-#div-container-treino{
+#section-container-treino{
     padding: 40px 0px 40px 0px;
     width: 80%;
 }
 
-#h3-treino{
+.h3-treino{
     color: white;
     font-size: 30px;
     text-align: center;
@@ -60,4 +60,70 @@
     font-size: 90px;
     text-align: center;
     margin: 0px;
+}
+
+
+/*INDICAÇÃO*/
+
+
+#section-indicacao-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px 40px 0px;
+    width: 100%;
+    background-color: black;
+}
+
+#indicacao-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    padding: 40px 0px 40px 0px;
+    border: 3px solid white;
+}
+
+.cards-treino{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    width: 80%;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.485);
+    margin-top: 80px;
+}
+
+.img-cards-treino{
+    height: 70%;
+    width: 30%;
+    border: 3px solid red;
+    border-radius: 20px;
+    background-color: white;    
+}
+
+.arguments-cards-treino{
+    height: 70%;
+    width: 65%;
+    border: 3px solid red;
+    border-radius: 20px;
+    background-color: white;    
+}
+
+.h3-treino-cards{
+    color: red;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.p-cards-treino{
+    font-size: 20px;
+    color: black;
+    text-align: center;
 }
