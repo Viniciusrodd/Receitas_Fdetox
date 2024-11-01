@@ -1,7 +1,23 @@
 @charset "UTF-8";
 
+:root{
+    --cor01: #FBF3EB;
+    --cor02: #172313;
+    --cor03: #7aa789;
+    --cor04: #d3efdc;
+    --cor05: #ff5e5e;
+    --cor06: #287FB6;
+    --cor07: #003452;
+    --cor08: #ea5f5f;
+    --cor09: #410039;
+}
+
+
 .treino{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #container-treino mark{
@@ -12,7 +28,7 @@
 #container-treino{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 40px 0px 40px 0px;
     width: 100%;
@@ -113,6 +129,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 40px 0px 40px 0px;
+    border-radius: 30px;
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.641);
@@ -127,6 +144,10 @@
     width: 75%;
     border-radius: 20px;
     margin-top: 80px;
+    transition: transform 0.3s ease;
+}
+.cards-treino:hover{
+    transform: scale(1.05);
 }
 
 .img-cards-treino-container{
@@ -147,7 +168,7 @@
     justify-content: center;
     align-items: center;
     height: 30vh;
-    width: 60%;
+    width: 70%;
     border-radius: 20px;
     background-color: white;    
 }
@@ -165,4 +186,39 @@
     color: black;
     text-align: center;
     width: 90%;
+}
+
+#treino-button{
+    height: 70px;
+    width: 20%;
+    margin-top: 5%;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--cor05);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+#treino-button:hover{
+    transform: scale(1.05);
+}
+
+
+/*SECTION GARANTIA*/
+
+
+#section-treino-garantia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    background-color: black;
+
+    & .img-treino-garantia{
+        height: 40vh;
+        width: 30vw;
+    }
 }

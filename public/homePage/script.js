@@ -71,7 +71,7 @@ var treinoContainer = document.getElementById('container-treino');
 bttTreino.addEventListener('click', () =>{
     liftContainer.style.display = 'none';
     secandoContainer.style.display = 'none';
-    treinoContainer.style.display = 'block';   
+    treinoContainer.style.display = 'flex';
 
     requestAnimationFrame(() =>{
         treinoContainer.classList.add('treino');
