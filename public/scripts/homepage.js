@@ -1,5 +1,5 @@
 
-
+/*
 //FUNÇÕES DE AÇÕES HEADER
 let iniciarBtt = document.getElementById('btt-conteudo-1')
 let comprarAgora1Btt = document.getElementById('btt-compraragora-1')
@@ -21,15 +21,42 @@ scrollButton(iniciarBtt, sectionMission[0])
 var cardsCompras = document.getElementById('container-cards-compras')
 scrollButton(comprarAgora1Btt,cardsCompras)
 scrollButton(comprarAgora2Btt, cardsCompras)
+*/
+
+
+//ANIMAÇÃO NOS PRODUTOS
+function mouseEnter(img, transformed){
+    img.addEventListener('mouseenter', () => {
+        img.classList.add(transformed);
+    });
+}
+
+function mouseLeave(img, classe){
+    img.addEventListener('mouseleave', () =>{
+        setTimeout(() =>{
+            img.classList.remove(classe)
+        }, 5000)
+    })
+}
+
+var imgLift = document.getElementById('img-lift');
+mouseEnter(imgLift, 'transformed-lift');
+//mouseLeave(imgLift, 'transformed-lift');
+
+var imgSecandoCasa = document.getElementById('img-secandoCasa');
+mouseEnter(imgSecandoCasa, 'transformed-secandoCasa')
+//mouseLeave(imgSecandoCasa, 'transformed-secandoCasa')
+
+
+var imgTreino = document.getElementById('img-treino');
+mouseEnter(imgTreino, 'transformed-treino')
+//mouseLeave(imgProdutoDigital, 'transformed-produtoDigital')
 
 
 
 
 //CARREGANDO LIFT-DETOX:
-var bttLift = document.getElementById('button-lift');
-var liftContainer = document.getElementById('liftDetox-container');
-var secandoContainer = document.getElementById('container-secando');
-
+/*
 bttLift.addEventListener('click', () => {
     secandoContainer.style.display = 'none';
     liftContainer.style.display = 'block';
@@ -42,9 +69,33 @@ bttLift.addEventListener('click', () => {
             })
     })
 })
+*/
+
+var bttLift = document.getElementById('button-lift');
+var liftContainer = document.getElementById('carregaLift-Partial')
+
+bttLift.addEventListener('click', async () =>{
+    try{
+        const response = await fetch('/carregaLift/liftDetox');
+        if(response.ok){
+            const html = await response.text();
+            liftContainer.innerHTML = html;  
+        
+            requestAnimationFrame(() =>{
+                liftContainer.scrollIntoView({
+                    behavior: "smooth"
+                })
+            })        
+        }else{
+            console.error("Erro ao carregar o partial:", response.status);
+        }
+    }catch(error){
+        console.error("Erro de requisição:", error);
+    }
+})
 
 
-
+/*
 //CARREGANDO SECANDO EM CASA
 var bttSecando = document.getElementById('button-secando');
 var secandoContainer = document.getElementById('container-secando');
@@ -80,33 +131,4 @@ bttTreino.addEventListener('click', () =>{
             })
     })
 })
-
-
-
-//ANIMAÇÃO NOS PRODUTOS
-function mouseEnter(img, transformed){
-    img.addEventListener('mouseenter', () => {
-        img.classList.add(transformed);
-    });
-}
-
-function mouseLeave(img, classe){
-    img.addEventListener('mouseleave', () =>{
-        setTimeout(() =>{
-            img.classList.remove(classe)
-        }, 5000)
-    })
-}
-
-var imgLift = document.getElementById('img-lift');
-mouseEnter(imgLift, 'transformed-lift');
-//mouseLeave(imgLift, 'transformed-lift');
-
-var imgSecandoCasa = document.getElementById('img-secandoCasa');
-mouseEnter(imgSecandoCasa, 'transformed-secandoCasa')
-//mouseLeave(imgSecandoCasa, 'transformed-secandoCasa')
-
-
-var imgTreino = document.getElementById('img-treino');
-mouseEnter(imgTreino, 'transformed-treino')
-//mouseLeave(imgProdutoDigital, 'transformed-produtoDigital')
+*/

@@ -637,3 +637,18 @@ ul{
     background-position: center;
     border-radius: 100px;    
 }
+
+#carregaLift-Partial{
+    padding: 1px 0px 1px 0px;
+    width: 100%;
+}
+
+#carregaSecando-Partial{
+    padding: 1px 0px 1px 0px;
+    width: 100%;
+}
+
+#carregaTreino-Partial{
+    padding: 1px 0px 1px 0px;
+    width: 100%;
+}
