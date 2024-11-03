@@ -1,8 +1,8 @@
 
 
 
-let comprarAgora1Btt = document.getElementById('btt-compraragora-1')
-let comprarAgora2Btt = document.getElementById('btt-compraragora-2')
+let comprarAgora1Btt = document.getElementById('btt-compraragora-1-lift')
+let comprarAgora2Btt = document.getElementById('btt-compraragora-2-lift')
 
 function scrollButton(btt, content){
     btt.addEventListener('click', () =>{
@@ -14,6 +14,6 @@ function scrollButton(btt, content){
     })
 }
 
-var cardsCompras = document.getElementById('container-cards-compras')
+var cardsCompras = document.getElementById('container-cards-compras-lift')
 scrollButton(comprarAgora1Btt,cardsCompras)
 scrollButton(comprarAgora2Btt, cardsCompras)

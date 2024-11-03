@@ -28,7 +28,7 @@ body, html {
 }
 
 
-mark{
+.container-pai-home mark{
     background-color: var(--cor10);
     border-radius: 10px;
     color: var(--cor01);
@@ -39,20 +39,20 @@ mark{
 /*COMEÇO DA PÁGINA*/
 
 
-#container-pai{
+.container-pai-home{
     display: flex;
     flex-direction: column;
     width: 100%;
-}
 
-div#imagem-header-container{
+
+#imagem-header-container-home{
     background-image: url(../imagens/mulher-correndo-3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-div#imagem-header{
+div#imagem-header-home{
     height: 120vh;
     width: 100%;
     background-color: #1d49546f;
@@ -62,7 +62,7 @@ div#imagem-header{
 /*HEADER*/
 
 
-header{
+#header-home{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -71,7 +71,7 @@ header{
     height: 20vh;
 }
 
-#titles-header-1{
+#titles-header-1-home{
     display: flex;
     flex-direction: row;
     height: 100px;
@@ -80,7 +80,7 @@ header{
     align-items: center;
 }
 
-#titles-header-2{
+#titles-header-2-home{
     display: flex;
     flex-direction: row;
     height: 100px;
@@ -89,14 +89,14 @@ header{
     align-items: center;
 }
 
-.h1-titles-header{
+.h1-titles-header-home{
     font-size: 21px;
     margin: 0;
     color: white;
     cursor: pointer;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.h1-titles-header:hover{
+.h1-titles-header-home:hover{
     border: 4px solid white;
     color: var(--cor01);
     border-radius: 30px;
@@ -104,7 +104,7 @@ header{
     transition: 0.5s ease, transform 0.5s ease;
 }
 
-h1#titulo{
+h1#titulo-home{
     color: var(--cor01);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 57px;
@@ -116,7 +116,7 @@ h1#titulo{
 /*CONTEÚDO 1*/
 
 
-div#conteudo-container-1{
+div#conteudo-container-1-home{
     display: flex;
     justify-content: flex-end;
     margin-top: 10px;
@@ -124,7 +124,7 @@ div#conteudo-container-1{
     width: 100%;
 }
 
-.conteudo-1{
+.conteudo-1-home{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,7 +133,7 @@ div#conteudo-container-1{
     margin-right: 60px; 
 }
 
-.h1-conteudos{
+.h1-conteudos-home{
     text-align: center;
     font-size: 53px;
     color: var(--cor01);
@@ -142,18 +142,18 @@ div#conteudo-container-1{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;
 }
-.h1-conteudos:hover{
+.h1-conteudos-home:hover{
     transform: scale(1.03);
 }
 
-div#container-button-1{
+#container-button-1-home{
     display: flex;
     justify-content: flex-end;
     height: 10vh;
     width: 100%;
 }
 
-#btt-conteudo-1{
+#btt-conteudo-1-home{
     height: 100%;
     width: 190px;
     margin-right: 300px;
@@ -166,7 +166,7 @@ div#container-button-1{
     cursor: pointer;
     transition: transform 0.3s ease;
 }
-#btt-conteudo-1:hover{
+#btt-conteudo-1-home:hover{
     transform: scale(1.05);
 }
 
@@ -174,7 +174,7 @@ div#container-button-1{
 /*CONTEÚDO 2*/
 
 
-div#conteudo-container-2{
+#conteudo-container-2-home{
     display: flex;
     justify-content: flex-end;
     height: 35vh;
@@ -182,7 +182,7 @@ div#conteudo-container-2{
     margin-top: 20px;
 }
 
-.conteudo-2{
+.conteudo-2-home{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,7 +191,7 @@ div#conteudo-container-2{
     margin-right: 5px;
 }
 
-.p-conteudo-2{
+.p-conteudo-2-home{
     text-align: center;
     font-weight: bold;
     font-size: 32px;
@@ -200,7 +200,7 @@ div#conteudo-container-2{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;
 }
-.p-conteudo-2:hover{
+.p-conteudo-2-home:hover{
     transform: scale(1.03);
 }
 
@@ -208,7 +208,7 @@ div#conteudo-container-2{
 /*SECTION PRODUTOS*/
 
 
-section.sessao-imagens{
+.sessao-imagens-home{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -218,7 +218,7 @@ section.sessao-imagens{
     background-color: var(--cor01);
 }
 
-#img-1{
+#img-1-home{
     height: 80%;
     width: 17%;
     background-image: url(../imagens/fita-metrica.png);
@@ -227,7 +227,7 @@ section.sessao-imagens{
     background-repeat: no-repeat;
 }
 
-#img-2{
+#img-2-home{
     height: 80%;
     width: 17%;
     background-image: url(../imagens/cesta.png);
@@ -236,7 +236,7 @@ section.sessao-imagens{
     background-repeat: no-repeat;
 }
 
-#img-3{
+#img-3-home{
     height: 80%;
     width: 17%;
     background-image: url(../imagens/secando.png);
@@ -250,7 +250,7 @@ section.sessao-imagens{
 /*SECTION OUR MISSION*/
 
 
-.section-mission{
+.section-mission-home{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -264,7 +264,7 @@ section.sessao-imagens{
     background-size: cover;
 }
 
-.container-mission{
+.container-mission-home{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -274,7 +274,7 @@ section.sessao-imagens{
     margin: 10vh 0px 10vh 0px;
 }
 
-.mission-text{
+.mission-text-home{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -285,7 +285,7 @@ section.sessao-imagens{
     background-color: rgba(0, 53, 88, 0.369);
 }
 
-.text{
+.text-home{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -294,7 +294,7 @@ section.sessao-imagens{
     width: 80%;
 }
 
-.h1-mission{
+.h1-mission-home{
     font-size: 35px;
     color: white;
     font-weight: bold;
@@ -303,7 +303,7 @@ section.sessao-imagens{
     text-align: center;
 }
 
-.p-mission{
+.p-mission-home{
     font-size: 27px;
     color: white;
     font-weight: bold;
@@ -311,7 +311,7 @@ section.sessao-imagens{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }    
 
-.mission-video{
+.mission-video-home{
     height: 65vh;
     width: 40%;
     overflow: hidden; /* Oculta partes do vídeo que saem da div */
@@ -319,13 +319,13 @@ section.sessao-imagens{
     border-radius: 0px 20px 20px 0px;      
 }
 
-.video-section-mission{
+.video-section-mission-home{
     width: 100%;
     height: 100%;
     object-fit: cover; /* Mantém a proporção do vídeo enquanto ocupa todo o espaço */
 }
 
-.mission-text-2{
+.mission-text-2-home{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -338,7 +338,7 @@ section.sessao-imagens{
     border: 3px solid var(--cor10);
 }
 
-.text-2{
+.text-2-home{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -352,7 +352,7 @@ section.sessao-imagens{
 
 
 
-.sessao-prodAbaixo{
+.sessao-prodAbaixo-home{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -362,7 +362,7 @@ section.sessao-imagens{
     background-color: var(--cor01);
 }
 
-.p-prodAbaixo{
+.p-prodAbaixo-home{
     font-size: 35px;
     color: white;
     font-weight: bold;
@@ -371,7 +371,7 @@ section.sessao-imagens{
     margin-bottom: 10px;
 }
 
-#img-seta{
+#img-seta-home{
     height: 50px;
 }
 
@@ -379,7 +379,7 @@ section.sessao-imagens{
 /*SESSÃO APRESENTAÇÃO PRODUTOS*/
 
 
-#product-presentation{
+#product-presentation-home{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -389,7 +389,7 @@ section.sessao-imagens{
     background-color: var(--cor01);
 }
 
-#container-lift{
+#container-lift-home{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -401,7 +401,7 @@ section.sessao-imagens{
     overflow: hidden; /* Para esconder o conteúdo que sair da div */
 }
 
-#img-lift{
+#img-lift-home{
     height: 100%;
     width: 50%;
     background-color: var(--cor02);
@@ -415,7 +415,7 @@ section.sessao-imagens{
     border-radius: 20px 0px 0px 20px;
 }
 
-#desc-lift{
+#desc-lift-home{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -426,13 +426,13 @@ section.sessao-imagens{
     border-radius: 0px 20px 20px 0px;
 }
 
-ul{
+#ul-home{
     width: 90%;
     padding: 0%;
     margin-bottom: 0px;
 }
 
-#h1-desc-lift{
+#h1-desc-lift-home{
     font-family: "Fira Sans Condensed", sans-serif;
     font-size: 35px;
     text-align: center;
@@ -441,7 +441,7 @@ ul{
     color: var(--cor05);
 }
 
-.li-lift{
+.li-lift-home{
     margin: 8px;
     font-size: 25px;
     text-align: center;
@@ -449,7 +449,7 @@ ul{
     color: black;
 }
 
-.button-products{
+.button-products-home{
     height: 45px;
     width: 120px;
     margin-top: 8px;
@@ -461,18 +461,18 @@ ul{
     cursor: pointer;
 }
 
-.button-products:hover{
+.button-products-home:hover{
     background-color: rgb(255, 0, 0);
     transform: scale(1.05);
 }
 
-.transformed-lift{
+.transformed-lift-home{
     transform: translateX(-100%);        
 }
 
 /*SECANDO*/
 
-#container-secandoCasa{
+#container-secandoCasa-home{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -484,7 +484,7 @@ ul{
     overflow: hidden; /* Para esconder o conteúdo que sair da div */
 }
 
-#img-secandoCasa{
+#img-secandoCasa-home{
     height: 100%;
     width: 50%;
     background-image: url(../imagens/secando/secandoEmCasa.jpg);
@@ -496,7 +496,7 @@ ul{
     cursor: pointer;
 }
 
-#desc-secandoCasa{
+#desc-secandoCasa-home{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -506,35 +506,35 @@ ul{
     background-color: var(--cor01);
 }
 
-.container-desc{
+.container-desc-home{
     width: 90%;
 }
 
-#h1-secandoCasa{
+#h1-secandoCasa-home{
     color: var(--cor05);
     font-size: 40px;
     text-align: center;
     margin: 0px;
 }
 
-#h2-secandoCasa{
+#h2-secandoCasa-home{
     font-size: 28px;
     text-align: center;
 }
 
-#p-secandoCasa{
+#p-secandoCasa-home{
     font-size: 20px;
     text-align: center;
     margin-bottom: 8px;
 }
 
-.transformed-secandoCasa{
+.transformed-secandoCasa-home{
     transform: translateX(100%);        
 }
 
 /*PRODUTO DIGITAL*/
 
-#container-treino-product{
+#container-treino-product-home{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -546,7 +546,7 @@ ul{
     overflow: hidden;
 }
 
-#img-treino{
+#img-treino-home{
     height: 100%;
     width: 50%;
     background-image: url(../imagens/mulher-treino.jpg);
@@ -558,7 +558,7 @@ ul{
     cursor: pointer;
 }
 
-#desc-treino{
+#desc-treino-home{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -567,7 +567,7 @@ ul{
     background-color: var(--cor01);            
 }
 
-.transformed-treino{
+.transformed-treino-home{
     transform: translateX(-100%);
 }
 
@@ -575,7 +575,7 @@ ul{
 /*SESSÃO ARGUMENTOS 5*/
 
 
-#sessao-argumentos-5{
+#sessao-argumentos-5-home{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -585,20 +585,20 @@ ul{
     width: 100%;
 }
 
-.h1-arg-5{
+.h1-arg-5-home{
     color: var(--cor01);
     font-size: 45px;
     margin-bottom: 3px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.p-arg-5{
+.p-arg-5-home{
     font-size: 30px;
     text-align: center;
     font-weight: bold;
 }
 
-#container-cards-arg5{
+#container-cards-arg5-home{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -609,7 +609,7 @@ ul{
     margin-bottom: 40px;
 }
 
-.cards-arg-5{
+.cards-arg-5-home{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -622,19 +622,19 @@ ul{
     transition: transform 0.3s ease;
     cursor: pointer;
 }
-.cards-arg-5:hover{
+.cards-arg-5-home:hover{
     transform: scale(1.02);
     background-color: rgba(255, 255, 255, 0.161);
 }
 
-#container-pai .imagem-cards-arg-2{
+.imagem-cards-arg-2-home{
     height: 150px;
     width: 150px;
     background-color: var(--cor11);
     border-radius: 100px;         
 }
 
-.img-cards-arg-2{
+.img-cards-arg-2-home{
     height: 100%;
     width: 100%;    
     background-size: auto;
@@ -654,4 +654,5 @@ ul{
 
 #carregaTreino-Partial{
     width: 100%;
+}
 }

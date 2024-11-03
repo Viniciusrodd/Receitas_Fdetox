@@ -1,10 +1,17 @@
 @charset "UTF-8";
 
 :root{
-    --cor01: #FCF9ED;
-    --cor02: #193722;
+    --cor01: #FBF3EB;
+    --cor02: #172313;
     --cor03: #7aa789;
     --cor04: #d3efdc;
+    --cor05: rgb(255, 94, 94);
+    --cor06: #287FB6;
+    --cor07: #003452;
+    --cor08: #ea5f5f;
+    --cor09: #410039;
+    --cor10: #2D728F;
+    --cor11: #EFF053;
 }
 
 @media screen and (max-width: 767px){
@@ -12,7 +19,7 @@
 
 /*COMEÇO DA PÁGINA*/
 
-    div#imagem-header{
+    div#imagem-header-home{
         height: 140vh;
     }
 
@@ -20,17 +27,17 @@
 /*HEADER*/
 
 
-    header{
+    #header-home{
         padding-top: 15px;
         justify-content: center;
         height: 19vh;
     }
 
-    #titles-header-1{
+    #titles-header-1-home{
         display: none;
     }
     
-    #titles-header-2{
+    #titles-header-2-home{
         display: none;
     }
 
@@ -38,33 +45,33 @@
 /*CONTEÚDO 1*/
 
 
-    div#conteudo-container-1{
+    div#conteudo-container-1-home{
         justify-content: center;
         margin: 0px;
         height: 30vh;
     }
     
-    .conteudo-1{
+    .conteudo-1-home{
         width: 90vw;
         margin: 0px;
     }
     
-    .h1-conteudos{
+    .h1-conteudos-home{
         font-size: 40px;
     }
-    .h1-conteudos:hover{
+    .h1-conteudos-home:hover{
         transform: none;
     }
     
-    div#container-button-1{
+    div#container-button-1-home{
         justify-content: center;
         margin: 20px 0px 40px 0px;
     }
     
-    #btt-conteudo-1{
+    #btt-conteudo-1-home{
         margin: 0px;
     }
-    #btt-conteudo-1:hover{
+    #btt-conteudo-1-home:hover{
         transform: none;
     }
 
@@ -72,22 +79,22 @@
 /*CONTEÚDO 2*/
 
 
-    div#conteudo-container-2{
+    div#conteudo-container-2-home{
         justify-content: center;
         height: 50vh;
         margin-top: 0px;
     }
 
-    .conteudo-2{
+    .conteudo-2-home{
         width: 90vw;
         margin-right: 0px;
     }
 
-    .p-conteudo-2{
+    .p-conteudo-2-home{
         font-size: 29px;
         margin: 0px;
     }
-    .p-conteudo-2:hover{
+    .p-conteudo-2-home:hover{
         transform: none;
     }
 

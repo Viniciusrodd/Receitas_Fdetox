@@ -1,10 +1,37 @@
 @charset "UTF-8";
 
+:root{
+    --cor01: #FBF3EB;
+    --cor02: #172313;
+    --cor03: #7aa789;
+    --cor04: #d3efdc;
+    --cor05: #ff5e5e;
+    --cor06: #287FB6;
+    --cor07: #003452;
+    --cor08: #ea5f5f;
+    --cor09: #410039;
+}
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;    
+}
+
 /*SECTION*/
 
+#liftDetox-container-lift mark{
+    background-color: var(--cor06);
+    color: white;
+    padding: 3px;
+}
 
+#liftDetox-container-lift{
 
-section#sessao-conteudo-1{
+section#sessao-conteudo-1-lift{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +39,7 @@ section#sessao-conteudo-1{
     background-color: var(--cor01);
 }
 
-div.container-sessao-1{
+div.container-sessao-1-lift{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,7 +50,7 @@ div.container-sessao-1{
     border-bottom: 3px solid black;
 }
 
-.h1-sessao-1{
+.h1-sessao-1-lift{
     text-align: center;
     font-size: 38px;
     color: black;
@@ -31,14 +58,14 @@ div.container-sessao-1{
     margin: 0;
 }
 
-.p-sessao-1{
+.p-sessao-1-lift{
     text-align: center;
     font-weight: bold;
     font-size: 25px;
     color: black;
 }
 
-div#container-iframe-1{
+div#container-iframe-1-lift{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,23 +75,23 @@ div#container-iframe-1{
     margin-top: 50px;
 }
 
-div#iframe-1{
+div#iframe-1-lift{
     height: 100%;
     width: 50vw;
     border-radius: 20px;
 }
 
-iframe#iframe-1{
+iframe#iframe-1-lift{
     border-radius: 20px;
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.76);
     transition: transform 0.3s ease;
 }
-#iframe-1:hover{
+#iframe-1-lift:hover{
     transform: scale(1.05);
 }
 
-.container-button-section-1{
+.container-button-section-1-lift{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,7 +101,7 @@ iframe#iframe-1{
     margin-bottom: 40px;
 }
 
-.btt-section-1{
+.btt-section-1-lift{
     height: 65px;
     width: 300px;
     font-size: 21px;
@@ -85,7 +112,7 @@ iframe#iframe-1{
     cursor: pointer;
     transition: transform 0.3s ease;
 }
-.btt-section-1:hover{
+.btt-section-1-lift:hover{
     background-color: rgb(255, 0, 0);
     transform: scale(1.05);
 }
@@ -94,7 +121,7 @@ iframe#iframe-1{
 /*SESSÃO 2 - ARGUMENTOS 1 - CARDS*/
 
 
-section#container-argumentos{
+section#container-argumentos-lift{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,7 +134,7 @@ section#container-argumentos{
     background-size: cover;
 }
 
-h1.h1-argumentos{
+h1.h1-argumentos-lift{
     text-align: center;
     font-size: 45px;
     margin-top: 70px;
@@ -116,7 +143,7 @@ h1.h1-argumentos{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-div#argumentos-cards{
+div#argumentos-cards-lift{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -128,7 +155,7 @@ div#argumentos-cards{
     border: 3px solid white;
 }
 
-div.cards{
+div.cards-lift{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,12 +167,12 @@ div.cards{
     transition: transform 0.3s ease;
     cursor: pointer;
 }
-div.cards:hover{
+div.cards-lift:hover{
     transform: scale(1.05);
     background-color: rgba(255, 255, 255, 0.095);
 }
 
-div.imagem{
+div.imagem-lift{
     height: 130px;
     width: 130px;
     border-radius: 100px;
@@ -154,7 +181,7 @@ div.imagem{
     background-size: cover;
 }
 
-h2.h2-cards{
+h2.h2-cards-lift{
     text-align: center;
     font-size: 35px;
     color: white;
@@ -162,7 +189,7 @@ h2.h2-cards{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-p.p-cards{
+p.p-cards-lift{
     text-align: center;
     font-size: 19px;
     color: white;
@@ -175,7 +202,7 @@ p.p-cards{
 /*SESSÃO 3 - ARGUMENTOS 2: - PRODUTO*/
 
 
-section#container-argumentos-2{
+section#container-argumentos-2-lift{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,7 +212,7 @@ section#container-argumentos-2{
     background-color: var(--cor01);
 }
 
-div#container-produto{
+div#container-produto-lift{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -194,7 +221,7 @@ div#container-produto{
     margin-top: 20px;
 }
 
-div#descrição-produto{
+div#descrição-produto-lift{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -208,7 +235,11 @@ div#descrição-produto{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-li{
+#ul-lift{
+    padding: 5px;
+}
+
+#li-lift{
     font-size: 28px;
     font-weight: bold;
     margin: 15px 0px 15px 0px;
@@ -216,7 +247,7 @@ li{
     color: white;
 }
 
-div#imagem-produto{
+div#imagem-produto-lift{
     height: 70vh;
     width: 35%;
     background-image: url(../../imagens/lift/pilulas.jpg);
@@ -232,7 +263,7 @@ div#imagem-produto{
 /*SESSÃO 4 - RESULTADOS*/
 
 
-div#div-resultados{
+div#div-resultados-lift{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -242,14 +273,14 @@ div#div-resultados{
     background-color: var(--cor01);
 }
 
-h1#h1-resultados{
+h1#h1-resultados-lift{
     color: black;
     font-size: 50px;
     margin: 0px 0px 30px 0px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-div#iframes-resultados{
+div#iframes-resultados-lift{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -260,13 +291,13 @@ div#iframes-resultados{
     width: 80%; 
 }
 
-iframe.iframe-2{
+iframe.iframe-2-lift{
     margin: 10px;
     transition: transform 0.3s ease;
     border-radius: 20px;
     border: 3px solid black;
 }
-.iframe-2:hover{
+.iframe-2-lift:hover{
     transform: scale(1.05);
 }
 
@@ -274,7 +305,7 @@ iframe.iframe-2{
 /*SESSÃO 5 - COMPRAS*/
 
 
-section#container-compras-5{
+section#container-compras-5-lift{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -287,7 +318,7 @@ section#container-compras-5{
     background-size: cover;
 }
 
-div#container-compras{
+div#container-compras-lift{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -298,14 +329,14 @@ div#container-compras{
     background-color: rgba(0, 53, 88, 0.823);
 }
 
-h1.h1-compras{
+h1.h1-compras-lift{
     color: rgb(255, 255, 255);
     font-size: 50px;
     margin: 0px 0px 30px 0px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.video-iframe-compras{
+.video-iframe-compras-lift{
     height: 280px;
     width: 500px;
     border-radius: 20px;
@@ -314,19 +345,19 @@ h1.h1-compras{
     margin-bottom: 40px;
     transition: transform 0.3s ease;
 }
-.video-iframe-compras:hover{
+.video-iframe-compras-lift:hover{
     transition: transform 0.3s ease;
 
 }
 
-h2#h2-compras{
+h2#h2-compras-lift{
     color: white;
     font-size: 33px;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-div#container-cards-compras{
+div#container-cards-compras-lift{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -336,7 +367,7 @@ div#container-cards-compras{
     padding: 5px;
 }
 
-div.cards-compras{
+div.cards-compras-lift{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -348,11 +379,11 @@ div.cards-compras{
     transition: transform 0.3s ease;
     cursor: pointer;
 }
-.cards-compras:hover{
+.cards-compras-lift:hover{
     transform: scale(1.05);
 }
 
-.img-div-compras{
+.img-div-compras-lift{
     height: 85%;
     width: 95%;
     border: 3px solid white;
@@ -361,18 +392,18 @@ div.cards-compras{
     background-repeat: no-repeat;
 }
 
-.video-compras{
+.video-compras-lift{
     height: 100%;
     width: 100%;
     border: 3px solid white;
     border-radius: 20px;
     transition: transform 0.3s ease;
 }
-.video-compras:hover{
+.video-compras-lift:hover{
     transition: transform 0.3s ease;
 }
 
-.btt-compras{
+.btt-compras-lift{
     height: 45px;
     width: 200px;
     font-size: 15px;
@@ -384,7 +415,7 @@ div.cards-compras{
     cursor: pointer;
     transition: transform 0.3s ease;
 }
-.btt-compras:hover{
+.btt-compras-lift:hover{
     background-color: rgb(255, 94, 94);
     transform: scale(1.05);
 }
@@ -393,7 +424,7 @@ div.cards-compras{
 /*SESSÃO 6 - FOOTER*/
 
 
-section#container-footer-6{
+section#container-footer-6-lift{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -403,16 +434,16 @@ section#container-footer-6{
     background-color: var(--cor01);
 }
 
-#h1-footer{
+#h1-footer-lift{
     font-size: 45px;
     margin-bottom: 20px;
 }
 
-#h2-footer{
+#h2-footer-lift{
     font-size: 32px;
 }
 
-#div-footer-1{
+#div-footer-1-lift{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -422,7 +453,7 @@ section#container-footer-6{
     margin-bottom: 40px;
 }
 
-.div-cards-footer{
+.div-cards-footer-lift{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -432,30 +463,30 @@ section#container-footer-6{
     padding: 10px;
     transition: transform 0.3s ease;
 }
-.div-cards-footer:hover{
+.div-cards-footer-lift:hover{
     transform: scale(1.05);
     background-color: rgba(0, 0, 0, 0.205);
     border-radius: 20px;
 }
 
-.h1-cards-footer{
+.h1-cards-footer-lift{
     font-size: 30px;
     margin: 5px 0px 5px 0px;
 }
 
-.h2-cards-footer{
+.h2-cards-footer-lift{
     font-size: 18px;
     margin: 5px 0px 5px 0px;
     text-align: center;
 }
 
-.p-cards-footer{
+.p-cards-footer-lift{
     font-size: 18px;
     margin: 5px 0px 5px 0px;
     text-align: center;
 }
 
-#div-argumentos-footer{
+#div-argumentos-footer-lift{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -465,7 +496,7 @@ section#container-footer-6{
     margin-top: 40px;
 }
 
-#argumentos-footer{
+#argumentos-footer-lift{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -474,29 +505,30 @@ section#container-footer-6{
     width: 60%;
 }
 
-#h1-argumentos-footer{
+#h1-argumentos-footer-lift{
     font-size: 42px;
     margin: 0px 0px 20px 0px;
     color: #193722;
 }
 
-#h2-argumentos-footer{
+#h2-argumentos-footer-lift{
     font-size: 22px;
     margin: 0px 0px 20px 0px;
     text-align: center;
     color: #193722;
 }
 
-#p-argumentos-footer{
+#p-argumentos-footer-lift{
     font-size: 19px;
     margin: 0px 0px 20px 0px;
     text-align: center;
 }
 
-#imagem-argumentos-footer{
+#imagem-argumentos-footer-lift{
     height: 100%;
     width: 35%;
     background-image: url(../../imagens/lift/valores.jpg);
     background-size: contain;
     background-position: center center;
+}
 }

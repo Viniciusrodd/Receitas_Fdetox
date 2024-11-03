@@ -1,7 +1,7 @@
 
 
 //FUNÇÕES DE AÇÕES HEADER
-let iniciarBtt = document.getElementById('btt-conteudo-1');
+let iniciarBtt = document.getElementById('btt-conteudo-1-home');
 
 function scrollButton(btt, content){
     btt.addEventListener('click', () =>{
@@ -13,7 +13,7 @@ function scrollButton(btt, content){
     });
 };
 
-let sectionMission = document.getElementsByClassName('section-mission');
+let sectionMission = document.getElementsByClassName('section-mission-home');
 scrollButton(iniciarBtt, sectionMission[0]);
 
 
@@ -34,24 +34,24 @@ function mouseLeave(img, classe){
     });
 };
 
-var imgLift = document.getElementById('img-lift');
-mouseEnter(imgLift, 'transformed-lift');
+var imgLift = document.getElementById('img-lift-home');
+mouseEnter(imgLift, 'transformed-lift-home');
 //mouseLeave(imgLift, 'transformed-lift');
 
-var imgSecandoCasa = document.getElementById('img-secandoCasa');
-mouseEnter(imgSecandoCasa, 'transformed-secandoCasa');
+var imgSecandoCasa = document.getElementById('img-secandoCasa-home');
+mouseEnter(imgSecandoCasa, 'transformed-secandoCasa-home');
 //mouseLeave(imgSecandoCasa, 'transformed-secandoCasa')
 
 
-var imgTreino = document.getElementById('img-treino');
-mouseEnter(imgTreino, 'transformed-treino');
+var imgTreino = document.getElementById('img-treino-home');
+mouseEnter(imgTreino, 'transformed-treino-home');
 //mouseLeave(imgProdutoDigital, 'transformed-produtoDigital')
 
 
 
 
 //CARREGANDO LIFT
-var bttLift = document.getElementById('button-lift');
+var bttLift = document.getElementById('button-lift-home');
 var liftContainer = document.getElementById('carregaLift-Partial');
 
 bttLift.addEventListener('click', async () =>{
@@ -88,7 +88,7 @@ function carregarScriptInteracao() {
 
 
 //CARREGANDO SECANDO
-var bttSecando = document.getElementById('button-secando');
+var bttSecando = document.getElementById('button-secando-home');
 var secandoContainer = document.getElementById('carregaSecando-Partial');
 
 bttSecando.addEventListener('click', async () =>{
@@ -117,7 +117,7 @@ bttSecando.addEventListener('click', async () =>{
 
 
 //CARREGANDO TREINO
-var bttTreino = document.getElementById('button-treino');
+var bttTreino = document.getElementById('button-treino-home');
 var treinoContainer = document.getElementById('carregaTreino-Partial');
 
 bttTreino.addEventListener('click', async () =>{

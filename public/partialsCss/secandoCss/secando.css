@@ -21,6 +21,8 @@
     background-color: #843B62;
 }
 
+.container-secando{
+
 
 /*SESSÃO 1*/
 
@@ -402,4 +404,5 @@ section#container-arg-5{
 #container2-img-arg-5{
     height: 15vh;
     width: 30%;  
+}
 }

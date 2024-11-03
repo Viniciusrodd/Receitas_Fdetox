@@ -1,37 +1,50 @@
 
 @charset "UTF-8";
 
+:root{
+    --cor01: #FBF3EB;
+    --cor02: #172313;
+    --cor03: #7aa789;
+    --cor04: #d3efdc;
+    --cor05: #ff5e5e;
+    --cor06: #287FB6;
+    --cor07: #003452;
+    --cor08: #ea5f5f;
+    --cor09: #410039;
+}
+
+
 /*SECTION*/
 
 @media screen and (max-width: 767px){
 
     
-    div.container-sessao-1{
+    div.container-sessao-1-lift{
         height: 50vh;
         margin-top: 60px;
     }
 
-    .h1-sessao-1{
+    .h1-sessao-1-lift{
         font-size: 32px;
     }
 
-    .p-sessao-1{
+    .p-sessao-1-lift{
         font-size: 23px;
     }
 
-    div#container-iframe-1{
+    div#container-iframe-1-lift{
         height: 50vh;
     }
 
-    div#iframe-1{
+    div#iframe-1-lift{
         width: 80vw;
     }
 
-    #iframe-1:hover{
+    #iframe-1-lift:hover{
         transform: none;
     }
 
-    .btt-section-1:hover{
+    .btt-section-1-lift:hover{
         transform: none;
     }
 
@@ -39,38 +52,38 @@
     /*SESSÃO 2 - ARGUMENTOS 1 - CARDS*/
 
 
-    h1.h1-argumentos{
+    h1.h1-argumentos-lift{
         font-size: 28px;
     }
 
-    div#argumentos-cards{
+    div#argumentos-cards-lift{
         justify-content: center;
         flex-direction: column;
         width: 90%;
         padding: 0px 10px 0px 10px;
     }
 
-    div.cards{
+    div.cards-lift{
         height: 55vh;
         width: 90vw;
         padding: 20px 10px 20px 10px;
         border-radius: 20px 20px 0px 0px;
     }
-    div.cards:hover{
+    div.cards-lift:hover{
         transform: none;
     }
 
-    div.imagem{
+    div.imagem-lift{
         height: 110px;
         width: 110px;
         border: 2px solid white;
     }
 
-    h2.h2-cards{
+    h2.h2-cards-lift{
         font-size: 35px;
     }
 
-    p.p-cards{
+    p.p-cards-lift{
         font-size: 19px;
     }
 
@@ -78,23 +91,23 @@
     /*SESSÃO 3 - ARGUMENTOS 2: - PRODUTO*/
 
 
-    div#container-produto{
+    div#container-produto-lift{
         flex-direction: column;
         padding: 20px 0px 20px 0px;
     }
 
-    div#descrição-produto{
+    div#descrição-produto-lift{
         align-items: flex-start;
         height: 55vh;
         width: 90%;
         border-radius: 40px 40px 0px 0px;
     }
 
-    li{
+    #li-lift{
         font-size: 23px;
     }
 
-    div#imagem-produto{
+    div#imagem-produto-lift{
         height: 35vh;
         width: 90%;
         background-size: cover;
@@ -106,40 +119,40 @@
     /*SESSÃO 4 - ARGUMENTOS 2 - CARDS 2*/
 
 
-    div#div-container-argumentos-4{
+    div#div-container-argumentos-4-lift{
         padding: 0px 0px 10px 0px;
         height: 215vh;
     }
 
-    h1#h1-argumentos-4{
+    h1#h1-argumentos-4-lift{
         font-size: 43px;
         margin: 5px 0px 0px 0px;
         text-align: center;
     }
 
-    h2#h2-argumentos-4{
+    h2#h2-argumentos-4-lift{
         font-size: 30px;
         margin: 60px 0px 0px 0px;
     }
 
-    div#argumentos-cards-2{
+    div#argumentos-cards-2-lift{
         justify-content: center;
         flex-direction: column;
         height: 100%;
         margin-top: 0px;
     }
 
-    div.cards-2{
+    div.cards-2-lift{
         justify-content: space-around;
         height: 35vh;
         width: 100%;
         margin: 10px 0px 10px 0px;
     }
-    div.cards-2:hover{
+    div.cards-2-lift:hover{
         transform: none;
     }
 
-    p.p-cards-2{
+    p.p-cards-2-lift{
         margin: 0px;
         font-size: 25px;
     }
@@ -148,18 +161,18 @@
     /*SESSÃO 4 - RESULTADOS*/
 
 
-    div#div-resultados{
+    div#div-resultados-lift{
         justify-content: flex-start;
         height: 240vh;
     }
 
-    h1#h1-resultados{
+    h1#h1-resultados-lift{
         font-size: 40px;
         margin: 60px 0px 30px 0px;
         text-align: center;
     }
 
-    .iframe-2:hover{
+    .iframe-2-lift:hover{
         transform: none;
     }
 
@@ -167,7 +180,7 @@
     /*SESSÃO 5 - COMPRAS*/
 
 
-    h1.h1-compras{
+    h1.h1-compras-lift{
         font-size: 37px;
         text-align: center;
     }
@@ -180,36 +193,36 @@
         transform: none;
     }
     */
-    #video-iframe-compras{
+    #video-iframe-compras-lift{
         height: 220px;
         width: 395px;
     }
-    #video-iframe-compras:hover{
+    #video-iframe-compras-lift:hover{
         height: 220px;
         width: 395px;
     }
 
 
-    h2#h2-compras{
+    h2#h2-compras-lift{
         font-size: 28px;
         text-align: center;
     }
 
-    div#container-cards-compras{
+    div#container-cards-compras-lift{
         justify-content: space-around;
         flex-direction: column;
         height: 430vh;
     }
 
-    div.cards-compras{
+    div.cards-compras-lift{
         height: 100vh;
         width: 90%;
     }
-    .cards-compras:hover{
+    .cards-compras-lift:hover{
         transform: none
     }
 
-    .btt-compras:hover{
+    .btt-compras-lift:hover{
         transform: none;
     }
 
@@ -217,7 +230,7 @@
     /*SESSÃO 6 - FOOTER*/
 
 
-    section#container-footer-6{
+    section#container-footer-6-lift{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -227,18 +240,18 @@
         background-color: var(--cor01);
     }
 
-    #h1-footer{
+    #h1-footer-lift{
         font-size: 40px;
         margin-bottom: 20px;
         text-align: center;
     }
 
-    #h2-footer{
+    #h2-footer-lift{
         font-size: 30px;
         text-align: center;
     }
 
-    #div-footer-1{
+    #div-footer-1-lift{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -248,7 +261,7 @@
         margin-bottom: 40px;
     }
 
-    .div-cards-footer{
+    .div-cards-footer-lift{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -259,24 +272,24 @@
         border-top: 3px solid black;
     }
 
-    .h1-cards-footer{
+    .h1-cards-footer-lift{
         font-size: 30px;
         margin: 5px 0px 5px 0px;
     }
 
-    .h2-cards-footer{
+    .h2-cards-footer-lift{
         font-size: 18px;
         margin: 5px 0px 5px 0px;
         text-align: center;
     }
 
-    .p-cards-footer{
+    .p-cards-footer-lift{
         font-size: 18px;
         margin: 5px 0px 5px 0px;
         text-align: center;
     }
 
-    #div-argumentos-footer{
+    #div-argumentos-footer-lift{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -286,7 +299,7 @@
         margin-top: 40px;
     }
 
-    #argumentos-footer{
+    #argumentos-footer-lift{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -295,27 +308,27 @@
         width: 90%;
     }
 
-    #h1-argumentos-footer{
+    #h1-argumentos-footer-lift{
         font-size: 42px;
         margin: 0px 0px 20px 0px;
         color: #193722;
         text-align: center;
     }
 
-    #h2-argumentos-footer{
+    #h2-argumentos-footer-lift{
         font-size: 22px;
         margin: 0px 0px 20px 0px;
         text-align: center;
         color: #193722;
     }
 
-    #p-argumentos-footer{
+    #p-argumentos-footer-lift{
         font-size: 19px;
         margin: 0px 0px 20px 0px;
         text-align: center;
     }
 
-    #imagem-argumentos-footer{
+    #imagem-argumentos-footer-lift{
         display: none;
         height: 100%;
         width: 40%;
