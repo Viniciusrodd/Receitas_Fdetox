@@ -12,6 +12,15 @@
     --cor09: #410039;
 }
 
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;    
+}
+
 
 .treino{
     display: flex;
@@ -30,7 +39,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 0px 40px 0px;
+    padding: 40px 0px 0px 0px;
     width: 100%;
     background-color: black;
 }
@@ -80,11 +89,17 @@
 
 #container-image-treino{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.641);
+
+    & img{
+        height: 30vh;
+        width: 15vw;    
+    }
 }
 
 .h1-image-treino{
@@ -206,14 +221,77 @@
 }
 
 
+/*SECTION 4*/
+
+
+#section-treino-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    width: 100%;
+    background-image: url(/imagens/treino/mulher-treino-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#div-4-color{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.641);
+}
+
+.div-4-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px 40px 0px;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.641);
+}
+
+#h1-section-4{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;    
+    height: 80%;
+    width: 70%;
+    list-style: none;
+}
+
+li{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    margin-top: 25px;
+}
+
+
 /*SECTION GARANTIA*/
 
 
 #section-treino-garantia{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    padding: 40px 0px 120px 0px;
     width: 100%;
     background-color: black;
 

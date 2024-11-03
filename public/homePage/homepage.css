@@ -349,6 +349,9 @@ section.sessao-imagens{
 
 
 /*SESSÃO PRODUTOS ABAIXO*/
+
+
+
 .sessao-prodAbaixo{
     display: flex;
     justify-content: center;
@@ -371,6 +374,7 @@ section.sessao-imagens{
 #img-seta{
     height: 50px;
 }
+
 
 /*SESSÃO APRESENTAÇÃO PRODUTOS*/
 
@@ -638,17 +642,16 @@ ul{
     border-radius: 100px;    
 }
 
+/*PARTIALS*/
+
 #carregaLift-Partial{
-    padding: 1px 0px 1px 0px;
     width: 100%;
 }
 
 #carregaSecando-Partial{
-    padding: 1px 0px 1px 0px;
     width: 100%;
 }
 
 #carregaTreino-Partial{
-    padding: 1px 0px 1px 0px;
     width: 100%;
 }

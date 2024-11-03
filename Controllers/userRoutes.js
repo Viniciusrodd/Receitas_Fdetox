@@ -4,9 +4,14 @@ const express = require('express');
 const router = express.Router();
 
 
-
+//HOMEPAGE ROUTE
 router.get('/homepage', (req, res) =>{
     res.render('homepage')
+})
+
+//PARTIALS CUSTOMIZATION
+router.get('/partial/treino', (req, res) =>{
+    res.render('partials/treino')
 })
 
 
