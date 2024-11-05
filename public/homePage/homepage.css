@@ -376,7 +376,7 @@ div#conteudo-container-1-home{
 }
 
 
-/*SESSÃO APRESENTAÇÃO PRODUTOS*/
+/*SESSÃO APRESENTAÇÃO PRODUTOS 4*/
 
 
 #product-presentation-home{
@@ -426,7 +426,7 @@ div#conteudo-container-1-home{
     border-radius: 0px 20px 20px 0px;
 }
 
-#ul-home{
+.ul-home{
     width: 90%;
     padding: 0%;
     margin-bottom: 0px;
@@ -435,11 +435,15 @@ div#conteudo-container-1-home{
 
 #h1-desc-lift-home{
     font-family: "Fira Sans Condensed", sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     margin-top: 0px;
     margin-bottom: 3px;
-    color: var(--cor05);
+    color: #09af00;
+
+    & #mark-lift{
+        background-color: #09af00;
+    }
 }
 
 .li-lift-home{
@@ -516,6 +520,10 @@ div#conteudo-container-1-home{
     font-size: 40px;
     text-align: center;
     margin: 0px;
+
+    .mark-secando{
+        background-color: var(--cor05);
+    }
 }
 
 #h2-secandoCasa-home{
@@ -533,7 +541,9 @@ div#conteudo-container-1-home{
     transform: translateX(100%);        
 }
 
-/*PRODUTO DIGITAL*/
+
+/*TREINO*/
+
 
 #container-treino-product-home{
     display: flex;
@@ -561,11 +571,39 @@ div#conteudo-container-1-home{
 
 #desc-treino-home{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 50%;
     background-color: var(--cor01);            
+}
+
+#h1-desc-treino-home{
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: var(--cor05);
+
+    & #mark-treino{
+        background-color: var(--cor09);
+    }
+}
+ 
+.ul-treino-home{
+    width: 90%;
+    padding: 0%;
+    margin-bottom: 0px;
+    list-style: none;
+}
+
+.li-treino-home{
+    margin-bottom: 12px;
+    font-size: 21px;
+    text-align: center;
+    color: black;
 }
 
 .transformed-treino-home{
@@ -581,22 +619,24 @@ div#conteudo-container-1-home{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--cor10);
+    background-color: var(--cor07);
     padding: 60px 0px 60px 0px;
     width: 100%;
 }
 
 .h1-arg-5-home{
     color: var(--cor01);
-    font-size: 45px;
+    font-size: 50px;
     margin-bottom: 3px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
 }
 
 .p-arg-5-home{
     font-size: 30px;
     text-align: center;
     font-weight: bold;
+    color: var(--cor01);
 }
 
 #container-cards-arg5-home{
@@ -615,8 +655,8 @@ div#conteudo-container-1-home{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
-    width: 20vw;
+    height: 70vh;
+    width: 22vw;
     padding: 5px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.13);
@@ -641,6 +681,34 @@ div#conteudo-container-1-home{
     background-size: auto;
     background-position: center;
     border-radius: 100px;    
+}
+
+.h1-cards-arg-2-home{
+    font-size: 35px;
+    text-align: center;
+    margin: 25px 0px 5px 0px;
+}
+
+.p-cards-arg-2-home{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.button-arg5-home{
+    height: 70px;
+    width: 250px;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: var(--cor11);
+    transition: transform 0.3s ease;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.button-arg5-home:hover{
+    transform: scale(1.05);
 }
 
 /*PARTIALS*/

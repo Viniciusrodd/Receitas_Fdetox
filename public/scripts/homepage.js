@@ -1,6 +1,6 @@
 
 
-//FUNÇÕES DE AÇÕES HEADER
+//FUNÇÕES DE AÇÕES DE CLICK
 let iniciarBtt = document.getElementById('btt-conteudo-1-home');
 
 function scrollButton(btt, content){
@@ -16,6 +16,10 @@ function scrollButton(btt, content){
 let sectionMission = document.getElementsByClassName('section-mission-home');
 scrollButton(iniciarBtt, sectionMission[0]);
 
+
+let productsSession = document.getElementById('sessao-prodAbaixo-home');
+let buttonProductsView = document.getElementById('products-btt-view');
+scrollButton(buttonProductsView, productsSession)
 
 
 
