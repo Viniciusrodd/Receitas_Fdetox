@@ -113,7 +113,7 @@ body, html {
 /*INDICAÇÃO*/
 
 
-#section-indicacao-container{
+#section-indicacao-container-treino{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -123,7 +123,7 @@ body, html {
     background-color: black;
 }
 
-#indicacao-container{
+#indicacao-container-treino{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -138,7 +138,7 @@ body, html {
     background-attachment: fixed;
 }
 
-#indicacao-container-color{
+#indicacao-container-color-treino{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -238,7 +238,7 @@ body, html {
     background-attachment: fixed;
 }
 
-#div-4-color{
+#div-4-color-treino{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -248,7 +248,7 @@ body, html {
     background-color: rgba(0, 0, 0, 0.641);
 }
 
-.div-4-container{
+.div-4-container-treino{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -258,28 +258,28 @@ body, html {
     background-color: rgba(0, 0, 0, 0.641);
 }
 
-#h1-section-4{
+#h1-section-4-treino{
     font-size: 40px;
     color: white;
     margin-bottom: 5px;
     text-align: center;
 }
 
-ul{
+#ul-treino{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;    
-    height: 80%;
+    padding: 10px 0px 10px 0px;
     width: 70%;
     list-style: none;
 }
 
-li{
+#li-treino{
     font-size: 30px;
     color: white;
     text-decoration: none;
-    margin-top: 25px;
+    margin-top: 5px;
 }
 
 
