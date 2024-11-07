@@ -45,8 +45,11 @@ body, html {
     width: 100%;
 
 
+/*HEADER*/
+
+
 #imagem-header-container-home{
-    background-image: url(../imagens/mulher-correndo-3.jpg);
+    background-image: url(../imagens/mulher-correndo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,12 +58,8 @@ body, html {
 div#imagem-header-home{
     height: 120vh;
     width: 100%;
-    background-color: #1d49546f;
+    background-color: #1d495431;
 }
-
-
-/*HEADER*/
-
 
 #header-home{
     display: flex;
@@ -69,6 +68,14 @@ div#imagem-header-home{
     flex-direction: row;
     width: 100%;
     height: 20vh;
+}
+
+h1#titulo-home{
+    color: var(--cor01);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 57px;
+    margin: 0;
+    text-decoration: overline;
 }
 
 #titles-header-1-home{
@@ -104,16 +111,7 @@ div#imagem-header-home{
     transition: 0.5s ease, transform 0.5s ease;
 }
 
-h1#titulo-home{
-    color: var(--cor01);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-size: 57px;
-    margin: 0;
-    text-decoration: overline;
-}
-
-
-/*CONTEÚDO 1*/
+/*CONTEÚDO 1 HEADER*/
 
 
 div#conteudo-container-1-home{
@@ -171,7 +169,7 @@ div#conteudo-container-1-home{
 }
 
 
-/*CONTEÚDO 2*/
+/*CONTEÚDO 2 HEADER*/
 
 
 #conteudo-container-2-home{
@@ -205,49 +203,7 @@ div#conteudo-container-1-home{
 }
 
 
-/*SECTION PRODUTOS*/
-
-
-.sessao-imagens-home{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    height: 25vh;
-    width: 100%;
-    background-color: var(--cor01);
-}
-
-#img-1-home{
-    height: 80%;
-    width: 17%;
-    background-image: url(../imagens/fita-metrica.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#img-2-home{
-    height: 80%;
-    width: 17%;
-    background-image: url(../imagens/cesta.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#img-3-home{
-    height: 80%;
-    width: 17%;
-    background-image: url(../imagens/secando.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-
-
-/*SECTION OUR MISSION*/
+/*SESSÃO MISSÃO 1*/
 
 
 .section-mission-home{
@@ -295,7 +251,7 @@ div#conteudo-container-1-home{
 }
 
 .h1-mission-home{
-    font-size: 35px;
+    font-size: 45px;
     color: white;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -304,7 +260,7 @@ div#conteudo-container-1-home{
 }
 
 .p-mission-home{
-    font-size: 27px;
+    font-size: 30px;
     color: white;
     font-weight: bold;
     text-align: center;
@@ -335,7 +291,6 @@ div#conteudo-container-1-home{
     padding: 30px;
     border-radius: 20px;
     background-color: rgba(0, 53, 88, 0.369);
-    border: 3px solid var(--cor10);
 }
 
 .text-2-home{
@@ -348,8 +303,40 @@ div#conteudo-container-1-home{
 }
 
 
-/*SESSÃO PRODUTOS ABAIXO*/
+/*SESSÃO MISSÃO 2*/
 
+
+#section-mission-home-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
+    width: 100%;
+    background-color: var(--cor07);
+}
+
+#h1-mission-2{
+    font-size: 50px;
+    margin-bottom: 5px;
+    letter-spacing: 3px;
+}
+
+.mark-mission-2{
+    color: var(--cor07);
+    background-color: var(--cor11);
+}
+
+#p-mission-2{
+    font-size: 40px;
+    color: var(--cor01);
+    font-weight: bold;
+    text-align: center;
+    width: 90%;
+}
+
+
+/*SESSÃO PRODUTOS ABAIXO*/
 
 
 .sessao-prodAbaixo-home{
@@ -357,13 +344,13 @@ div#conteudo-container-1-home{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px 0px 20px 0px;
+    padding: 40px 0px 40px 0px;
     width: 100%;
     background-color: var(--cor01);
 }
 
 .p-prodAbaixo-home{
-    font-size: 35px;
+    font-size: 40px;
     color: white;
     font-weight: bold;
     text-align: center;
@@ -669,6 +656,9 @@ div#conteudo-container-1-home{
 }
 
 .imagem-cards-arg-2-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 150px;
     width: 150px;
     background-color: var(--cor11);
@@ -676,11 +666,10 @@ div#conteudo-container-1-home{
 }
 
 .img-cards-arg-2-home{
-    height: 100%;
-    width: 100%;    
+    height: 80%;
+    width: 80%;
     background-size: auto;
     background-position: center;
-    border-radius: 100px;    
 }
 
 .h1-cards-arg-2-home{
