@@ -130,7 +130,7 @@ div#conteudo-container-1-home{
 
 .container-mission-home{
     flex-direction: column;
-    height: 90vh;
+    height: 110vh;
     margin: 5vh 0px 5vh 0px;
 }
 
@@ -155,15 +155,82 @@ div#conteudo-container-1-home{
 }    
 
 .mission-video-home{
+    height: 75vh;
     width: 90%;
     border-radius: 0px 0px 20px 20px;
 }
 
-/**/
-
 .mission-text-2-home{
     width: 80%;
 }
+
+
+/*SESSÃO MISSÃO 2*/
+
+
+#p-mission-2{
+    font-size: 30px;
+    width: 100%;
+}
+
+
+/*SESSÃO PRODUTOS ABAIXO*/
+
+
+
+.p-prodAbaixo-home{
+    font-size: 40px;
+}
+
+
+/*SESSÃO APRESENTAÇÃO PRODUTOS 4*/
+
+
+#product-presentation-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 250vh;
+    width: 100%;
+    background-color: var(--cor01);
+    border-top: 2px solid black;
+}
+
+#container-lift-home{
+    height: 75vh;
+    border: 2px solid black;
+}
+
+#img-lift-home{
+    display: none;
+}
+
+#desc-lift-home{
+    width: 100%;
+    background-color: var(--cor04);
+}
+
+.ul-home{
+    width: 100%;
+    padding: 0px;
+}
+
+.li-lift-home{
+    font-size: 25px;
+}
+
+.button-products-home{
+    transition: none;
+}
+.button-products-home:hover{
+    transform: none;
+}
+
+.transformed-lift-home{
+    transform: none;        
+}
+
 
 
 
