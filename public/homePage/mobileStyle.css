@@ -191,7 +191,7 @@ div#conteudo-container-1-home{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 250vh;
+    height: 320vh;
     width: 100%;
     background-color: var(--cor01);
     border-top: 2px solid black;
@@ -232,6 +232,53 @@ div#conteudo-container-1-home{
 }
 
 
+/*SECANDO*/
+
+
+#container-secandoCasa-home{
+    height: 95vh;
+    border: 2px solid black;
+}
+
+#img-secandoCasa-home{
+    display: none;
+}
+
+#desc-secandoCasa-home{
+    width: 100%;
+    background-color: var(--cor01);
+}
+
+.container-desc-home{
+    width: 90%;
+}
+
+.transformed-secandoCasa-home{
+    transform: none;        
+}
+
+
+/*TREINO*/
+
+
+#container-treino-product-home{
+    height: 95vh;
+    background-color: var(--cor01);
+    border: 2px solid black;
+}
+
+#img-treino-home{
+    display: none;
+}
+
+#desc-treino-home{
+    width: 100%;
+    background-color: var(--cor01);            
+}
+
+.transformed-treino-home{
+    transform: none;
+}
 
 
 }
