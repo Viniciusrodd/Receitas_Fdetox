@@ -25,12 +25,12 @@
 
 
 #imagem-header-container-home{
-    background-image: url(../imagens/mulher-correndo.jpg);
+    background-image: url(../imagens/mulher-correndo-3.jpg);
 }
 
 div#imagem-header-home{
     height: 140vh;
-    background-color: #00000065;
+    background-color: #0000007c;
 }
 
 #header-home{
@@ -81,7 +81,7 @@ div#conteudo-container-1-home{
 #btt-conteudo-1-home{
     margin-right: 0px;
     font-size: 25px;
-    cursor: none;
+    cursor: pointer;
     transition: none;
 }
 #btt-conteudo-1-home:hover{
@@ -278,6 +278,36 @@ div#conteudo-container-1-home{
 
 .transformed-treino-home{
     transform: none;
+}
+
+
+/*SESSÃO ARGUMENTOS 5*/
+
+
+.h1-arg-5-home{
+    text-align: center;
+}
+
+.p-arg-5-home{
+    font-size: 30px;
+    text-align: center;
+    margin: 70px 0px 0px 0px;
+}
+
+#container-cards-arg5-home{
+    flex-direction: column;
+}
+
+.cards-arg-5-home{
+    width: 90vw;
+    margin-top: 40px;
+}
+.cards-arg-5-home:hover{
+    transform: none;
+}
+
+.p-cards-arg-2-home{
+    font-size: 25px;
 }
 
 
