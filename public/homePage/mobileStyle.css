@@ -25,12 +25,12 @@
 
 
 #imagem-header-container-home{
-    background-image: url(../imagens/mulher-correndo-3.jpg);
+    background-image: url(../imagens/mulher-correndo.jpg);
 }
 
 div#imagem-header-home{
-    height: 120vh;
-    background-color: #1d495465;
+    height: 140vh;
+    background-color: #00000065;
 }
 
 #header-home{
@@ -75,6 +75,7 @@ div#conteudo-container-1-home{
     align-items: center;
     height: 12vh;
     width: 100%;
+    margin: 5vh 0px 5vh 0px;
 }
 
 #btt-conteudo-1-home{
@@ -112,12 +113,58 @@ div#conteudo-container-1-home{
     font-size: 32px;
     color: var(--cor01);
     margin: 0px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     transition: none;
 }
 .p-conteudo-2-home:hover{
     transform: none;
 }
+
+
+/*SESSÃO MISSÃO 1*/
+
+
+.section-mission-home{
+    justify-content: space-around;
+    padding: 10vh 0px 10vh 0px;
+}
+
+.container-mission-home{
+    flex-direction: column;
+    height: 90vh;
+    margin: 5vh 0px 5vh 0px;
+}
+
+.mission-text-home{
+    width: 90%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.text-home{
+    justify-content: space-around;
+    height: 100%;
+    width: 90%;
+}
+
+.h1-mission-home{
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.p-mission-home{
+    font-size: 25px;
+}    
+
+.mission-video-home{
+    width: 90%;
+    border-radius: 0px 0px 20px 20px;
+}
+
+/**/
+
+.mission-text-2-home{
+    width: 80%;
+}
+
 
 
 }
