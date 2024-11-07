@@ -78,24 +78,6 @@ h1#titulo-home{
     text-decoration: overline;
 }
 
-#titles-header-1-home{
-    display: flex;
-    flex-direction: row;
-    height: 100px;
-    width: 400px;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#titles-header-2-home{
-    display: flex;
-    flex-direction: row;
-    height: 100px;
-    width: 400px; 
-    justify-content: space-around;
-    align-items: center;
-}
-
 .h1-titles-header-home{
     font-size: 21px;
     margin: 0;
@@ -405,7 +387,7 @@ div#conteudo-container-1-home{
 #desc-lift-home{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
     width: 50%;
@@ -414,9 +396,13 @@ div#conteudo-container-1-home{
 }
 
 .ul-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
     width: 90%;
-    padding: 0%;
-    margin-bottom: 0px;
+    margin: 0px;
     list-style: none;
 }
 
@@ -424,8 +410,7 @@ div#conteudo-container-1-home{
     font-family: "Fira Sans Condensed", sans-serif;
     font-size: 30px;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 3px;
+    margin: 0px 0px 40px 0px;
     color: #09af00;
 
     & #mark-lift{
@@ -434,17 +419,17 @@ div#conteudo-container-1-home{
 }
 
 .li-lift-home{
-    margin: 8px;
-    font-size: 25px;
+    margin-bottom: 5px;
+    font-size: 28px;
     text-align: center;
-    text-decoration: underline;
     color: black;
+    font-weight: bold;
 }
 
 .button-products-home{
     height: 45px;
     width: 120px;
-    margin-top: 8px;
+    margin-top: 0px;
     border: none;
     font-size: 16px;
     color: white;
@@ -462,7 +447,9 @@ div#conteudo-container-1-home{
     transform: translateX(-100%);        
 }
 
+
 /*SECANDO*/
+
 
 #container-secandoCasa-home{
     display: flex;
@@ -490,7 +477,7 @@ div#conteudo-container-1-home{
 
 #desc-secandoCasa-home{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     height: 100%;
@@ -506,7 +493,7 @@ div#conteudo-container-1-home{
     color: var(--cor05);
     font-size: 40px;
     text-align: center;
-    margin: 0px;
+    margin: 0px 0px 20px 0px;
 
     .mark-secando{
         background-color: var(--cor05);
@@ -514,14 +501,15 @@ div#conteudo-container-1-home{
 }
 
 #h2-secandoCasa-home{
-    font-size: 28px;
+    font-size: 32px;
     text-align: center;
+    margin: 0px 0px 20px 0px;
 }
 
 #p-secandoCasa-home{
-    font-size: 20px;
+    font-size: 23px;
     text-align: center;
-    margin-bottom: 8px;
+    margin: 0px 0px 20px 0px;
 }
 
 .transformed-secandoCasa-home{
@@ -559,7 +547,7 @@ div#conteudo-container-1-home{
 #desc-treino-home{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
     width: 50%;
@@ -570,8 +558,7 @@ div#conteudo-container-1-home{
     font-family: "Fira Sans Condensed", sans-serif;
     font-size: 35px;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0px;
     color: var(--cor05);
 
     & #mark-treino{
@@ -582,13 +569,14 @@ div#conteudo-container-1-home{
 .ul-treino-home{
     width: 90%;
     padding: 0%;
-    margin-bottom: 0px;
+    margin: 0px;
     list-style: none;
 }
 
 .li-treino-home{
     margin-bottom: 12px;
     font-size: 21px;
+    font-weight: bold;
     text-align: center;
     color: black;
 }

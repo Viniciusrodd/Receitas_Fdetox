@@ -16,87 +16,109 @@
 
 @media screen and (max-width: 767px){
 
-
-/*COMEÇO DA PÁGINA*/
-
-    div#imagem-header-home{
-        height: 140vh;
-    }
-
+.container-pai-home{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 
 /*HEADER*/
 
 
-    #header-home{
-        padding-top: 15px;
-        justify-content: center;
-        height: 19vh;
-    }
+#imagem-header-container-home{
+    background-image: url(../imagens/mulher-correndo-3.jpg);
+}
 
-    #titles-header-1-home{
-        display: none;
-    }
-    
-    #titles-header-2-home{
-        display: none;
-    }
+div#imagem-header-home{
+    height: 120vh;
+    background-color: #1d495465;
+}
 
+#header-home{
+    height: 20vh;
+}
 
-/*CONTEÚDO 1*/
-
-
-    div#conteudo-container-1-home{
-        justify-content: center;
-        margin: 0px;
-        height: 30vh;
-    }
-    
-    .conteudo-1-home{
-        width: 90vw;
-        margin: 0px;
-    }
-    
-    .h1-conteudos-home{
-        font-size: 40px;
-    }
-    .h1-conteudos-home:hover{
-        transform: none;
-    }
-    
-    div#container-button-1-home{
-        justify-content: center;
-        margin: 20px 0px 40px 0px;
-    }
-    
-    #btt-conteudo-1-home{
-        margin: 0px;
-    }
-    #btt-conteudo-1-home:hover{
-        transform: none;
-    }
+h1#titulo-home{
+    font-size: 55px;
+}
 
 
-/*CONTEÚDO 2*/
+/*CONTEÚDO 1 HEADER*/
 
 
-    div#conteudo-container-2-home{
-        justify-content: center;
-        height: 50vh;
-        margin-top: 0px;
-    }
+div#conteudo-container-1-home{
+    margin-top: 0px;
+    height: 25vh;
+}
 
-    .conteudo-2-home{
-        width: 90vw;
-        margin-right: 0px;
-    }
+.conteudo-1-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+    margin-right: 0px; 
+}
 
-    .p-conteudo-2-home{
-        font-size: 29px;
-        margin: 0px;
-    }
-    .p-conteudo-2-home:hover{
-        transform: none;
-    }
+.h1-conteudos-home{
+    text-align: center;
+    font-size: 40px;
+    margin: 0px;
+    transition: none;
+}
+.h1-conteudos-home:hover{
+    transform: none;
+}
+
+#container-button-1-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    width: 100%;
+}
+
+#btt-conteudo-1-home{
+    margin-right: 0px;
+    font-size: 25px;
+    cursor: none;
+    transition: none;
+}
+#btt-conteudo-1-home:hover{
+    transform: none;
+}
 
 
+/*CONTEÚDO 2 HEADER*/
+
+
+#conteudo-container-2-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.conteudo-2-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.p-conteudo-2-home{
+    font-size: 32px;
+    color: var(--cor01);
+    margin: 0px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: none;
+}
+.p-conteudo-2-home:hover{
+    transform: none;
+}
+
+
+}
 }
