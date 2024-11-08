@@ -206,7 +206,7 @@ body, html {
 #treino-button{
     height: 70px;
     width: 20%;
-    margin-top: 5%;
+    margin: 5% 0px 5% 0px;
     border: none;
     border-radius: 50px;
     background-color: var(--cor05);

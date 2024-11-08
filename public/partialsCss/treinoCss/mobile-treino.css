@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+:root{
+    --cor01: #FBF3EB;
+    --cor02: #172313;
+    --cor03: #7aa789;
+    --cor04: #d3efdc;
+    --cor05: rgb(255, 94, 94);
+    --cor06: #287FB6;
+    --cor07: #003452;
+    --cor08: #ea5f5f;
+    --cor09: #410039;
+    --cor10: #2D728F;
+    --cor11: #EFF053;
+}
+
+@media screen and (max-width: 767px){
+    
+#container-treino{
+
+
+#section-container-treino{
+
+    & img{
+        height: 30vh;
+        width: 30vw;    
+    }
+}
+
+/*IMAGE TREINO*/
+
+
+#image-treino{
+    height: 100vh;
+}
+
+#container-image-treino{
+
+    & img{
+        height: 30vh;
+        width: 30vw;    
+    }
+}
+
+.h1-image-treino{
+    font-size: 60px;
+}
+
+
+/*INDICAÇÃO*/
+
+
+#indicacao-container-treino{
+    width: 90%;
+}
+
+.cards-treino{
+    flex-direction: column;
+    width: 80%;
+    transition: none;
+}
+.cards-treino:hover{
+    transform: none;
+}
+
+.img-cards-treino-container{
+    height: 50vh;
+    width: 100%;
+
+    & .img-cards-treino{
+        border-radius: 20px 20px 0px 0px;
+    }
+}
+
+.arguments-cards-treino{
+    height: 40vh;
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.h3-treino-cards{
+    font-size: 35px;
+}
+
+.p-cards-treino{
+    font-size: 22px;
+}
+
+#treino-button{
+    width: 80%;
+    transition: none;
+    margin: 50px 0px 50px 0px;
+}
+#treino-button:hover{
+    transform: none;
+}
+
+
+/*SECTION 4*/
+
+
+#section-treino-4{
+    height: 130vh;
+}
+
+.div-4-container-treino{
+    width: 100%;
+}
+
+#ul-treino{
+    width: 90%;
+}
+
+
+/*SECTION GARANTIA*/
+
+
+#section-treino-garantia{
+    padding: 100px 0px 120px 0px;
+    width: 100%;
+    background-color: black;
+
+    & .img-treino-garantia{
+        height: 30vh;
+        width: 55vw;
+    }
+}
+ 
+
+
+}
+}
