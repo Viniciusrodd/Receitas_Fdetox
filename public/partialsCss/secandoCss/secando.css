@@ -11,6 +11,7 @@
     --cor07: #003452;
     --cor08: #ea5f5f;
     --cor09: #410039;
+    --cor12: #f19cc9;
 }
 
 *{
@@ -103,7 +104,7 @@ div.cards-secando:hover{
 div.imagem-cards-secando{
     height: 120px;
     width: 120px;
-    background-color: red;
+    background-color: var(--cor12);
     border-radius: 100px; 
 }
 
@@ -345,6 +346,13 @@ section#container-arg-3-secando{
     background-color: rgba(255, 255, 255, 0.161);
 }
 
+.img-arg-5-secando{
+    height: 100%;
+    width: 100%;
+    background-size: auto;
+    background-position: center;
+}
+
 /*ARGUMENTOS 5*/
 
 
@@ -377,7 +385,7 @@ section#container-arg-5-secando{
     width: 20%;
 }
 
-.img-arg-5-secando{
+.img-garantia-secando{
     height: 100%;
     width: 100%;
     background-size: auto;

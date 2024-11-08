@@ -125,9 +125,51 @@ section#container-arg-3-secando{
 }
 .video-secando{
     transition: none;
-
 }
 
+
+/*ARGUMENTOS 4*/
+
+
+.container-arg-cards-4-secando{
+    flex-direction: column;
+    width: 90%;
+}
+
+.cards-arg-4-secando{
+    height: 80vh;
+    width: 80%;
+    transition: none;
+}
+.cards-arg-4-secando:hover{
+    transform: none;
+}
+
+
+/*ARGUMENTOS 5*/
+
+
+.h1-container-arg-5-secando{
+    font-size: 35px;
+}
+
+#container-img-arg-5-secando{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+.img-garantia-secando{
+    height: 50%;
+    width: 50%;
+}
+
+
+#container2-img-arg-5-secando{
+    width: 80%;  
+}
 
 
 }
