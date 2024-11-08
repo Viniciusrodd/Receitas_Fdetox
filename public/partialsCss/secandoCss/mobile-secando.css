@@ -64,102 +64,68 @@ p.p-cards-secando{
 
 /*ARGUMENTOS 2*/
 
-
-#container-arg-2-secando{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    padding: 80px 0px 80px 0px;
-    background-color: var(--cor01);
-}
-
-#div-container-arg-2-secando{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px 0px 10px 0px;
-    width: 95%;
-    background-color: #410039;
-    border-radius: 20px 20px 0px 0px;
-}
-
 .h1-container-arg-secando{
-    font-size: 40px;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 70px;
 }
 
 .p-container-arg-secando{
-    width: 90%;
-    text-align: center;
     font-size: 25px;
-    color: white;
-    margin-bottom: 0px;
     text-shadow: none;
+    margin-top: 0px;
 }
     
 .container-arg-cards-2-secando{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 95%;
-    padding: 20px 0px 20px 0px;
-    background-color: var(--cor09);
-    border-radius: 0px 0px 20px 20px;
 }
 
 .cards-arg-2-secando{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     height: 60vh;
     width: 80%;
-    padding: 0px 10px 10px 10px;
-    border-radius: 20px;
-    margin: 30px;
-    background-color: rgba(255, 255, 255, 0.13);
-    transition: transform 0.3s ease;
-    cursor: pointer;
+    transition: none;
 }
 .cards-arg-2-secando:hover{
-    transform: scale(1.05);
-    background-color: rgba(255, 255, 255, 0.161);
+    transform: none;
 }
 
 div.imagem-cards-arg-2-secando{
     height: 120px;
     width: 120px;
-    background-color: red;
-    border-radius: 100px;         
 }
 
-.img-cards-arg-2-secando{
+
+/*ARGUMENTOS 3*/
+
+
+section#container-arg-3-secando{
+    height: 270vh;
+}
+
+#div-container-arg-3-secando{
+    justify-content: flex-start;
     height: 100%;
-    width: 100%;    
-    background-size: auto;
-    background-position: center;
-    border-radius: 100px;    
 }
 
-.h1-cards-arg-2-secando{
-    font-size: 30px;
-    text-align: center;
-    margin: 15px 0px 2px 0px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.container-depoimentos-secando{
+    flex-direction: column;
+    height: 140vh;
+    margin: 50px 0px 30px 0px;
 }
 
-.p-cards-arg-2-secando{
-    font-size: 20px;
-    text-align: center;
-    color: white;
-    margin: 10px 0px 0px 0px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.cards-depoimentos-secando{
+    height: 35vh;
+    width: 80%;
+    transition: none;
+}
+.cards-depoimentos-secando:hover{
+    transform: none;
+}
+
+.video-secando{
+    transition: none;
+}
+.video-secando{
+    transition: none;
+
 }
 
 
