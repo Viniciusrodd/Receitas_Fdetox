@@ -17,6 +17,11 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;    
+}
+
 #container-secando mark{
     background-color: #f19cc9;
 }
@@ -83,7 +88,7 @@ div.cards-secando{
     align-items: center;
     height: 100%;
     width: 20vw;
-    padding: 0px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.13);
     transition: transform 0.3s ease;

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+:root{
+    --cor01: #FBF3EB;
+    --cor02: #172313;
+    --cor03: #7aa789;
+    --cor04: #d3efdc;
+    --cor05: #ff5e5e;
+    --cor06: #287FB6;
+    --cor07: #003452;
+    --cor08: #ea5f5f;
+    --cor09: #410039;
+}
+
+@media screen and (max-width: 767px){
+
+
+.container-secando{
+
+/*SESSÃO 1*/
+
+
+section#container-arg-1-secando{
+    height: 230vh;
+    width: 100%;
+}
+
+div#div-container-arg-1-secando{
+    height: 100%;
+}
+
+h2#h2-arg-1-secando{
+    font-size: 45px;
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+}
+
+h1#h1-arg-1-secando{
+    font-size: 30px;
+    margin: 0px;
+    text-align: center;
+}
+
+div#container-arg-cards-1-secando{
+    justify-content: center;
+    flex-direction: column;
+    height: 180vh;
+}
+
+div.cards-secando{
+    height: 60%;
+    width: 90%;
+    transition: none;
+    margin-bottom: 30px;
+}
+div.cards-secando:hover{
+    transform: none;
+}
+
+p.p-cards-secando{
+    font-size: 25px;
+}
+
+
+
+
+
+}
+
+
+
+}
