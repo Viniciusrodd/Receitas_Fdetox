@@ -10,8 +10,8 @@ router.get('/homepage', (req, res) =>{
 })
 
 //PARTIALS CUSTOMIZATION
-router.get('/partial/treino', (req, res) =>{
-    res.render('partials/treino')
+router.get('/partial', (req, res) =>{
+    res.render('partials/liftDetox')
 })
 
 
