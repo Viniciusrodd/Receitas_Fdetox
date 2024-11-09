@@ -17,11 +17,29 @@ router.get('/partial', (req, res) =>{
 })
 
 
+// Endpoint para registrar cliques
+router.get("/painelAdm", (req, res) => {
+    res.render('painelAdm', {
+        clickCount: clickCount
+    })    
+});
 
-//PAINEL ROUTE
-router.get('/painelAdm', (req, res) =>{
-    res.render('painelAdm')
-})
+
+
+// Endpoint para registrar cliques
+router.post("/painelAdm/:data", (req, res) => {
+    let count = req.params.data
+    console.log(`Clique registrado! ${count}`);
+
+     // Atualiza o valor de clickCount
+     clickCount = parseInt(count);  // Converte para inteiro, se necessário
+
+     // Renderiza novamente a página com a nova contagem de cliques
+     res.render('painelAdm', { 
+        clickCount: clickCount 
+    });
+});
+
 
 
 //CARREGA LIFT

@@ -85,7 +85,7 @@ bttLift.addEventListener('click', async () =>{
 function carregarScriptInteracao() {
     const script = document.createElement('script');
     script.src = '../../scripts/liftDetox.js'; // Caminho do script específico para o partial
-    script.onload = () => console.log("Script de interação carregado.");
+    script.onload;
     document.body.appendChild(script);
 };
 
@@ -152,6 +152,13 @@ bttTreino.addEventListener('click', async () =>{
 
 var clickCount = 0
 bttLift.addEventListener('click', () =>{
+
     clickCount++
-    localStorage.setItem(`Click count: ${clickCount}`)
+    axios.post(`http://localhost:5500/painelAdm/${clickCount}`)
+        .then((response) =>{
+            console.log(`dados enviados`)
+        })
+        .catch((error) =>{
+            console.log(`Erro ao enviar dados de clickCount ${error}`)
+        })
 })
