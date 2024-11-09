@@ -219,11 +219,12 @@
         justify-content: space-around;
         flex-direction: column;
         height: 430vh;
+        padding: 0px;
     }
 
     div.cards-compras-lift{
         height: 105vh;
-        width: 70%;
+        width: 65%;
     }
     .cards-compras-lift:hover{
         transform: none

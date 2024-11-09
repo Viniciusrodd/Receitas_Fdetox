@@ -9,9 +9,18 @@ router.get('/homepage', (req, res) =>{
     res.render('homepage')
 })
 
+
+
 //PARTIALS CUSTOMIZATION
 router.get('/partial', (req, res) =>{
     res.render('partials/liftDetox')
+})
+
+
+
+//PAINEL ROUTE
+router.get('/painelAdm', (req, res) =>{
+    res.render('painelAdm')
 })
 
 

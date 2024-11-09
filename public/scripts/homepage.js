@@ -17,7 +17,7 @@ let sectionMission = document.getElementsByClassName('section-mission-home');
 scrollButton(iniciarBtt, sectionMission[0]);
 
 
-let productsSession = document.getElementById('sessao-prodAbaixo-home');
+let productsSession = document.getElementById('product-presentation-home');
 let buttonProductsView = document.getElementById('products-btt-view');
 scrollButton(buttonProductsView, productsSession)
 
