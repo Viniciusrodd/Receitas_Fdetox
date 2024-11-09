@@ -25,7 +25,8 @@
 
 
 #imagem-header-container-home{
-    background-image: url(../imagens/mulher-correndo-3.jpg);
+    background-image: url(../imagens/mulher-correndo.jpg);
+    background-position: left;
 }
 
 div#imagem-header-home{
@@ -176,7 +177,9 @@ div#conteudo-container-1-home{
 
 /*SESSÃO PRODUTOS ABAIXO*/
 
-
+.sessao-prodAbaixo-home{
+    display: none;
+}
 
 .p-prodAbaixo-home{
     font-size: 40px;
@@ -187,28 +190,27 @@ div#conteudo-container-1-home{
 
 
 #product-presentation-home{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     height: 320vh;
-    width: 100%;
-    background-color: var(--cor01);
-    border-top: 2px solid black;
 }
 
 #container-lift-home{
     height: 75vh;
-    border: 2px solid black;
+    border: none;
 }
 
 #img-lift-home{
     display: none;
 }
 
+#background-lift-home{
+    height: 100%;
+    width: 100%;
+    background-image: url(../imagens/lift/Lift-Caps.png);
+}
+
 #desc-lift-home{
     width: 100%;
-    background-color: var(--cor04);
+    background-color: #172313c0;
 }
 
 .ul-home{
@@ -217,7 +219,9 @@ div#conteudo-container-1-home{
 }
 
 .li-lift-home{
-    font-size: 25px;
+    font-size: 28px;
+    margin: 0px;
+    color: white;
 }
 
 .button-products-home{
@@ -237,16 +241,22 @@ div#conteudo-container-1-home{
 
 #container-secandoCasa-home{
     height: 95vh;
-    border: 2px solid black;
+    border: none;
 }
 
 #img-secandoCasa-home{
     display: none;
 }
 
+#background-secando-home{
+    height: 100%;
+    width: 100%;
+    background-image: url(../imagens/secando/secandoEmCasa.jpg);
+}
+
 #desc-secandoCasa-home{
     width: 100%;
-    background-color: var(--cor01);
+    background-color: rgba(0, 0, 0, 0.488);
 }
 
 .container-desc-home{
@@ -256,6 +266,17 @@ div#conteudo-container-1-home{
 .transformed-secandoCasa-home{
     transform: none;        
 }
+
+#h2-secandoCasa-home{
+    color: white;
+}
+
+#p-secandoCasa-home{
+    font-size: 23px;
+    color: white;
+    margin-bottom: 0px;
+}
+
 
 
 /*TREINO*/
@@ -271,9 +292,21 @@ div#conteudo-container-1-home{
     display: none;
 }
 
+#background-treino-home{
+    height: 100%;
+    width: 100%;
+    background-image: url(../imagens/mulher-treino.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 #desc-treino-home{
     width: 100%;
-    background-color: var(--cor01);            
+    background-color: rgba(0, 0, 0, 0.488);
+}
+
+.li-treino-home{
+    color: white;
 }
 
 .transformed-treino-home{

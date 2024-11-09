@@ -384,13 +384,18 @@ div#conteudo-container-1-home{
     border-radius: 20px 0px 0px 20px;
 }
 
+#background-lift-home{
+    height: 100%;
+    width: 50%;
+}
+
 #desc-lift-home{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 100%;
-    width: 50%;
+    width: 100%;
     background-color: var(--cor01);
     border-radius: 0px 20px 20px 0px;
 }
@@ -475,13 +480,18 @@ div#conteudo-container-1-home{
     cursor: pointer;
 }
 
+#background-secando-home{
+    height: 100%;
+    width: 50%;
+}
+
 #desc-secandoCasa-home{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     height: 100%;
-    width: 50%;
+    width: 100%;
     background-color: var(--cor01);
 }
 
@@ -544,13 +554,18 @@ div#conteudo-container-1-home{
     cursor: pointer;
 }
 
+#background-treino-home{
+    height: 100%;
+    width: 50%;
+}
+
 #desc-treino-home{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 100%;
-    width: 50%;
+    width: 100%;
     background-color: var(--cor01);            
 }
 
