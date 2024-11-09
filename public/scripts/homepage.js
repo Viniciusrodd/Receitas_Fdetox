@@ -145,3 +145,13 @@ bttTreino.addEventListener('click', async () =>{
         console.error("Erro de requisição:", error);
     }
 });
+
+
+
+//var bttLift = document.getElementById('button-lift-home');
+
+var clickCount = 0
+bttLift.addEventListener('click', () =>{
+    clickCount++
+    localStorage.setItem(`Click count: ${clickCount}`)
+})
