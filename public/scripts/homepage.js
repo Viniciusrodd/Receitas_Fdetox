@@ -19,7 +19,7 @@ scrollButton(iniciarBtt, sectionMission[0]);
 
 let productsSession = document.getElementById('product-presentation-home');
 let buttonProductsView = document.getElementById('products-btt-view');
-scrollButton(buttonProductsView, productsSession)
+scrollButton(buttonProductsView, productsSession);
 
 
 
@@ -88,9 +88,26 @@ bttLift.addEventListener('click', async () =>{
 //CARREGANDO SCRIPT ÚNICO DA PARTIAL LIFT:
 function carregarScriptInteracao() {
     const script = document.createElement('script');
-    script.src = '../../scripts/liftDetox.js'; // Caminho do script específico para o partial
+    script.src = '../../scripts/scriptPartials.js'; // Caminho do script específico para o partial
     script.onload;
     document.body.appendChild(script);
+
+
+    //FUNÇÕES DE VOLTAR AOS PRODUTOS
+    //Lift:
+    let bttLiftVoltar = document.getElementById('btt-lift-voltar');
+    let liftProductVoltar = document.getElementById('container-lift-home');
+    scrollButton(bttLiftVoltar, liftProductVoltar);
+
+    //Secando:
+    let bttSecandoVoltar = document.getElementById('btt-secando-voltar');
+    let secandoProductVoltar = document.getElementById('container-secandoCasa-home')
+    scrollButton(bttSecandoVoltar, secandoProductVoltar);
+
+    //Treino:
+    let bttTreinoVoltar = document.getElementById('btt-treino-voltar');
+    let treinoProductVoltar = document.getElementById('container-treino-product-home')
+    scrollButton(bttTreinoVoltar, treinoProductVoltar);
 };
 
 
@@ -117,6 +134,8 @@ bttSecando.addEventListener('click', async () =>{
                     behavior: "smooth"
                 });
             });    
+
+            carregarScriptInteracao();
         }else{
             console.error("Erro ao carregar o partial:", response.status);
         }
@@ -149,7 +168,9 @@ bttTreino.addEventListener('click', async () =>{
                 treinoContainer.scrollIntoView({
                     behavior: "smooth"
                 });
-            });        
+            });     
+            
+            carregarScriptInteracao();
         }else{
             console.error("Erro ao carregar o partial:", response.status);
         }

@@ -23,7 +23,7 @@ body, html {
     padding: 0;    
 }
 
-mark{
+#section-container-voltar mark{
     color: var(--cor07);
     background-color: var(--cor11);
     padding: 10px;
@@ -35,7 +35,7 @@ mark{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px 0px 60px 0px;
+    padding: 90px 0px 90px 0px;
     width: 100%;
     background-color: var(--cor07);
 
@@ -54,7 +54,7 @@ mark{
     flex-direction: row;
     height: 80vh;
     width: 90%;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .produtos-container{
