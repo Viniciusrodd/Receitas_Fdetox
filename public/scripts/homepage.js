@@ -60,11 +60,14 @@ var liftContainer = document.getElementById('carregaLift-Partial');
 
 bttLift.addEventListener('click', async () =>{
     try{
-        const response = await fetch('/carregaLift/liftDetox');
-        const response2 = await fetch('/')
-        if(response.ok){
-            const html = await response.text();
-            liftContainer.innerHTML = html;  
+        const response1 = await fetch('/carregaLift/liftDetox');
+        const response2 = await fetch('/carregaPartial/voltarProdutos');
+
+        if(response1.ok && response2.ok){
+            const html1 = await response1.text();
+            const html2 = await response2.text();
+
+            liftContainer.innerHTML = html1 + html2;  
             secandoContainer.innerHTML = '';
             treinoContainer.innerHTML = '';
         
@@ -98,10 +101,14 @@ var secandoContainer = document.getElementById('carregaSecando-Partial');
 
 bttSecando.addEventListener('click', async () =>{
     try{
-        const response = await fetch('/carregaSecando/secando');
-        if(response.ok){
-            const html = await response.text();
-            secandoContainer.innerHTML = html;
+        const response1 = await fetch('/carregaSecando/secando');
+        const response2 = await fetch('/carregaPartial/voltarProdutos');
+
+        if(response1.ok && response2.ok){
+            const html1 = await response1.text();
+            const html2 = await response2.text();
+
+            secandoContainer.innerHTML = html1 + html2;
             liftContainer.innerHTML = '';  
             treinoContainer.innerHTML = '';
         
@@ -127,10 +134,14 @@ var treinoContainer = document.getElementById('carregaTreino-Partial');
 
 bttTreino.addEventListener('click', async () =>{
     try{
-        const response = await fetch('/carregaTreino/treino');
-        if(response.ok){
-            const html = await response.text();
-            treinoContainer.innerHTML = html;
+        const response1 = await fetch('/carregaTreino/treino');
+        const response2 = await fetch('/carregaPartial/voltarProdutos');
+
+        if(response1.ok && response2.ok){
+            const html1 = await response1.text();
+            const html2 = await response2.text();
+
+            treinoContainer.innerHTML = html1 + html2;
             liftContainer.innerHTML = '';
             secandoContainer.innerHTML = ''  
         
