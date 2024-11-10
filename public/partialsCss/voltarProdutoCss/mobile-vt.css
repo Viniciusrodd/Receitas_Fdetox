@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+:root{
+    --cor01: #FBF3EB;
+    --cor02: #172313;
+    --cor03: #7aa789;
+    --cor04: #d3efdc;
+    --cor05: rgb(255, 94, 94);
+    --cor06: #287FB6;
+    --cor07: #003452;
+    --cor08: #ea5f5f;
+    --cor09: #410039;
+    --cor10: #2D728F;
+    --cor11: #EFF053;
+}
+
+@media screen and (max-width: 767px){
+
+
+#section-container-voltar{
+
+
+#h1-produtos-voltar{
+    font-size: 45px;    
+    text-decoration: none;
+}
+
+
+#container-produtos{
+    flex-direction: column;
+    height: 230vh;
+    width: 100%;
+}
+
+.produtos-container{
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+
+}
+}

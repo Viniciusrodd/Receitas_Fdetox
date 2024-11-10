@@ -40,6 +40,7 @@ router.post("/painelAdm/:data", (req, res) => {
 });
 
 
+
 //CARREGA VOLTARPRODUTOS    
 router.get('/carregaPartial/:partial', async (req, res) =>{
     const { partial } = req.params;
@@ -58,6 +59,7 @@ router.get('/carregaPartial/:partial', async (req, res) =>{
     }
 
 });
+
 
 
 //CARREGA LIFT
