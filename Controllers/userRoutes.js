@@ -10,10 +10,9 @@ router.get('/homepage', (req, res) =>{
 })
 
 
-
 //PARTIALS CUSTOMIZATION
 router.get('/partial', (req, res) =>{
-    res.render('partials/liftDetox')
+    res.render('./partials/voltarProdutos')
 })
 
 

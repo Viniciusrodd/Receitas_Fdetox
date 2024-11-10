@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+:root{
+    --cor01: #FBF3EB;
+    --cor02: #172313;
+    --cor03: #7aa789;
+    --cor04: #d3efdc;
+    --cor05: #ff5e5e;
+    --cor06: #287FB6;
+    --cor07: #003452;
+    --cor08: #ea5f5f;
+    --cor09: #410039;
+}
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;    
+}
