@@ -61,6 +61,7 @@ var liftContainer = document.getElementById('carregaLift-Partial');
 bttLift.addEventListener('click', async () =>{
     try{
         const response = await fetch('/carregaLift/liftDetox');
+        const response2 = await fetch('/')
         if(response.ok){
             const html = await response.text();
             liftContainer.innerHTML = html;  

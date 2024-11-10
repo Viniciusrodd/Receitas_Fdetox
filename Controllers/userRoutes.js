@@ -41,6 +41,8 @@ router.post("/painelAdm/:data", (req, res) => {
 
 
 
+
+
 //CARREGA LIFT
 router.get('/carregaLift/:partial', async (req, res) =>{
     const { partial } = req.params;

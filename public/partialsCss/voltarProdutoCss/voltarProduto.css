@@ -5,11 +5,13 @@
     --cor02: #172313;
     --cor03: #7aa789;
     --cor04: #d3efdc;
-    --cor05: #ff5e5e;
+    --cor05: rgb(255, 94, 94);
     --cor06: #287FB6;
     --cor07: #003452;
     --cor08: #ea5f5f;
     --cor09: #410039;
+    --cor10: #2D728F;
+    --cor11: #EFF053;
 }
 
 *{
@@ -19,4 +21,94 @@
 body, html {
     margin: 0;
     padding: 0;    
+}
+
+mark{
+    color: var(--cor07);
+    background-color: var(--cor11);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#section-container-voltar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0px 60px 0px;
+    width: 100%;
+    background-color: var(--cor07);
+
+#h1-produtos-voltar{
+    font-size: 50px;
+    text-align: center;
+    color: var(--cor11);
+    margin: 0px;
+    text-decoration: overline;
+}
+
+#container-produtos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 80vh;
+    width: 90%;
+    margin-top: 30px;
+}
+
+.produtos-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+    background-color: var(--cor10);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.produtos-container:hover{
+    transform: scale(1.02);
+}
+
+.img-produtos{
+    height: 55%;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 45%;
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+    background-color: rgba(0, 0, 0, 0.398);
+}
+
+.img-seta-home{
+    height: 20%;
+    width: 13%;
+}
+
+.button-produtos-voltar{
+    height: 70px;
+    padding: 0px 40px 0px 40px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: var(--cor11);
+    transition: transform 0.3s ease;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.button-produtos-voltar:hover{
+    transform: scale(1.05);
+}
+
 }
