@@ -110,7 +110,7 @@ body, html {
 }
 
 
-/*INDICAÇÃO*/
+/*SECTION TREINO 2*/
 
 
 #section-indicacao-container-treino{
@@ -120,7 +120,6 @@ body, html {
     align-items: center;
     padding: 40px 0px 40px 0px;
     width: 100%;
-    background-color: black;
 }
 
 #indicacao-container-treino{
@@ -131,11 +130,7 @@ body, html {
     width: 80%;
     border: 3px solid white;
     border-radius: 30px;
-    background-image: url(../../imagens/treino/equipamentos.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: black;    
 }
 
 #indicacao-container-color-treino{
@@ -259,7 +254,6 @@ a{
     align-items: center;
     padding: 40px 0px 40px 0px;
     width: 60%;
-    background-color: rgba(0, 0, 0, 0.641);
 }
 
 #h1-section-4-treino{

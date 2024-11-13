@@ -27,11 +27,25 @@
     }
 }
 
+.h1-treino{
+    font-size: 30px;
+}
+
+#section-container-treino{
+    width: 90%;
+
+}
+
+.p-container-treino{
+    font-size: 25px;
+}
+
+
 /*IMAGE TREINO*/
 
 
 #image-treino{
-    height: 100vh;
+    height: 80vh;
 }
 
 #container-image-treino{
@@ -47,11 +61,13 @@
 }
 
 
-/*INDICAÇÃO*/
+/*SECTION TREINO 2*/
 
 
 #indicacao-container-treino{
-    width: 90%;
+    width: 100%;
+    border-radius: 0px;
+    border: 0px;
 }
 
 .cards-treino{
@@ -64,7 +80,7 @@
 }
 
 .img-cards-treino-container{
-    height: 50vh;
+    height: 40vh;
     width: 100%;
 
     & .img-cards-treino{
@@ -73,7 +89,7 @@
 }
 
 .arguments-cards-treino{
-    height: 40vh;
+    height: 45vh;
     width: 100%;
     border-radius: 0px 0px 20px 20px;
 }
@@ -100,7 +116,7 @@
 
 
 #section-treino-4{
-    height: 130vh;
+    height: 100vh;
 }
 
 .div-4-container-treino{
@@ -108,7 +124,11 @@
 }
 
 #ul-treino{
-    width: 90%;
+    width: 80%;
+}
+
+#li-treino{
+    font-size: 25px;
 }
 
 
@@ -116,13 +136,13 @@
 
 
 #section-treino-garantia{
-    padding: 100px 0px 120px 0px;
+    padding: 40px 0px 40px 0px;
     width: 100%;
     background-color: black;
 
     & .img-treino-garantia{
-        height: 30vh;
-        width: 55vw;
+        height: 28vh;
+        width: 60vw;
     }
 }
  

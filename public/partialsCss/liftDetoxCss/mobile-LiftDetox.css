@@ -106,8 +106,14 @@
         border-radius: 40px 40px 0px 0px;
     }
 
+    #ul-lift{
+        align-items: center;
+        width: 100%;
+    }
+
     #li-lift{
         font-size: 25px;
+        margin: 5px 0px 5px 0px;
     }
 
     div#imagem-produto-lift{
@@ -201,12 +207,11 @@
     }
     */
     .video-iframe-compras-lift{
-        height: 220px;
-        width: 395px;
+        height: 207px;
+        width: 370px;
     }
     .video-iframe-compras-lift:hover{
-        height: 220px;
-        width: 395px;
+        transition: none;
     }
 
 
@@ -223,8 +228,8 @@
     }
 
     div.cards-compras-lift{
-        height: 105vh;
-        width: 65%;
+        height: 100vh;
+        width: 75%;
     }
     .cards-compras-lift:hover{
         transform: none

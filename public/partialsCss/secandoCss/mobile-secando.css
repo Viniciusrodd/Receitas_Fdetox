@@ -72,6 +72,7 @@ p.p-cards-secando{
     font-size: 25px;
     text-shadow: none;
     margin-top: 0px;
+    font-weight: bold;
 }
     
 .container-arg-cards-2-secando{
@@ -92,6 +93,10 @@ div.imagem-cards-arg-2-secando{
     width: 120px;
 }
 
+.p-cards-arg-2-secando{
+    font-weight: bold;
+}
+
 
 /*ARGUMENTOS 3*/
 
@@ -101,8 +106,8 @@ section#container-arg-3-secando{
 }
 
 #div-container-arg-3-secando{
-    justify-content: flex-start;
     height: 100%;
+    padding: 0px;
 }
 
 .container-depoimentos-secando{

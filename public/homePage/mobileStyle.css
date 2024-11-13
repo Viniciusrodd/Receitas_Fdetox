@@ -25,13 +25,12 @@
 
 
 #imagem-header-container-home{
-    background-image: url(../imagens/mulher-correndo.jpg);
-    background-position: left;
+    background-image: url(../imagens/saude-abstrato.jpg);
 }
 
 div#imagem-header-home{
     height: 140vh;
-    background-color: #0000007c;
+    background-color: #00000093;
 }
 
 #header-home{
@@ -168,6 +167,15 @@ div#conteudo-container-1-home{
 
 /*SESSÃO MISSÃO 2*/
 
+#h1-mission-2{
+    font-size: 45px;
+    letter-spacing: 0px;
+}
+
+.mark-mission-2{
+    color: var(--cor11);
+    background-color: var(--cor07);
+}
 
 #p-mission-2{
     font-size: 30px;
@@ -194,7 +202,7 @@ div#conteudo-container-1-home{
 }
 
 #container-lift-home{
-    height: 75vh;
+    height: 85vh;
     border: none;
 }
 
@@ -240,7 +248,7 @@ div#conteudo-container-1-home{
 
 
 #container-secandoCasa-home{
-    height: 95vh;
+    height: 105vh;
     border: none;
 }
 
@@ -275,6 +283,7 @@ div#conteudo-container-1-home{
     font-size: 23px;
     color: white;
     margin-bottom: 0px;
+    font-weight: bold;
 }
 
 
@@ -283,7 +292,7 @@ div#conteudo-container-1-home{
 
 
 #container-treino-product-home{
-    height: 95vh;
+    height: 105vh;
     background-color: var(--cor01);
     border: 2px solid black;
 }
