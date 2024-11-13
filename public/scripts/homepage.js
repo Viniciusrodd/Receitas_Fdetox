@@ -78,6 +78,7 @@ bttLift.addEventListener('click', async () =>{
             });
 
             carregarScriptInteracao();
+            voltarProdutos()
         }else{
             console.error("Erro ao carregar o partial:", response.status);
         }
@@ -86,14 +87,24 @@ bttLift.addEventListener('click', async () =>{
     }
 });
 //CARREGANDO SCRIPT ÚNICO DA PARTIAL LIFT:
-function carregarScriptInteracao() {
-    const script = document.createElement('script');
-    script.src = '../../scripts/scriptPartials.js'; // Caminho do script específico para o partial
-    script.onload;
-    document.body.appendChild(script);
+async function carregarScriptInteracao() {
+    if (!document.querySelector('script[src="/scripts/scriptPartials.js"]')) {
+        const script = document.createElement('script');
+        script.src = '/scripts/scriptPartials.js';
+        script.onload = () => {
+            inicializarBotoesLift();  // Chama a função assim que o script é carregado
+        };
+        document.body.appendChild(script);
+    } else {
+        // Caso já esteja carregado, apenas chama a função de inicialização
+        inicializarBotoesLift();
+    }
+}
 
 
-    //FUNÇÕES DE VOLTAR AOS PRODUTOS
+
+function voltarProdutos(){
+//FUNÇÕES DE VOLTAR AOS PRODUTOS
     //Lift:
     let bttLiftVoltar = document.getElementById('btt-lift-voltar');
     let liftProductVoltar = document.getElementById('container-lift-home');
@@ -108,7 +119,7 @@ function carregarScriptInteracao() {
     let bttTreinoVoltar = document.getElementById('btt-treino-voltar');
     let treinoProductVoltar = document.getElementById('container-treino-product-home')
     scrollButton(bttTreinoVoltar, treinoProductVoltar);
-};
+}
 
 
 
@@ -135,7 +146,7 @@ bttSecando.addEventListener('click', async () =>{
                 });
             });    
 
-            carregarScriptInteracao();
+            voltarProdutos()
         }else{
             console.error("Erro ao carregar o partial:", response.status);
         }
@@ -170,7 +181,7 @@ bttTreino.addEventListener('click', async () =>{
                 });
             });     
             
-            carregarScriptInteracao();
+            voltarProdutos()
         }else{
             console.error("Erro ao carregar o partial:", response.status);
         }
