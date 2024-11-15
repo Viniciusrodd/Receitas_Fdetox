@@ -34,8 +34,240 @@ iframe#iframe-1-lift{
 }
 
 
+/*SESSÃO 2 - ARGUMENTOS 1 - CARDS*/
+
+ 
+ 
+ div.cards-lift{
+     transition: none;
+ }
+ div.cards-lift:hover{
+     transform: none;
+     background-color: rgba(255, 255, 255, 0);
+ }
+ 
+ div.imagem-lift{
+     height: 120px;
+     width: 120px;
+ }
+ 
+ h2.h2-cards-lift{
+     font-size: 30px;
+ }
+ 
+ p.p-cards-lift{
+     font-size: 18px;
+ }
 
 
+/*SESSÃO 3 - ARGUMENTOS 2: - PRODUTO*/
+
+
+section#container-argumentos-2-lift{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0px 0px 0px;
+    width: 100%;
+    background-color: var(--cor01);
+}
+
+div#container-produto-lift{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+div#descrição-produto-lift{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 35%;
+    background-color: #005f72;
+    border-radius: 40px 0px 0px 40px;
+    cursor: pointer;
+    border: 3px solid black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#ul-lift{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    padding: 5px;
+}
+
+#li-lift{
+    font-size: 28px;
+    font-weight: bold;
+    list-style-type: none;
+    color: white;
+    margin: 10px 0px 10px 0px;
+}
+
+div#imagem-produto-lift{
+    height: 70vh;
+    width: 34%;
+    background-image: url(../../imagens/lift/pilulas.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 0px 40px 40px 0px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+
+/*SESSÃO 3 - ARGUMENTOS 2: - PRODUTO*/
+
+ 
+ div#descrição-produto-lift{
+     height: 65vh;
+ }
+ 
+ #li-lift{
+     font-size: 25px;
+     margin: 5px 0px 0px 0px;
+ }
+ 
+ div#imagem-produto-lift{
+     height: 65vh;
+ }
+ 
+
+/*SESSÃO 4 - RESULTADOS*/
+
+
+div#div-resultados-lift{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 110vh;
+    width: 100%;
+    background-color: var(--cor01);
+}
+
+h1#h1-resultados-lift{
+    color: black;
+    font-size: 50px;
+    margin: 0px 0px 30px 0px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+div#iframes-resultados-lift{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 70vh;
+    width: 80%; 
+}
+
+iframe.iframe-2-lift{
+    margin: 10px;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+.iframe-2-lift:hover{
+    transform: scale(1.05);
+}
+
+
+/*SESSÃO 4 - RESULTADOS*/
+
+
+div#div-resultados-lift{
+     justify-content: flex-start;
+     height: 150vh;
+ }
+ 
+ h1#h1-resultados-lift{
+     text-align: center;
+ }
+  
+ iframe.iframe-2-lift{
+     transition: none;
+ }
+ .iframe-2-lift:hover{
+     transform: none;
+ }
+
+
+/*SESSÃO 5 - COMPRAS*/
+
+ 
+ h1.h1-compras-lift{
+     text-align: center;
+ }
+  
+ div.cards-compras-lift{
+     height: 80%;
+     width: 25vw;
+     margin: 0px 15px 0px 15px;
+     transition: none;
+ }
+ .cards-compras-lift:hover{
+     transform: none;
+ }
+ 
+ 
+/*SESSÃO 6 - FOOTER*/
+
+ 
+ #h1-footer-lift{
+     font-size: 45px;
+ }
+ 
+ #h2-footer-lift{
+     font-size: 35px;
+     width: 70%;
+     text-align: center;
+ }
+  
+ .div-cards-footer-lift{
+     transition: none;
+ }
+ .div-cards-footer-lift:hover{
+     transform: none;
+     background-color: rgba(0, 0, 0, 0);
+     border-radius: 0px;
+ }
+ 
+ .h1-cards-footer-lift{
+     font-size: 30px;
+     text-align: center;
+ }
+ 
+ .h2-cards-footer-lift{
+     font-size: 20px;
+     text-align: center;
+ }
+ 
+ .p-cards-footer-lift{
+     font-size: 20px;
+ }
+ 
+ 
+ #h1-argumentos-footer-lift{
+     text-align: center;
+ }
+  
+ #imagem-argumentos-footer-lift{
+     display: none;
+ }
+ 
 }
 
 
