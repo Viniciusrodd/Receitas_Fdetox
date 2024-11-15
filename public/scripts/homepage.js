@@ -70,17 +70,18 @@ bttLift.addEventListener('click', async () =>{
             liftContainer.innerHTML = html1 + html2;  
             secandoContainer.innerHTML = '';
             treinoContainer.innerHTML = '';
-        
-            requestAnimationFrame(() =>{
+    
+            // Força o navegador a recalcular o layout
+            liftContainer.offsetHeight;
+
+            setTimeout(() =>{
                 liftContainer.scrollIntoView({
                     behavior: "smooth"
                 });
-            });
+            }, 1000);               
 
             carregarScriptInteracao();
             voltarProdutos()
-        }else{
-            console.error("Erro ao carregar o partial:", response.status);
         }
     }catch(error){
         console.error("Erro de requisição:", error);
@@ -100,8 +101,6 @@ async function carregarScriptInteracao() {
         inicializarBotoesLift();
     }
 }
-
-
 
 function voltarProdutos(){
 //FUNÇÕES DE VOLTAR AOS PRODUTOS
@@ -140,11 +139,11 @@ bttSecando.addEventListener('click', async () =>{
             liftContainer.innerHTML = '';  
             treinoContainer.innerHTML = '';
         
-            requestAnimationFrame(() =>{
+            setTimeout(() =>{
                 secandoContainer.scrollIntoView({
                     behavior: "smooth"
                 });
-            });    
+            }, 1000);    
 
             voltarProdutos()
         }else{
@@ -175,11 +174,11 @@ bttTreino.addEventListener('click', async () =>{
             liftContainer.innerHTML = '';
             secandoContainer.innerHTML = ''  
         
-            requestAnimationFrame(() =>{
+            setTimeout(() =>{
                 treinoContainer.scrollIntoView({
                     behavior: "smooth"
                 });
-            });     
+            }, 1000);     
             
             voltarProdutos()
         }else{

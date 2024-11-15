@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+:root{
+    --cor01: #FBF3EB;
+    --cor02: #172313;
+    --cor03: #7aa789;
+    --cor04: #d3efdc;
+    --cor05: rgb(255, 94, 94);
+    --cor06: #287FB6;
+    --cor07: #003452;
+    --cor08: #ea5f5f;
+    --cor09: #410039;
+    --cor10: #2D728F;
+    --cor11: #EFF053;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1250px){
+
+
+
+.container-pai-home{
+display: flex;
+flex-direction: column;
+width: 100%;
+
+/*HEADER*/
+
+
+#imagem-header-container-home{
+    background-image: url(../imagens/mulher-correndo-3.jpg);
+}
+
+div#imagem-header-home{
+    height: 120vh;
+    width: 100%;
+    background-color: #0000005f;
+}
+
+.h1-titles-header-home{
+    font-size: 20px;
+}
+.h1-titles-header-home:hover{
+    transition: none;
+}
+
+/*CONTEÚDO 1 HEADER*/
+
+
+
+.h1-conteudos-home{
+    font-size: 45px;
+    transition: none;
+}
+.h1-conteudos-home:hover{
+    transform: none;
+}
+
+#btt-conteudo-1-home{
+    transition: none;
+    margin-right: 20%;
+}
+#btt-conteudo-1-home:hover{
+    transform: none;
+}
+
+/*CONTEÚDO 2 HEADER*/
+
+
+#conteudo-container-2-home{
+    height: 45vh;
+}
+
+.p-conteudo-2-home{
+    font-size: 30px;
+    transition: none;
+}
+.p-conteudo-2-home:hover{
+    transform: none;
+}
+
+
+}    
+}
