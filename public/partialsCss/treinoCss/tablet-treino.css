@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+:root{
+    --cor01: #FBF3EB;
+    --cor02: #172313;
+    --cor03: #7aa789;
+    --cor04: #d3efdc;
+    --cor05: rgb(255, 94, 94);
+    --cor06: #287FB6;
+    --cor07: #003452;
+    --cor08: #ea5f5f;
+    --cor09: #410039;
+    --cor10: #2D728F;
+    --cor11: #EFF053;
+    --cor12: #f19cc9;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1250px){
+
+
+#container-treino{
+
+/*IMAGE TREINO*/
+
+
+#image-treino{
+    height: 80vh;
+    width: 100%;
+    background-image: url(/imagens/treino/mulher-treino-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 30px;
+}
+
+#container-image-treino{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.641);
+
+    & img{
+        height: 30vh;
+        width: 15vw;    
+    }
+}
+
+.h1-image-treino{
+    color: red;
+    font-size: 90px;
+    text-align: center;
+    margin: 0px;
+}
+
+
+}
+
+
+}
