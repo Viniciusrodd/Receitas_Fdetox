@@ -31,7 +31,7 @@ width: 100%;
 }
 
 div#imagem-header-home{
-    height: 120vh;
+    height: 140vh;
     width: 100%;
     background-color: #0000005f;
 }
@@ -48,7 +48,7 @@ div#imagem-header-home{
 
 
 .h1-conteudos-home{
-    font-size: 45px;
+    font-size: 43px;
     transition: none;
 }
 .h1-conteudos-home:hover{
@@ -67,7 +67,7 @@ div#imagem-header-home{
 
 
 #conteudo-container-2-home{
-    height: 45vh;
+    height: 60vh;
 }
 
 .p-conteudo-2-home{
@@ -77,6 +77,113 @@ div#imagem-header-home{
 .p-conteudo-2-home:hover{
     transform: none;
 }
+
+
+/*SESSÃO MISSÃO 1*/
+
+.h1-mission-home{
+    font-size: 40px;
+}
+
+.p-mission-home{
+    font-size: 23px;
+}    
+
+
+/*SESSÃO MISSÃO 2*/
+
+
+#h1-mission-2{
+    font-size: 45px;
+}
+
+#p-mission-2{
+    font-size: 30px;
+}
+
+
+/*SESSÃO PRODUTOS ABAIXO*/
+
+
+.p-prodAbaixo-home{
+    font-size: 35px;
+}
+
+
+/*SESSÃO APRESENTAÇÃO PRODUTOS 4*/
+
+
+#h1-desc-lift-home{
+    font-size: 25px;
+    margin: 0px 0px 10px 0px;
+}
+
+.li-lift-home{
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+
+/*SECANDO*/
+
+#desc-secandoCasa-home{
+    justify-content: center;
+}
+
+.container-desc-home{
+    margin-bottom: 30px;
+}
+
+#h1-secandoCasa-home{
+    font-size: 30px;
+    margin: 0px 0px 20px 0px;
+}
+
+#h2-secandoCasa-home{
+    display: none;
+}
+
+#p-secandoCasa-home{
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+/*TREINO*/
+
+#desc-treino-home{
+    justify-content: center;
+}
+
+#h1-desc-treino-home{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.li-treino-home{
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+
+/*SESSÃO ARGUMENTOS 5*/
+
+
+#container-cards-arg5-home{
+    flex-direction: column;
+}
+
+.cards-arg-5-home{
+    height: 70vh;
+    width: 70vw;
+    margin-bottom: 20px;
+    transition: none;
+}
+.cards-arg-5-home:hover{
+    transform: none;
+}
+
 
 
 }    
