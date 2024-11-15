@@ -26,11 +26,94 @@
 
 div.cards-secando{
     transition: none;
+    margin: 0px 5px 0px 5px;
+    padding: 20px;
 }
 div.cards-secando:hover{
     transform: none;
 }
 
+div.imagem-cards-secando{
+     height: 100px;
+     width: 100px;
+ }
+
+
+/*ARGUMENTOS 2*/
+
+ 
+ .cards-arg-2-secando{
+     width: 30vw;
+     transition: none;
+     padding: 30px 20px 20px 20px;
+ }
+ .cards-arg-2-secando:hover{
+     transform: none;
+     background-color: rgba(255, 255, 255, 0.13);
+ }
+
+ div.imagem-cards-arg-2-secando{
+     height: 120px;
+     width: 120px;
+     background-color: red;
+     border-radius: 100px;         
+ }
+  
+
+ 
+/*ARGUMENTOS 3*/
+
+
+.cards-depoimentos-secando{
+    width: 28vw;
+    background-color: rgba(255, 255, 255, 0.13);
+    transition: none;
+}
+.cards-depoimentos-secando:hover{
+    transform: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+/*ARGUMENTOS 4*/
+
+
+.cards-arg-4-secando{
+    height: 65vh;
+    width: 30vw;
+    transition: none;
+}
+.cards-arg-4-secando:hover{
+    transform: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+/*ARGUMENTOS 5*/
+
+
+.h1-container-arg-5-secando{
+    width: 70%;
+}
+
+#container-img-arg-5-secando{
+    width: 25%;
+}
+
+.p-container-arg-5-secando{
+    font-size: 25px;
+}
+
+.btt-arg-5-secando{
+    transition: none;
+}
+.btt-arg-5-secando:hover{
+    transform: none;
+}
+
+#container2-img-arg-5-secando{
+    width: 40%;  
+}
 
 
 
