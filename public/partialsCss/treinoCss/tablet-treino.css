@@ -24,37 +24,71 @@
 
 
 #image-treino{
-    height: 80vh;
-    width: 100%;
-    background-image: url(/imagens/treino/mulher-treino-2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin-bottom: 30px;
+    height: 90vh;
 }
 
-#container-image-treino{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.641);
 
-    & img{
-        height: 30vh;
-        width: 15vw;    
-    }
+/*SECTION TREINO 2*/
+
+
+#indicacao-container-treino{
+    width: 90%;
 }
 
-.h1-image-treino{
-    color: red;
-    font-size: 90px;
-    text-align: center;
-    margin: 0px;
+.cards-treino{
+    padding: 20px;
+    width: 90%;
+    transition: none;
 }
+.cards-treino:hover{
+    transform: none;
+}
+
+.img-cards-treino-container{
+    height: 30vh;
+    width: 25%;
+}
+
+.arguments-cards-treino{
+    height: 35vh;
+    width: 70%;
+}
+
+#treino-button{
+    height: 70px;
+    width: 40vw;
+    transition: none;
+}
+#treino-button:hover{
+    transform: none;
+}
+
+
+/*SECTION 4*/
+
+
+.div-4-container-treino{
+    width: 80%;
+}
+
+
+/*SECTION GARANTIA*/
+
+
+#section-treino-garantia{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 40px 0px 40px 0px;
+     width: 100%;
+     background-color: black;
+ 
+     & .img-treino-garantia{
+         height: 30vh;
+         width: 30vw;
+     }
+ }
 
 
 }
