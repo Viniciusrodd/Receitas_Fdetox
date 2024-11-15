@@ -76,14 +76,8 @@
 
 
 #section-treino-garantia{
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
      padding: 40px 0px 40px 0px;
-     width: 100%;
-     background-color: black;
- 
+      
      & .img-treino-garantia{
          height: 30vh;
          width: 30vw;

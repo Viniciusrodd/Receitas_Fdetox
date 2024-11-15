@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+:root{
+    --cor01: #FBF3EB;
+    --cor02: #172313;
+    --cor03: #7aa789;
+    --cor04: #d3efdc;
+    --cor05: rgb(255, 94, 94);
+    --cor06: #287FB6;
+    --cor07: #003452;
+    --cor08: #ea5f5f;
+    --cor09: #410039;
+    --cor10: #2D728F;
+    --cor11: #EFF053;
+    --cor12: #f19cc9;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1250px){
+
+
+#section-container-voltar{
+
+
+#container-produtos{
+    height: 80vh;
+    width: 95%;
+}
+
+.produtos-container{
+    height: 85%;
+    width: 32%;
+    transition: none;
+}
+.produtos-container:hover{
+    transform: none;
+}
+
+.img-produtos{
+    height: 50%;
+}
+
+.produtos{
+    height: 50%;
+    width: 100%;
+}
+
+.img-seta-home{
+    height: 18%;
+    width: 14%;
+}
+
+.button-produtos-voltar{
+    height: 60px;
+    padding: 0px 20px 0px 20px;
+    font-size: 20px;
+    transition: none;
+}
+.button-produtos-voltar:hover{
+    transform: none;
+}
+
+
+}
+
+}
