@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+:root{
+    --cor01: #FBF3EB;
+    --cor02: #172313;
+    --cor03: #7aa789;
+    --cor04: #d3efdc;
+    --cor05: rgb(255, 94, 94);
+    --cor06: #287FB6;
+    --cor07: #003452;
+    --cor08: #ea5f5f;
+    --cor09: #410039;
+    --cor10: #2D728F;
+    --cor11: #EFF053;
+    --cor12: #f19cc9;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1250px){
+
+
+.container-secando{
+
+
+/*SESSÃO 1*/
+
+
+div.cards-secando{
+    transition: none;
+}
+div.cards-secando:hover{
+    transform: none;
+}
+
+
+
+
+}
+
+}
