@@ -5,4 +5,4 @@ server.js
 #Fields
 database/
 public/scripts/
-node_modules_
+node_modules/
