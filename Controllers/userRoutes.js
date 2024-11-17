@@ -2,6 +2,7 @@
 //DEPENDENCES
 const express = require('express');
 const router = express.Router();
+const painelHomepage = require('../models/painelHomepage');
 
 
 //HOMEPAGE ROUTE
@@ -18,25 +19,49 @@ router.get('/partial', (req, res) =>{
 
 // Endpoint para registrar cliques
 router.get("/painelAdm", (req, res) => {
-    res.render('painelAdm', {
-        clickCount: clickCount
-    })    
+
+
+
+    res.render('painelAdm') 
 });
 
 
 
 // Endpoint para registrar cliques
-router.post("/painelAdm/:data", (req, res) => {
-    let count = req.params.data
-    console.log(`Clique registrado! ${count}`);
+router.post("/painelAdm/clicksRegister", async (req, res) => {
+    try {
+        const { buttonType } = req.body; //Recebe o tipo do botão
 
-     // Atualiza o valor de clickCount
-     clickCount = parseInt(count);  // Converte para inteiro, se necessário
+        //Verifica se o botão é válido com 1 das validações:
+        const validButtons = ['lift', 'secando', 'treino'];
+        if (!validButtons.includes(buttonType)) {
+            return res.status(400).send('Botão inválido');
+        }
 
-     // Renderiza novamente a página com a nova contagem de cliques
-     res.render('painelAdm', { 
-        clickCount: clickCount 
-    });
+        //Busca ou cria o registro da página
+        //page: O registro encontrado (ou recém-criado).
+        //created: Um booleano (true ou false) que indica se o registro foi criado durante essa execução.
+        const [page, created] = await painelHomepage.findOrCreate({
+            where: { page_name: 'HomePage' },
+            defaults: {
+                clicks_lift: 0,
+                clicks_secando: 0,
+                clicks_treino: 0,
+                screen_time: 0
+            }
+        });
+
+        //Incrementa o campo correspondente ao botão clicado
+        const fieldToIncrement = `clicks_${buttonType}`; // e.g., clicks_lift
+        await page.increment(fieldToIncrement, { 
+            by: 1 
+        });
+
+        res.status(200).send({ message: `Clique no botão ${buttonType} registrado com sucesso!` });
+    } catch (error) {
+        console.error('Erro ao registrar clique:', error);
+        res.status(500).send({ error: 'Erro ao registrar clique' });
+    }
 });
 
 
