@@ -203,7 +203,7 @@ div#conteudo-container-1-home{
 
 #container-lift-home{
     height: 85vh;
-    border: none;
+    border: 2px solid black;
 }
 
 #img-lift-home{
@@ -218,7 +218,7 @@ div#conteudo-container-1-home{
 
 #desc-lift-home{
     width: 100%;
-    background-color: #172313c0;
+    background-color: #172313bb;
 }
 
 .ul-home{
@@ -250,6 +250,7 @@ div#conteudo-container-1-home{
 #container-secandoCasa-home{
     height: 105vh;
     border: none;
+    border: 2px solid black;
 }
 
 #img-secandoCasa-home{
@@ -260,11 +261,13 @@ div#conteudo-container-1-home{
     height: 100%;
     width: 100%;
     background-image: url(../imagens/secando/secandoEmCasa.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 #desc-secandoCasa-home{
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.488);
+    background-color: rgba(0, 0, 0, 0.562);
 }
 
 .container-desc-home{

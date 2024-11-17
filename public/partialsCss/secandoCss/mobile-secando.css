@@ -101,15 +101,6 @@ div.imagem-cards-arg-2-secando{
 /*ARGUMENTOS 3*/
 
 
-section#container-arg-3-secando{
-    height: 270vh;
-}
-
-#div-container-arg-3-secando{
-    height: 100%;
-    padding: 0px;
-}
-
 .container-depoimentos-secando{
     flex-direction: column;
     height: 140vh;
