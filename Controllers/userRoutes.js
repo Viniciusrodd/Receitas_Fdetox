@@ -3,6 +3,7 @@
 const express = require('express');
 const router = express.Router();
 const painelHomepage = require('../models/painelHomepage');
+const sequelize = require('sequelize');
 
 
 //HOMEPAGE ROUTE
@@ -19,10 +20,19 @@ router.get('/partial', (req, res) =>{
 
 // Endpoint para registrar cliques
 router.get("/painelAdm", (req, res) => {
-
-
-
-    res.render('painelAdm') 
+    painelHomepage.findOne({
+        where: {
+            page_name: 'homePage'
+        }
+    })
+    .then((data) =>{
+        res.render('painelAdm', {
+            painelData: data
+        }) 
+    })
+    .catch((error) =>{
+        console.log(error)
+    })
 });
 
 
