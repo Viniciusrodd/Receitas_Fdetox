@@ -41,22 +41,23 @@ router.post('/painelAdm/getTime', async (req, res) =>{
     try{
         const { totalTimeSpent } = req.body;
 
-        //Localiza um registro existente com base na page_name (HomePage no exemplo).
-        //Se não existir, cria um novo com os valores padrão especificados em defaults.
-        const [page, created] = await painelHomepage.findOrCreate({
-            where: { page_name: 'HomePage' },
-            defaults: {
-                screen_time: 0 // Valor inicial padrão
-            }
-        });
-
         // Incrementar o tempo de tela
-        await page.increment('screen_time', {
-            by: totalTimeSpent // Incrementa pelo tempo enviado
-        });
-    }
-    catch{
+        await painelHomepage.update({
+            screen_time: totalTimeSpent
+        }, {
+            where: {
+                page_name: 'HomePage'
+            }
+        })
+        .then((data) =>{
+            console.log('timeSpent enviado')
+        })
 
+        res.status(200).send('Tempo incrementado com sucesso!');
+    }
+    catch (error){
+        console.error('Erro ao atualizar tempo de tela:', error);
+        res.status(500).send('Erro no servidor');    
     }
 })
 
