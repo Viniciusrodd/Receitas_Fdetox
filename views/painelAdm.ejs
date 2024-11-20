@@ -7,14 +7,38 @@
 </head>
 <body>
     <h1>Esse é o painel Administrativo</h1>
+
+    <h3>Primeiro click:</h3>
+    <p>
+        <% 
+            const createdAt = new Date(painelData.createdAt); 
+            const formattedDateCreated = createdAt.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' });
+            const formattedTimeCreated = createdAt.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        %>
+        <%= formattedDateCreated %> às <%= formattedTimeCreated %>    
+    </p>
+
+    <hr>
     <h3>Contagem de cliques lift:</h3>
     <p><%= painelData.clicks_lift %></p>
+
     <hr>
     <h3>Contagem de cliques Secando:</h3>
     <p><%= painelData.clicks_secando %></p>
+
     <hr>
     <h3>Contagem de cliques Treino:</h3>
     <p><%= painelData.clicks_treino %></p>
 
+    <hr>
+    <h3>Último click:</h3>
+    <p>
+        <% 
+            const updatedAt = new Date(painelData.updatedAt); 
+            const formattedDateUpdated = updatedAt.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' });
+            const formattedTimeUpdated = updatedAt.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        %>
+        <%= formattedDateUpdated %> às <%= formattedTimeUpdated %>    
+    </p>
 </body>
 </html>
