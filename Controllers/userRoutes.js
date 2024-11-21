@@ -14,8 +14,13 @@ router.get('/homepage', (req, res) =>{
 
 //PARTIALS CUSTOMIZATION
 router.get('/partial', (req, res) =>{
-    res.render('./partials/treino')
+    res.render('registro')
 })
+
+
+
+
+
 
 
 // Endpoint para registrar cliques
