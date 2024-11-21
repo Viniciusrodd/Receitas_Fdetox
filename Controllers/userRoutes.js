@@ -4,6 +4,7 @@ const express = require('express');
 const router = express.Router();
 const painelHomepage = require('../models/painelHomepage');
 const sequelize = require('sequelize');
+const cadastroAdm = require('../models/cadastroAdm');
 
 
 //HOMEPAGE ROUTE
@@ -18,15 +19,34 @@ router.get('/partial', (req, res) =>{
 })
 
 
-/*
-router.post('cadastro', (req, res) =>{
-    const { name, password } = req.body;
 
-    if(!name || !password){
-        return res.status(400).send('Valores de campos incorretos')
+//PÁGINA CADASTRO
+router.get('/registro', (req, res) =>{
+    res.render('registro')
+})
+
+
+
+//ROTA DE EFETUAR CADASTRO
+router.post('/cadastro', async (req, res) =>{
+    try{
+        const { name, password } = req.body;
+
+        if(!name || !password){
+            return res.status(400).send('Valores de campos incorretos')
+        }
+    
+        const cadastroAdm = await findOne({where: {nome: name}})
+        if(cadastroAdm){
+            return res.status(400).send('Nome de usuário já existente')
+        }
+
+
     }
-
-})*/
+    catch(error){
+        return res.status(400).send('Erro no processamento dos dados' + error)
+    }
+})
 
 
 
