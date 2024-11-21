@@ -27,6 +27,12 @@ router.get('/registro', (req, res) =>{
 })
 
 
+//PÁGINA DE LOGIN
+router.get('/loginAdm', (req, res) =>{
+    res.render('login')
+})
+
+
 
 //ROTA DE EFETUAR CADASTRO
 router.post('/cadastro', async (req, res) =>{
@@ -62,7 +68,37 @@ router.post('/cadastro', async (req, res) =>{
 
 
 
-//ROTA DE LOGIN
+//ROTA DE EFETUAR LOGIN
+router.post("/login", (req, res) => {
+    const name = req.body.nome;
+    const password = req.body.senha;
+
+    cadastroAdm.findOne({ 
+        where: { 
+            nome: name 
+        } 
+    })
+    .then((dadosLogin) =>{
+        if(dadosLogin != undefined){
+            var correct = bcrypt.compareSync(password, dadosLogin.senha)
+            if(correct){
+                req.session.user = {
+                    id: dadosLogin.id,
+                    nome: dadosLogin.nome
+                }
+                res.redirect('/painelAdm')
+                console.log('Autenticação + sessão Ok')
+            }else{
+                console.log('Senha incorreta')
+                res.redirect('/login')
+            }
+        }else{
+            console.log('Dados de adm incorretos')
+            res.redirect('/login')
+        }
+    })
+
+})
 
 
 
