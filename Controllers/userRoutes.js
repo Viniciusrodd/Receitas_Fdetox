@@ -31,14 +31,15 @@ router.get('/registro', (req, res) =>{
 //ROTA DE EFETUAR CADASTRO
 router.post('/cadastro', async (req, res) =>{
     try{
-        const { name, password } = req.body;
+        const name = req.body.nome;
+        const password = req.body.senha;
 
-        if(name === '' || password === ''){
-            return res.status(400).send('Valores de campos incorretos')
+        if(!name || !password){
+            return res.status(400).send('Campos nome e senha são obrigatórios')
         }
     
-        const cadastroAdm = await findOne({where: {nome: name}})
-        if(cadastroAdm){
+        const userExist = await cadastroAdm.findOne({ where: { nome: name } })
+        if(userExist){
             return res.status(400).send('Nome de usuário já existente')
         }
 
@@ -55,7 +56,7 @@ router.post('/cadastro', async (req, res) =>{
     }
     catch(error){
         console.log('Erro no processamento dos dados' + error)
-        res.status(400).send('Nome de usuário já existente')
+        res.status(400).send('Erro no processamento dos dados' + error)
     }
 })
 
