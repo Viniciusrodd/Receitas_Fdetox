@@ -14,7 +14,7 @@ router.get('/homepage', (req, res) =>{
 
 //PARTIALS CUSTOMIZATION
 router.get('/partial', (req, res) =>{
-    res.render('./partials/secando')
+    res.render('./partials/treino')
 })
 
 

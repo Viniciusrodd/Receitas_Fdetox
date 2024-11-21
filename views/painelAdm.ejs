@@ -19,6 +19,29 @@
     </p>
 
     <hr>
+    <h3>Tempo de tela do último Usuário registrado:</h3>
+    <p>
+        <%
+            const secondsToTime = (totalSeconds) => {
+                const hours = Math.floor(totalSeconds / 3600); // Calcula as horas
+                const minutes = Math.floor((totalSeconds % 3600) / 60); // Calcula os minutos
+                const seconds = totalSeconds % 60; // Calcula os segundos
+
+                // Se for menor que 1 hora, exibe no formato mm:ss
+                if (hours === 0) {
+                    return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+                } else {
+                    // Caso contrário, exibe no formato hh:mm:ss
+                    return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+                }
+            };
+
+            const formattedTimeSpent = secondsToTime(painelData.screen_time);
+        %>
+        <%= formattedTimeSpent %>   
+    </p>  
+
+    <hr>
     <h3>Contagem de cliques lift:</h3>
     <p><%= painelData.clicks_lift %></p>
 
@@ -40,28 +63,6 @@
         %>
         <%= formattedDateUpdated %> às <%= formattedTimeUpdated %>    
     </p>
-
-    <hr>
-    <h3>Tempo de tela do último Usuário registrado:</h3>
-    <p>
-        <%
-            const secondsToTime = (totalSeconds) => {
-                const hours = Math.floor(totalSeconds / 3600); // Calcula as horas
-                const minutes = Math.floor((totalSeconds % 3600) / 60); // Calcula os minutos
-                const seconds = totalSeconds % 60; // Calcula os segundos
-
-                // Se for menor que 1 hora, exibe no formato mm:ss
-                if (hours === 0) {
-                    return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-                } else {
-                    // Caso contrário, exibe no formato hh:mm:ss
-                    return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-                }
-            };
-
-            const formattedTimeSpent = secondsToTime(painelData.screen_time);
-        %>
-        <%= formattedTimeSpent %>   
-    </p>    
+  
 </body>
 </html>
