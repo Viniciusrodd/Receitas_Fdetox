@@ -5,6 +5,7 @@ const router = express.Router();
 const painelHomepage = require('../models/painelHomepage');
 const sequelize = require('sequelize');
 const cadastroAdm = require('../models/cadastroAdm');
+const bcrypt = require('bcryptjs');
 
 
 //HOMEPAGE ROUTE
@@ -32,7 +33,7 @@ router.post('/cadastro', async (req, res) =>{
     try{
         const { name, password } = req.body;
 
-        if(!name || !password){
+        if(name === '' || password === ''){
             return res.status(400).send('Valores de campos incorretos')
         }
     
@@ -41,10 +42,20 @@ router.post('/cadastro', async (req, res) =>{
             return res.status(400).send('Nome de usuário já existente')
         }
 
+        const salt = bcrypt.genSaltSync(10);
+        const hashedPassword = bcrypt.hashSync(password, salt);
 
+        await cadastroAdm.create({
+            nome: name,
+            senha: hashedPassword
+        })
+
+        console.log('Registro efetuado com sucesso');
+        res.redirect('/registro')
     }
     catch(error){
-        return res.status(400).send('Erro no processamento dos dados' + error)
+        console.log('Erro no processamento dos dados' + error)
+        res.status(400).send('Nome de usuário já existente')
     }
 })
 
