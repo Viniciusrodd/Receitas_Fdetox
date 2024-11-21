@@ -18,8 +18,15 @@ router.get('/partial', (req, res) =>{
 })
 
 
+/*
+router.post('cadastro', (req, res) =>{
+    const { name, password } = req.body;
 
+    if(!name || !password){
+        return res.status(400).send('Valores de campos incorretos')
+    }
 
+})*/
 
 
 
