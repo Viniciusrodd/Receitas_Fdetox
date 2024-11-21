@@ -62,6 +62,10 @@ router.post('/cadastro', async (req, res) =>{
 
 
 
+//ROTA DE LOGIN
+
+
+
 // Endpoint para registrar cliques
 router.get("/painelAdm", (req, res) => {
     painelHomepage.findOne({
