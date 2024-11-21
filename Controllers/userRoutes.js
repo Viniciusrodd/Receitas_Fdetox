@@ -6,6 +6,7 @@ const painelHomepage = require('../models/painelHomepage');
 const sequelize = require('sequelize');
 const cadastroAdm = require('../models/cadastroAdm');
 const bcrypt = require('bcryptjs');
+const authMiddleware = require('../middleware/authenticate');
 
 
 //HOMEPAGE ROUTE
@@ -89,12 +90,12 @@ router.post("/login", (req, res) => {
                 res.redirect('/painelAdm')
                 console.log('Autenticação + sessão Ok')
             }else{
+                return res.status(400).send('Senha de ADM incorretos') 
                 console.log('Senha incorreta')
-                res.redirect('/login')
             }
         }else{
-            console.log('Dados de adm incorretos')
-            res.redirect('/login')
+            console.log('Dados de ADM incorretos')
+            return res.status(400).send('Dados de ADM incorretos') 
         }
     })
 
@@ -102,8 +103,8 @@ router.post("/login", (req, res) => {
 
 
 
-// Endpoint para registrar cliques
-router.get("/painelAdm", (req, res) => {
+// Endpoint de painel de administrador
+router.get("/painelAdm", authMiddleware, (req, res) => {
     painelHomepage.findOne({
         where: {
             page_name: 'homePage'
