@@ -42,12 +42,12 @@ router.post('/cadastro', async (req, res) =>{
         const password = req.body.senha;
 
         if(!name || !password){
-            return res.status(400).send('Campos nome e senha são obrigatórios')
+            return res.redirect('/registro?error=Campos nome/senha inválidos')
         }
     
         const userExist = await cadastroAdm.findOne({ where: { nome: name } })
         if(userExist){
-            return res.status(400).send('Nome de usuário já existente')
+            return res.redirect('/registro?error=Nome de usuário já existente')
         }
 
         const salt = bcrypt.genSaltSync(10);
@@ -59,7 +59,7 @@ router.post('/cadastro', async (req, res) =>{
         })
 
         console.log('Registro efetuado com sucesso');
-        res.redirect('/registro')
+        res.redirect('/loginAdm')
     }
     catch(error){
         console.log('Erro no processamento dos dados' + error)
@@ -90,12 +90,11 @@ router.post("/login", (req, res) => {
                 res.redirect('/painelAdm')
                 console.log('Autenticação + sessão Ok')
             }else{
-                return res.status(400).send('Senha de ADM incorretos') 
-                console.log('Senha incorreta')
+                return res.redirect('/loginAdm?error=Senha de ADM incorretos') 
             }
         }else{
             console.log('Dados de ADM incorretos')
-            return res.status(400).send('Dados de ADM incorretos') 
+            return res.redirect('/loginAdm?error=Dados de ADM incorretos') 
         }
     })
 

@@ -18,4 +18,16 @@
         <button>Registrar-se</button>
     </form>
 </body>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () =>{
+        const urlParams = new URLSearchParams(window.location.search);
+        const sucessMsg = urlParams.get('error');
+
+        if(sucessMsg){
+            window.alert(sucessMsg)
+        }
+    })
+</script>
 </html>
