@@ -26,3 +26,95 @@ body, html {
     margin: 0;
     padding: 0;    
 }
+
+
+#container-pai-painel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px 0px 40px 0px;
+    background-color: #212121;
+
+
+#header-painel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+    height: 20vh;
+    width: 100%;
+}
+
+
+#h1-title-painel{
+    font-size: 40px;
+    color: white;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-decoration: overline;
+}
+
+#container-filho-painel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 40px;
+}
+
+.cards-dados-painel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    width: 28%;
+    margin: 20px 30px;
+    border-radius: 20px;
+    background-image: url(../imagens/dados-png.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.background-filter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: rgba(0, 0, 0, 0.676);
+}
+
+.background-title-painel{
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: black;
+}
+
+.h3-title-painel{
+    font-size: 25px;
+    text-align: left;
+    color: var(--cor10);
+    margin: 0px;
+}
+
+.p-cards-painel{
+    font-size: 35px;
+    color: white;
+    font-weight: bold;   
+    margin: 0px; 
+    text-align: left;
+}
+
+}

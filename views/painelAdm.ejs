@@ -4,65 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel Administrativo</title>
+    <link rel="stylesheet" href="../painelAdmCss/painelAdm.css">
 </head>
 <body>
-    <h1>Esse é o painel Administrativo</h1>
+    <div id="container-pai-painel">
+        <div id="header-painel">
+            <h1 id="h1-title-painel">PAINEL ADMINISTRATIVO</h1>
+        </div>
 
-    <h3>Primeiro click:</h3>
-    <p>
-        <% 
-            const createdAt = new Date(painelData.createdAt); 
-            const formattedDateCreated = createdAt.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' });
-            const formattedTimeCreated = createdAt.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-        %>
-        <%= formattedDateCreated %> às <%= formattedTimeCreated %>    
-    </p>
+        <div id="container-filho-painel">
+            <div class="cards-dados-painel">
+                <div class="background-filter">
+                    <p class="p-cards-painel">
+                        <%
+                            const createdAt = new Date(painelData.createdAt);
+                            const formattedDateCreated = createdAt.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' });
+                            const formattedTimeCreated = createdAt.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+                        %>
+                        <%= formattedDateCreated %> às <%= formattedTimeCreated %>
+                    </p>
+                </div>
+                <div class="background-title-painel">
+                    <h3 class="h3-title-painel">Primeira interação:</h3>
+                </div>    
+            </div>
 
-    <hr>
-    <h3>Tempo de tela do último Usuário registrado:</h3>
-    <p>
-        <%
-            const secondsToTime = (totalSeconds) => {
-                const hours = Math.floor(totalSeconds / 3600); // Calcula as horas
-                const minutes = Math.floor((totalSeconds % 3600) / 60); // Calcula os minutos
-                const seconds = totalSeconds % 60; // Calcula os segundos
+            
+            <div class="cards-dados-painel">
+                <div class="background-filter">
+                    <p class="p-cards-painel">
+                        <%
+                            const secondsToTime = (totalSeconds) => {
+                                const hours = Math.floor(totalSeconds / 3600); // Calcula as horas
+                                const minutes = Math.floor((totalSeconds % 3600) / 60); // Calcula os minutos
+                                const seconds = totalSeconds % 60; // Calcula os segundos
+                                // Se for menor que 1 hora, exibe no formato mm:ss
+                                if (hours === 0) {
+                                    return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+                                } else {
+                                    // Caso contrário, exibe no formato hh:mm:ss
+                                    return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+                                }
+                            };
+                            const formattedTimeSpent = secondsToTime(painelData.screen_time);
+                        %>
+                        <%= formattedTimeSpent %>
+                    </p>
+                </div>
+                <div class="background-title-painel">
+                    <h3 class="h3-title-painel">Tempo de tela do último acesso:</h3>
+                </div>
+            </div>
 
-                // Se for menor que 1 hora, exibe no formato mm:ss
-                if (hours === 0) {
-                    return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-                } else {
-                    // Caso contrário, exibe no formato hh:mm:ss
-                    return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-                }
-            };
+            <div class="cards-dados-painel">
+                <div class="background-filter">
+                    <p class="p-cards-painel">
+                        Clicks: <%= painelData.clicks_lift %>
+                    </p>
+                </div>
+                <div class="background-title-painel">
+                    <h3 class="h3-title-painel">
+                        Total de Interações - LiftDetox:
+                    </h3>
+                </div>
+            </div>
+            
+            <div class="cards-dados-painel">
+                <div class="background-filter">
+                    <p class="p-cards-painel">
+                        Clicks: <%= painelData.clicks_secando %>
+                    </p>
+                </div>
+                <div class="background-title-painel">
+                    <h3 class="h3-title-painel">
+                        Total de Interações - Secando:
+                    </h3>
+                </div>
+            </div>
 
-            const formattedTimeSpent = secondsToTime(painelData.screen_time);
-        %>
-        <%= formattedTimeSpent %>   
-    </p>  
+            <div class="cards-dados-painel">
+                <div class="background-filter">
+                    <p class="p-cards-painel">
+                        Clicks: <%= painelData.clicks_treino %>
+                    </p>
+                </div>
+                <div class="background-title-painel">
+                    <h3 class="h3-title-painel">
+                        Total de Interações - Planilhas:
+                    </h3>
+                </div>
+            </div>
 
-    <hr>
-    <h3>Contagem de cliques lift:</h3>
-    <p><%= painelData.clicks_lift %></p>
-
-    <hr>
-    <h3>Contagem de cliques Secando:</h3>
-    <p><%= painelData.clicks_secando %></p>
-
-    <hr>
-    <h3>Contagem de cliques Treino:</h3>
-    <p><%= painelData.clicks_treino %></p>
-
-    <hr>
-    <h3>Último click:</h3>
-    <p>
-        <% 
-            const updatedAt = new Date(painelData.updatedAt); 
-            const formattedDateUpdated = updatedAt.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' });
-            const formattedTimeUpdated = updatedAt.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-        %>
-        <%= formattedDateUpdated %> às <%= formattedTimeUpdated %>    
-    </p>
-  
+            <div class="cards-dados-painel">
+                <div class="background-filter">
+                    <p class="p-cards-painel">
+                        <%
+                            const updatedAt = new Date(painelData.updatedAt);
+                            const formattedDateUpdated = updatedAt.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' });
+                            const formattedTimeUpdated = updatedAt.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+                        %>
+                        <%= formattedDateUpdated %> às <%= formattedTimeUpdated %>
+                    </p>
+                </div>
+                <div class="background-title-painel">
+                    <h3 class="h3-title-painel">Última interação:</h3>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
