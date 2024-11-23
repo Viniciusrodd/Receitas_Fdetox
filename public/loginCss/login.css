@@ -32,14 +32,23 @@ body, html {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    padding: 40px 0px 40px 0px;
+    padding: 0px 0px 83px 0px;
     background-color: #212121;
+
+
+#header-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+    height: 20vh;
+    width: 100%;
+    margin-bottom: 3%;
 }
 
 #h1-title-login{
-    margin-top: 0px;
     font-size: 45px;
     color: white;
     text-decoration: overline;
@@ -52,6 +61,8 @@ body, html {
     align-items: center;
     height: 60vh;
     width: 70vw;
+    border-radius: 20px;
+    border: 3px solid var(--cor01);
 }
 
 #container-login-1{
@@ -89,6 +100,8 @@ body, html {
     border-right: none;
     border-left: none;
     border-bottom: 3px solid white;
+    text-align: center;
+    font-size: 20px;
 }
 .input-login:focus{
     outline: none;
@@ -114,4 +127,6 @@ body, html {
 }
 #btt-login:hover{
     transform: scale(1.05);
+}
+
 }

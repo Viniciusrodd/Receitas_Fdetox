@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+:root{
+    --cor01: #FBF3EB;
+    --cor02: #172313;
+    --cor03: #7aa789;
+    --cor04: #d3efdc;
+    --cor05: rgb(255, 94, 94);
+    --cor06: #287FB6;
+    --cor07: #003452;
+    --cor08: #ea5f5f;
+    --cor09: #410039;
+    --cor10: #2D728F;
+    --cor11: #EFF053;
+}
+
+@media screen and (max-width: 767px){
+
+
+#container-pai-login{
+    padding: 0px 0px 20px 0px;
+
+#header-login{
+    margin-bottom: 5%;
+}
+
+#h1-title-login{
+    font-size: 35px;
+    text-align: center;
+}
+
+#container-filho-login{
+    flex-direction: column;
+    height: 75vh;
+    width: 90%;
+}
+
+#container-login-1{
+    height: 40%;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#form-login{
+    height: 60%;
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.label-login{
+    font-size: 22px;
+}
+
+#btt-login{
+    transition: none;
+}
+#btt-login:hover{
+    transform: none;
+}
+
+
+}
+
+}
