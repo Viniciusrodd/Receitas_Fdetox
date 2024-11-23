@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="../loginCss/login.css">
 </head>
 <body>
-    <h1>Login de adm</h1>
+    <div id="container-pai-login">
+        <h1 id="h1-title-login">LOGIN ADMINISTRADOR</h1>
 
-    <form method="post" action="/login">
-        <label for="nome">Insira seu nome:</label>
-        <input type="text" name="nome" id="inome" required>
+        <div id="container-filho-login">
+            <div id="container-login-1">
+                
+            </div>
 
-        <label for="senha">Insira sua senha:</label>
-        <input type="password" name="senha" id="isenha" required>
-
-        <button>Login</button>
-    </form>
+            <form id="form-login" method="post" action="/login">
+                <label class="label-login" for="nome">Nome:</label>
+                <input class="input-login" autocomplete="off" type="text" name="nome" id="inome" required>
+                <label class="label-login" for="senha">Senha:</label>
+                <input class="input-login" type="password" name="senha" id="isenha" required>
+                <button id="btt-login">Login</button>
+            </form>
+        </div>
+    </div>
 </body>
 
 

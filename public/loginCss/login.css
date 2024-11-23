@@ -27,3 +27,91 @@ body, html {
     padding: 0;    
 }
 
+#container-pai-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 40px 0px 40px 0px;
+    background-color: #212121;
+}
+
+#h1-title-login{
+    margin-top: 0px;
+    font-size: 45px;
+    color: white;
+    text-decoration: overline;
+}
+
+#container-filho-login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    width: 70vw;
+}
+
+#container-login-1{
+    height: 100%;
+    width: 50%;
+    background-color: #212121;
+    background-image: url(../imagens/dados-png.png);
+    background-size: cover;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#form-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    background-color: #212121;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.label-login{
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+}
+
+.input-login{
+    height: 35px;
+    width: 80%;
+    margin-bottom: 40px;
+    color: white;
+    background-color: transparent;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px solid white;
+}
+.input-login:focus{
+    outline: none;
+}
+.input-login:valid{
+    background-color: transparent;
+}
+
+#btt-login{
+    height: 45px;
+    width: 25%;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #131313;
+    color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid var(--cor01);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+#btt-login:hover{
+    transform: scale(1.05);
+}
