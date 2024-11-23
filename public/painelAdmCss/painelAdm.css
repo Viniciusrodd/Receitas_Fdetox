@@ -78,6 +78,11 @@ body, html {
     background-image: url(../imagens/dados-png.png);
     background-position: center;
     background-size: cover;
+    transition: ease 0.5s;
+    cursor: pointer;
+}
+.cards-dados-painel:hover{
+    transform: translateY(-15px);
 }
 
 .background-filter{
@@ -89,23 +94,23 @@ body, html {
     width: 100%;
     padding: 20px;
     border-radius: 20px 20px 0px 0px;
-    background-color: rgba(0, 0, 0, 0.676);
+    background-color: rgba(0, 0, 0, 0.589);
 }
 
 .background-title-painel{
     display: flex;
     align-items: center;
-    height: 20vh;
+    height: 25vh;
     width: 100%;
     padding: 0px 20px 0px 20px;
     border-radius: 0px 0px 20px 20px;
-    background-color: black;
+    background-color: #161616;
 }
 
 .h3-title-painel{
     font-size: 25px;
     text-align: left;
-    color: var(--cor10);
+    color: var(--cor01);
     margin: 0px;
 }
 
