@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+:root{
+    --cor01: #FBF3EB;
+    --cor02: #172313;
+    --cor03: #7aa789;
+    --cor04: #d3efdc;
+    --cor05: rgb(255, 94, 94);
+    --cor06: #287FB6;
+    --cor07: #003452;
+    --cor08: #ea5f5f;
+    --cor09: #410039;
+    --cor10: #2D728F;
+    --cor11: #EFF053;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1250px){
+
+#container-pai-painel{
+
+.cards-dados-painel{
+    height: 38vh;
+    width: 35%;
+    transition: none;
+}
+.cards-dados-painel:hover{
+    transform: none;
+}
+
+.h3-title-painel{
+    font-size: 23px;
+}
+
+}
+
+}
