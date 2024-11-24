@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+:root{
+    --cor01: #FBF3EB;
+    --cor02: #172313;
+    --cor03: #7aa789;
+    --cor04: #d3efdc;
+    --cor05: rgb(255, 94, 94);
+    --cor06: #287FB6;
+    --cor07: #003452;
+    --cor08: #ea5f5f;
+    --cor09: #410039;
+    --cor10: #2D728F;
+    --cor11: #EFF053;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1250px){
+
+#container-pai-login{
+  
+
+#h1-title-login{
+    font-size: 40px;
+}
+
+#container-filho-login{
+    height: 60vh;
+    width: 90%;
+}
+
+#container-login-1{
+    height: 100%;
+    width: 40%;
+}
+
+#form-login{
+    height: 100%;
+    width: 60%;
+}
+
+.label-login{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.input-login{
+    font-size: 19px;
+}
+.input-login:focus{
+    outline: none;
+}
+.input-login:valid{
+    background-color: transparent;
+}
+
+#btt-login{
+    transition: none;
+}
+#btt-login:hover{
+    transform: none;
+}
+
+}
+
+}
