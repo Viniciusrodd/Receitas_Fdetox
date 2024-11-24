@@ -28,7 +28,7 @@
 }
 
 .h1-treino{
-    font-size: 30px;
+    font-size: 35px;
 }
 
 #section-container-treino{
@@ -103,7 +103,7 @@
 }
 
 #treino-button{
-    width: 60vw;
+    width: 70vw;
     transition: none;
     margin: 50px 0px 50px 0px;
 }
