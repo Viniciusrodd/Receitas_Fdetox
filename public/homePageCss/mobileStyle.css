@@ -125,7 +125,7 @@ div#conteudo-container-1-home{
 
 .section-mission-home{
     justify-content: space-around;
-    padding: 10vh 0px 10vh 0px;
+    padding: 5vh 0px 5vh 0px;
 }
 
 .container-mission-home{
@@ -167,6 +167,10 @@ div#conteudo-container-1-home{
 
 /*SESSÃO MISSÃO 2*/
 
+#section-mission-home-2{
+    padding: 10% 0px 10% 0px;
+}
+
 #h1-mission-2{
     font-size: 45px;
     letter-spacing: 0px;
@@ -198,7 +202,7 @@ div#conteudo-container-1-home{
 
 
 #product-presentation-home{
-    height: 320vh;
+    height: 350vh;
 }
 
 #container-lift-home{
@@ -221,7 +225,7 @@ div#conteudo-container-1-home{
 
 #desc-lift-home{
     width: 100%;
-    background-color: #000000a8;
+    background-color: #0000009d;
 }
 
 .ul-home{

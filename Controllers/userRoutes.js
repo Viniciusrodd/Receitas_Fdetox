@@ -17,7 +17,7 @@ router.get('/homepage', (req, res) =>{
 
 //PARTIALS CUSTOMIZATION
 router.get('/partial', (req, res) =>{
-    res.render('registro')
+    res.render('partials/liftDetox')
 })
 
 

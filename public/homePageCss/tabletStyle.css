@@ -115,7 +115,7 @@ div#imagem-header-home{
 
 #h1-desc-lift-home{
     font-size: 25px;
-    margin: 0px 0px 10px 0px;
+    margin: 0px 0px 30px 0px;
 }
 
 .li-lift-home{
@@ -137,7 +137,7 @@ div#imagem-header-home{
 
 #h1-secandoCasa-home{
     font-size: 30px;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 5% 0px;
 }
 
 #h2-secandoCasa-home{
@@ -153,7 +153,7 @@ div#imagem-header-home{
 /*TREINO*/
 
 #desc-treino-home{
-    justify-content: center;
+    justify-content: space-around;
 }
 
 #h1-desc-treino-home{

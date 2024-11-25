@@ -21,6 +21,7 @@
     padding: 0px 0px 20px 0px;
 
 #header-login{
+    height: 15vh;
     margin-bottom: 5%;
 }
 
@@ -32,7 +33,7 @@
 #container-filho-login{
     flex-direction: column;
     height: 75vh;
-    width: 90%;
+    width: 80%;
 }
 
 #container-login-1{
