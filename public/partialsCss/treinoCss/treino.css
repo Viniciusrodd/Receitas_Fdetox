@@ -77,7 +77,7 @@ body, html {
 
 
 #image-treino{
-    height: 90vh;
+    height: 95vh;
     width: 100%;
     background-image: url(/imagens/treino/mulher-treino-2.jpg);
     background-position: center;
@@ -228,7 +228,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 110vh;
+    height: 100vh;
     width: 100%;
     background-image: url(/imagens/treino/mulher-treino-2.jpg);
     background-position: center;
@@ -294,8 +294,129 @@ a{
     background-color: black;
 
     & .img-treino-garantia{
-        height: 40vh;
-        width: 30vw;
+        height: 35vh;
+        width: 25vw;
     }
+}
+
+
+/*FOOTER*/
+
+
+section#footer-treino{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0px 50px 0px;
+    background-color: var(--cor01);
+}
+
+#h1-footer-treino{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+#h2-footer-treino{
+    font-size: 32px;
+}
+
+#div-footer-1-treino{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.div-cards-footer-treino{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 20vw;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+.div-cards-footer-treino:hover{
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.205);
+    border-radius: 20px;
+}
+
+.h1-cards-footer-treino{
+    font-size: 30px;
+    margin: 5px 0px 5px 0px;
+}
+
+.h2-cards-footer-treino{
+    font-size: 18px;
+    margin: 5px 0px 5px 0px;
+    text-align: center;
+}
+
+.p-cards-footer-treino{
+    font-size: 18px;
+    margin: 5px 0px 5px 0px;
+    text-align: center;
+}
+
+#div-argumentos-footer-treino{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 60vh;
+    width: 90%;
+    margin-top: 40px;
+}
+
+#argumentos-footer-treino{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+}
+
+#h1-argumentos-footer-treino{
+    font-size: 42px;
+    margin: 0px 0px 20px 0px;
+    color: #193722;
+}
+
+#h2-argumentos-footer-treino{
+    font-size: 22px;
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+    color: #193722;
+}
+
+#p-argumentos-footer-treino{
+    font-size: 19px;
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+}
+
+.btt-compras-treino{
+    height: 45px;
+    width: 200px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.btt-compras-treino:hover{
+    background-color: rgb(255, 94, 94);
+    transform: scale(1.05);
 }
 }

@@ -365,7 +365,7 @@ div#conteudo-container-1-home{
     justify-content: flex-end;
     height: 65vh;
     width: 90%;
-    border-radius: 20px;
+    border-radius: 40px;
     background-color: var(--cor01);
     position: relative;
     overflow: hidden; /* Para esconder o conteúdo que sair da div */
@@ -382,7 +382,6 @@ div#conteudo-container-1-home{
     position: absolute; /* Sobrepõe a `desc-lift` */
     transition: transform 1s ease; /* Animação suave ao mover */
     cursor: pointer;
-    border-radius: 20px 0px 0px 20px;
 }
 
 #background-lift-home{
@@ -464,7 +463,7 @@ div#conteudo-container-1-home{
     justify-content: flex-start;
     height: 65vh;
     width: 90%;
-    border-radius: 20px;
+    border-radius: 40px;
     background-color: var(--cor01);
     position: relative;
     overflow: hidden; /* Para esconder o conteúdo que sair da div */
@@ -538,7 +537,7 @@ div#conteudo-container-1-home{
     justify-content: flex-end;
     height: 65vh;
     width: 90%;
-    border-radius: 20px;
+    border-radius: 40px;
     background-color: var(--cor01);
     position: relative;
     overflow: hidden;

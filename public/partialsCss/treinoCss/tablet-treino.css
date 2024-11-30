@@ -85,6 +85,57 @@
  }
 
 
+/*FOOTER*/
+
+ 
+#h1-footer-treino{
+    font-size: 45px;
+    text-align: center;
+}
+
+#h2-footer-treino{
+    font-size: 35px;
+    width: 70%;
+    text-align: center;
+}
+
+ 
+.div-cards-footer-treino{
+    transition: none;
+    height: 50vh;
+}
+.div-cards-footer-treino:hover{
+    transform: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0px;
+}
+
+.h1-cards-footer-treino{
+    font-size: 30px;
+    text-align: center;
+}
+
+.h2-cards-footer-treino{
+    font-size: 20px;
+    text-align: center;
+}
+
+.p-cards-footer-treino{
+    font-size: 20px;
+}
+
+#div-argumentos-footer-treino{
+   height: 80vh;
+}
+
+#h1-argumentos-footer-treino{
+    text-align: center;
+}
+ 
+#imagem-argumentos-footer-treino{
+    display: none;
+}
+
 }
 
 
