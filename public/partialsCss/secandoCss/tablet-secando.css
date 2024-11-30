@@ -116,6 +116,58 @@ div.imagem-cards-secando{
 }
 
 
+/*FOOTER*/
+
+ 
+#h1-footer-secando{
+    font-size: 45px;
+    text-align: center;
+}
+
+#h2-footer-secando{
+    font-size: 35px;
+    width: 70%;
+    text-align: center;
+}
+
+ 
+.div-cards-footer-secando{
+    transition: none;
+    height: 50vh;
+}
+.div-cards-footer-secando:hover{
+    transform: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0px;
+}
+
+.h1-cards-footer-secando{
+    font-size: 30px;
+    text-align: center;
+}
+
+.h2-cards-footer-secando{
+    font-size: 20px;
+    text-align: center;
+}
+
+.p-cards-footer-secando{
+    font-size: 20px;
+}
+
+#div-argumentos-footer-secando{
+   height: 80vh;
+}
+
+#h1-argumentos-footer-secando{
+    text-align: center;
+}
+ 
+#imagem-argumentos-footer-secando{
+    display: none;
+}
+
+
 
 }
 
