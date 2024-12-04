@@ -15,13 +15,4 @@ const cadastroAdm = Conection.define('cadastroAdm', {
 })
 
 
-cadastroAdm.sync({force: false})
-    .then(() =>{
-        console.log('Tabela registro sincronizada')
-    })
-    .catch((error) =>{
-        console.log('Tabela registro falha na sincronização' + error)
-    });
-
-
 module.exports = cadastroAdm;

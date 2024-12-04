@@ -31,12 +31,4 @@ const painelHome = Conection.define('painelHome', {
 });
 
 
-painelHome.sync({force: false})
-    .then(() =>{
-        console.log('Table PainelHome created');
-    })
-    .catch((error) =>{
-        console.log(`Table PainerlHome error at creation ${error}`);
-    })
-
 module.exports = painelHome;

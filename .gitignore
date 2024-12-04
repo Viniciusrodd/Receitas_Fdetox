@@ -3,8 +3,11 @@
 #Files to ignore:
 .env
 server.js
+
 #Fields
+migrations/
 config/config.js
 database/
+models/
 public/scripts/
 node_modules/
